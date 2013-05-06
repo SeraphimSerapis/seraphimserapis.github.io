@@ -2,10 +2,10 @@
 #      Main Configs       #
 # ----------------------- #
 
-url: http://SeraphimSerapis.github.io
-title: My Octopress Blog
-subtitle: A blogging framework for hackers.
-author: Your Name
+url: http://seraphimserapis.github.io
+title: Tim Messerschmidt
+subtitle: Developer Evangelist
+author: Tim Messerschmidt
 simple_search: http://google.com/search
 description:
 
@@ -58,13 +58,13 @@ default_asides: [asides/recent_posts.html, asides/github.html, asides/delicious.
 # ----------------------- #
 
 # Github repositories
-github_user:
+github_user: SeraphimSerapis
 github_repo_count: 0
 github_show_profile_link: true
 github_skip_forks: true
 
 # Twitter
-twitter_user:
+twitter_user: SeraAndroid
 twitter_tweet_button: true
 
 # Google +1
