@@ -1,4 +1,4 @@
 User-agent: *
 Disallow: 
 
-Sitemap: http://SeraphimSerapis.github.io/sitemap.xml 
+Sitemap: http://seraphimserapis.github.io/sitemap.xml 
