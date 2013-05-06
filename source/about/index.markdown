@@ -6,8 +6,6 @@ comments: false
 sharing: true
 footer: true
 ---
-Tim
-==
 I'm working as Developer Evangelist at PayPal. My main responsibility is working with developers and startups all over Europe. Before joining PayPal I've been working as Technical Project Manager and Software Engineer at Neofonie Mobile GmbH in Berlin. Additionally to that I've worked for Samsung as Developer Advocate in Germany.
 
 I studied Business Informatics at the University of Paderborn in Germany and graduated 2011.
@@ -67,3 +65,4 @@ This helps my Mac to do what I want:
 - [GrabBox](http://grabbox.devsoft.no/) - Upload Screenshots to Dropbox
 - [Clyppan](http://www.omh.cc/Clyppan-Clipboard-Manager-for-the-Mac/) - Intelligent Clipboard
 - [Dropbox](https://www.dropbox.com/) - Storage
+- [1Password](https://agilebits.com/onepassword) - Safe passwords
