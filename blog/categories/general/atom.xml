@@ -4,7 +4,7 @@
   <title><![CDATA[Category: General | timmesserschmidt]]></title>
   <link href="http://seraphimserapis.github.io/blog/categories/general/atom.xml" rel="self"/>
   <link href="http://seraphimserapis.github.io/"/>
-  <updated>2013-05-06T11:59:26+02:00</updated>
+  <updated>2013-05-06T12:03:37+02:00</updated>
   <id>http://seraphimserapis.github.io/</id>
   <author>
     <name><![CDATA[Tim Messerschmidt]]></name>
@@ -20,7 +20,7 @@
     <id>http://seraphimserapis.github.io/blog/2013/05/06/a-new-start-using-octopress</id>
     <content type="html"><![CDATA[<p>After I've spent some time <a href="http://timmesserschmidt.blogspot.com">blogging on Blogger</a> I wanted to try something new. The reason for that is not necessarily Blogger not being a good platform for your blog but me being eager to learn new stuff.</p>
 
-<p>Having worked with Jekyll before it was pretty obvious to me that I wanted to go for a solution that allows me to configure my blog and adds some pretty cool functionality like nicely formatted code embeds, writing posts in Markdown and of course deploying my site to GitHub pages. I could have either used Jekyll itself (<a href="http://blog.parkermoore.de/2013/05/06/jekyll-1-dot-0-released/">which just got bumped to version 1.0</a>) or used Octopress (which I do).</p>
+<p>Having <a href="http://battlehack.org">worked with Jekyll before</a> it was pretty obvious to me that I wanted to go for a solution that allows me to configure my blog and adds some pretty cool functionality like nicely formatted code embeds, writing posts in Markdown and of course deploying my site to GitHub pages. I could have either used Jekyll itself (<a href="http://blog.parkermoore.de/2013/05/06/jekyll-1-dot-0-released/">which just got bumped to version 1.0</a>) or used Octopress (which I do).</p>
 
 <p>The reason I stick with Octopress is that it comes with a decent default theme (which I'll tweak over time) and does a lot of configuration / JS /  … that Jekyll still requires to be done manually.</p>
 
