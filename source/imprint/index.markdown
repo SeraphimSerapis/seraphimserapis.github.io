@@ -18,7 +18,7 @@ Operator
 
 Responsible for the content of this site (and the person who runs this blog) is Tim Messerschmidt, living at Nollendorfstr. 18, 10777 Berlin, Germany (§55 RStV).
 
-The guy blogging here works for PayPal Deutschland GmbH, Martplatz 1 in 14532 Europarc Dreilinden, Germany. All opinions expresses here are strictly private and have no relation to PayPal Deutsch­land GmbH, PayPal (Europe) or another company belonging to eBay Inc. All content published here are not verified, corrected or checked by the company. All content & statements expressed here are belong to Tim Messerschmidt.
+The guy blogging here works for PayPal Deutschland GmbH, Martplatz 1 in 14532 Europarc Dreilinden, Germany. All opinions expresses here are strictly private and have no relation to PayPal Deutsch­land GmbH, PayPal (Europe) or another company belonging to eBay Inc. All content published here is not verified, corrected or checked by the company. All content & statements expressed here belong to Tim Messerschmidt.
 
 Links
 --
