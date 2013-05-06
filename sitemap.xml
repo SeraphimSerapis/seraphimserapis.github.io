@@ -1,12 +1,16 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <urlset xmlns='http://www.sitemaps.org/schemas/sitemap/0.9'>
     <url>
+        <loc>http://seraphimserapis.github.io/blog/2013/05/06/a-new-start-using-octopress/</loc>
+        <lastmod>2013-05-06T11:40:52+02:00</lastmod>
+    </url>
+    <url>
         <loc>http://seraphimserapis.github.io/blog/archives/</loc>
-        <lastmod>2013-05-06T10:39:23+02:00</lastmod>
+        <lastmod>2013-05-06T11:40:52+02:00</lastmod>
     </url>
     <url>
         <loc>http://seraphimserapis.github.io/</loc>
-        <lastmod>2013-05-06T10:39:23+02:00</lastmod>
+        <lastmod>2013-05-06T11:40:52+02:00</lastmod>
     </url>
     <url>
         <loc>http://seraphimserapis.github.io/robots.txt</loc>

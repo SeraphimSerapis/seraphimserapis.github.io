@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
 
-  <title><![CDATA[timmesserschmidt]]></title>
-  <link href="http://seraphimserapis.github.io/atom.xml" rel="self"/>
+  <title><![CDATA[Category: General | timmesserschmidt]]></title>
+  <link href="http://seraphimserapis.github.io/blog/categories/general/atom.xml" rel="self"/>
   <link href="http://seraphimserapis.github.io/"/>
   <updated>2013-05-06T11:41:43+02:00</updated>
   <id>http://seraphimserapis.github.io/</id>
@@ -18,15 +18,15 @@
     <link href="http://seraphimserapis.github.io/blog/2013/05/06/a-new-start-using-octopress/"/>
     <updated>2013-05-06T11:16:00+02:00</updated>
     <id>http://seraphimserapis.github.io/blog/2013/05/06/a-new-start-using-octopress</id>
-    <content type="html"><![CDATA[<p>After I&#8217;ve spent some time <a href="http://timmesserschmidt.blogspot.com">blogging on Blogger</a> I wanted to try something new. The reason for that is not necessarily Blogger not being a good platform for your blog but me being eager to learn new stuff.</p>
+    <content type="html"><![CDATA[<p>After I've spent some time <a href="http://timmesserschmidt.blogspot.com">blogging on Blogger</a> I wanted to try something new. The reason for that is not necessarily Blogger not being a good platform for your blog but me being eager to learn new stuff.</p>
 
 <p>Having worked with Jekyll before it was pretty obvious to me that I wanted to go for a solution that allows me to configure my blog and adds some pretty cool functionality like nicely formatted code embeds, writing posts in Markdown and of course deploying my site to GitHub pages. I could have either used Jekyll itself (<a href="http://blog.parkermoore.de/2013/05/06/jekyll-1-dot-0-released/">which just got bumped to version 1.0</a>) or used Octopress (which I do).</p>
 
-<p>The reason I stick with Octopress is that it comes with a decent default theme (which I&#8217;ll tweak over time) and does a lot of configuration / JS /  … that Jekyll still requires to be done manually.</p>
+<p>The reason I stick with Octopress is that it comes with a decent default theme (which I'll tweak over time) and does a lot of configuration / JS /  … that Jekyll still requires to be done manually.</p>
 
-<p>I&#8217;ll be blogging mainly about my life as Developer Evangelist, summarizing events I&#8217;ve been at and linking to interesting content I&#8217;ve found. Additionally I&#8217;ll be covering tools / apps / etc. that I like a lot and help me with being productive.</p>
+<p>I'll be blogging mainly about my life as Developer Evangelist, summarizing events I've been at and linking to interesting content I've found. Additionally I'll be covering tools / apps / etc. that I like a lot and help me with being productive.</p>
 
-<p>The reason I&#8217;m not importing stuff is that my old blog was a mess of both German and English posts and I didn&#8217;t really have a straight idea about what the content should be like.</p>
+<p>The reason I'm not importing stuff is that my old blog was a mess of both German and English posts and I didn't really have a straight idea about what the content should be like.</p>
 
 <p>Tim</p>
 ]]></content>
