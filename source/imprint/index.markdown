@@ -23,7 +23,7 @@ The guy blogging here works for PayPal Deutschland GmbH, Martplatz 1 in 14532 Eu
 Links
 --
 
-All links to external sites are being checked when publishing them here. No responsibility is taken for the content of external links. If legal violations are being discovered the affected links will be removed.
+All links to external sites are being checked when published here. No responsibility is taken for the content of external links. If legal violations are being discovered the affected links will be removed as soon as possible.
 
 Google Analytics
 --
