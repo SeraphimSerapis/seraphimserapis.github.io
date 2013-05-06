@@ -82,7 +82,7 @@ body {
       margin-right: $pad-wide;
     }
   }
-  #content > div > article > ul, #content > div > article.hentry > div.entry-content > ul {
+  #content > div > article > ul, #content > div > article > div.entry-content > ul {
     margin-left: 1.3em;
   }
   > header {
