@@ -9,20 +9,21 @@ footer: true
 
 If you want to contact me these are the best ways to do so:
 
-mail: [tmesserschmidt@paypal.com](mailto:tmesserschmidt@paypal.com)  
-twitter: [SeraAndroid](http://twitter.com/SeraAndroid)  
-gplus: [+Tim Messerschmidt](http://gplus.to/seraandroid)  
-linkedin: [Tim Messerschmidt](de.linkedin.com/in/timmesserschmidt/en)  
-cell: 0151 / 5504 8230  
+	mail: 		tmesserschmidt@paypal.com
+	twitter: 	@SeraAndroid
+	gplus: 		+Tim Messerschmidt
+	linkedin: 	Tim Messerschmidt
+	cell: 		+49 151 5504 8230  
 
 Operator
 --
 
 Responsible for the content of this site (and the person who runs this blog) is according to §55 RStV:
 
-	Tim Messerschmidt,
-	Nollendorfstr. 18,
-	10777 Berlin, Germany
+	Tim Messerschmidt
+	Nollendorfstr. 18
+	10777 Berlin
+	Germany
 
 The guy blogging here currently works for PayPal Deutschland GmbH, Martplatz 1 in 14532 Europarc Dreilinden, Germany. All opinions expresses here are strictly private and have no relation to PayPal Deutsch­land GmbH, PayPal (Europe) or another company belonging to eBay Inc. All content published here is not verified, corrected or checked by the company. All content & statements expressed here belong to Tim Messerschmidt.
 
