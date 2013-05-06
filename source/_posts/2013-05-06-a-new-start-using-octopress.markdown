@@ -14,5 +14,3 @@ The reason I stick with Octopress is that it comes with a decent default theme (
 I'll be blogging mainly about my life as Developer Evangelist, summarizing events I've been at and linking to interesting content I've found. Additionally I'll be covering tools / apps / etc. that I like a lot and help me with being productive.
 
 The reason I'm not importing stuff is that my old blog was a mess of both German and English posts and I didn't really have a straight idea about what the content should be like.
-
-Tim 
