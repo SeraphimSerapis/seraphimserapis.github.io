@@ -82,6 +82,9 @@ body {
       margin-right: $pad-wide;
     }
   }
+  #content > div > article > ul {
+    margin-left: 1.3em;
+  }
   > header {
     font-size: $header-font-size;
     padding-top: $header-padding-top;
