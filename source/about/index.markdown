@@ -3,7 +3,7 @@ layout: page
 title: "About"
 date: 2013-05-06 12:05
 comments: false
-sharing: true
+sharing: false
 footer: true
 ---
 I'm working as Developer Evangelist at PayPal. My main responsibility is working with developers and startups all over Europe. Before joining PayPal I've been working as Technical Project Manager and Software Engineer at Neofonie Mobile GmbH in Berlin. Additionally to that I've worked for Samsung as Developer Advocate in Germany.
