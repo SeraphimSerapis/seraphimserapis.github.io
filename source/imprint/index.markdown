@@ -7,12 +7,9 @@ sharing: false
 footer: true
 ---
 
-If you want to contact me these are the best ways to do so:
+If you want to contact me on another way than the usual social networks, these are the best ways to do so:
 
 	mail: 		tmesserschmidt@paypal.com
-	twitter: 	@SeraAndroid
-	gplus: 		+Tim Messerschmidt
-	linkedin: 	Tim Messerschmidt
 	cell: 		+49 151 5504 8230  
 
 Operator
