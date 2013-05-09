@@ -17,17 +17,18 @@ What do I take with me when traveling light?
 
 - MacBook Pro, 15" (Late 2012) with 8GB Ram and a Core i7 @ 2.4 GHz
 - iPhone 4S (Company phone)
-- Anker Mobile Battery which charges up my phone about 4-5 times
-- Sanyo Mobile Booster - another battery (tinier) that charges up my phone about 2-3 times
+- [Anker Mobile Battery](http://www.amazon.com/Lightning-Thunderbolt-Blackberry-connectors-customized/dp/B009USAJCC) which charges up my phone about 4-5 times
+- [Sanyo Mobile Booster](http://www.amazon.com/Sanyo-eneloop-KBC-L2B-Mobile-Booster/dp/B004BQJXJI) - another battery (tinier) that charges up my phone about 2-3 times
 - Sunglasses (if it makes sense - sadly I almost always forget them)
-- Bose QC15 Noise Cancelling Headset
+- [Bose QC15 Noise Cancelling Headset](http://www.amazon.com/Bose%C2%AE-QuietComfort%C2%AE-Acoustic-Cancelling%C2%AE-Headphones/dp/B0054JJ0QW) - helps to actually be productive at airports.
+- [AKG K375](http://www.amazon.com/AKG-Acoustics-K375-Headphone-Black/dp/B00A1UHM1Y) In-ear headphone - more mobile than the Bose and doesn't require battery
 - Lots of different cables (iPhone / iPad cable, USB, ...)
 - Dextro Energy (dextrose) - to get some energy in
 - A small notebook and a pen
 
 When not traveling in Europe I always take with me:
 - Country-specific Mac adaptors (I bought the travel-kit once)
-- A Skross World Adapter with 2 USB connectors
+- [A Skross World Adapter](http://www.amazon.com/Charger-Designed-Quality-Blackberrys-Countries/dp/B002G90I3M) with 2 USB connectors
 - Passport (useful also in UK)
 
 Traveling medium
@@ -36,8 +37,8 @@ Traveling medium is needed if I get to stay for a bit longer at one event or I n
 
 In this case I need to get both my backpack and a tiny suitcase (which has the optimum size for handluggage). Basically I put everything inside my backpack that I mentioned above already PLUS more clothes and additionally this tech:
 
-- Razer Mako speakers (charged via USB) that spice up listening to Music / watching movies in the hotel
-- Apple Airport Express (the new one) for connecting to the hotel's LAN and having a real good WiFi
+- [Razer Ferox speakers](http://www.amazon.com/Razer-Mobile-Gaming-Speakers-RZ05-00500100-R3/dp/B004L2JPS6) (charged via USB) that spice up listening to Music / watching movies in the hotel
+- [Apple Airport Express](http://www.amazon.com/Apple-AirPort-Express-Station-MC414LL/dp/B008ALA2RC/) for connecting to the hotel's LAN and having a real good WiFi
 - LAN cable (to connect the Airport Express to the room's LAN port)
 - iPad 3 32GB wih 3G (for gaming and reading stuff)
 - Kindle Paperwhite (reading stuff, again)
@@ -50,13 +51,13 @@ So this happens when I travel over to the US or do marathon events like Mobile W
 
 - Nexus 4 16GB
 - Nexus 7 16GB
-- Logitech G700 Mice
+- [Logitech G700 Mouse](http://www.amazon.com/Logitech-Wireless-Gaming-Mouse-G700/dp/B003VAM32E)
 
 When having a presentation
 ---
 I've got a tiny bag that sits in my backpack and contains:
 
-- Logitech R400
+- [Logitech R400](http://www.amazon.com/Logitech-910-001354-Wireless-Presenter-R400/dp/B002GHBUTK)
 - Display Adapter VGA
 - Display Adapter DVI
 - Display Adapter HDMI
