@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title><![CDATA[Category: Workflow | timmesserschmidt]]></title>
+  <link href="http://seraphimserapis.github.io/blog/categories/workflow/atom.xml" rel="self"/>
+  <link href="http://seraphimserapis.github.io/"/>
+  <updated>2013-05-11T10:13:33+01:00</updated>
+  <id>http://seraphimserapis.github.io/</id>
+  <author>
+    <name><![CDATA[Tim Messerschmidt]]></name>
+    
+  </author>
+  <generator uri="http://octopress.org/">Octopress</generator>
+
+  
+  <entry>
+    <title type="html"><![CDATA[Octopress Alfred Workflow]]></title>
+    <link href="http://seraphimserapis.github.io/blog/2013/05/11/octopress-alfred-workflow/"/>
+    <updated>2013-05-11T10:08:00+01:00</updated>
+    <id>http://seraphimserapis.github.io/blog/2013/05/11/octopress-alfred-workflow</id>
+    <content type="html"><![CDATA[<p>This is just a very short post highlighting a very nice Alfred workflow that adds support for creating new posts for Octopress or regenerating the site.</p>
+
+<p>You can find the workflow over <a href="http://www.alfredforum.com/topic/2289-octopress-publisher/">at the Alfred forums</a> or <a href="https://github.com/Temikus/alfred-octopress/">at GitHub</a>.</p>
+
+<p>To me this is very useful since I don't need to open iTerm first, navigate to my blog's folder, create a new file using rake and open the file in vi(m) or <a href="http://mouapp.com/">Mou</a>.</p>
+]]></content>
+  </entry>
+  
+</feed>
