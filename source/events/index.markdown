@@ -26,12 +26,12 @@ Upcoming (to be refreshed)
 - 06/05/2013 - Echtzeit - Berlin
 - 06/02/2013 - hy! - Berlin
 - 05/15/2013 - Google I/O - San Francisco
-- 05/10/2013 - Codemotion Conference - Berlin
-- 05/09/2013 - Codemotion Hackathon - Berlin
-- 05/08/2013 - Echtzeit - Munich
 
 History 2013
 --
+- 05/10/2013 - Codemotion Conference - Berlin
+- 05/09/2013 - Codemotion Hackathon - Berlin
+- 05/08/2013 - Echtzeit - Munich
 - 05/07/2013 - Seedcamp - Stockholm
 - 05/04/2013 - AngelHack - Berlin
 - 04/30/2013 - Hack & Tell - Berlin
