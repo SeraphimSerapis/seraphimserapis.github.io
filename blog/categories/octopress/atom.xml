@@ -4,7 +4,7 @@
   <title><![CDATA[Category: Octopress | timmesserschmidt]]></title>
   <link href="http://seraphimserapis.github.io/blog/categories/octopress/atom.xml" rel="self"/>
   <link href="http://seraphimserapis.github.io/"/>
-  <updated>2013-05-11T10:13:33+01:00</updated>
+  <updated>2013-05-11T10:19:31+01:00</updated>
   <id>http://seraphimserapis.github.io/</id>
   <author>
     <name><![CDATA[Tim Messerschmidt]]></name>
@@ -18,11 +18,26 @@
     <link href="http://seraphimserapis.github.io/blog/2013/05/11/octopress-alfred-workflow/"/>
     <updated>2013-05-11T10:08:00+01:00</updated>
     <id>http://seraphimserapis.github.io/blog/2013/05/11/octopress-alfred-workflow</id>
-    <content type="html"><![CDATA[<p>This is just a very short post highlighting a very nice Alfred workflow that adds support for creating new posts for Octopress or regenerating the site.</p>
+    <content type="html"><![CDATA[<p>This is just a very short post highlighting a very nice Alfred workflow that adds support for creating new posts for Octopress or regenerating the site. Furthermore I'll quickly describe how I post my stuff to GitHub.</p>
 
 <p>You can find the workflow over <a href="http://www.alfredforum.com/topic/2289-octopress-publisher/">at the Alfred forums</a> or <a href="https://github.com/Temikus/alfred-octopress/">at GitHub</a>.</p>
 
 <p>To me this is very useful since I don't need to open iTerm first, navigate to my blog's folder, create a new file using rake and open the file in vi(m) or <a href="http://mouapp.com/">Mou</a>.</p>
+
+<p>This is my Git workflow to test the blog locally and add new posts:</p>
+
+<p><code>
+alias octopush='git push origin source &amp;&amp; rake generate &amp;&amp; rake deploy'
+alias octoprev='rake generate &amp;&amp; rake preview'
+</code></p>
+
+<p>Place that into your .zshrc or .bashrc or whatever you use and you only have to do the following before:</p>
+
+<p><code>
+git add .
+git commit -am "My fancy message"
+</code>
+Basically I test before commiting with <code>octoprev</code> and use <code>octopush</code> afterwards to push to GitHub.</p>
 ]]></content>
   </entry>
   

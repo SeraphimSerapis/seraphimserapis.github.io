@@ -110,11 +110,29 @@
   </header>
 
 
-  <div class="entry-content"><p>This is just a very short post highlighting a very nice Alfred workflow that adds support for creating new posts for Octopress or regenerating the site.</p>
+  <div class="entry-content"><p>This is just a very short post highlighting a very nice Alfred workflow that adds support for creating new posts for Octopress or regenerating the site. Furthermore I&#8217;ll quickly describe how I post my stuff to GitHub.</p>
 
 <p>You can find the workflow over <a href="http://www.alfredforum.com/topic/2289-octopress-publisher/">at the Alfred forums</a> or <a href="https://github.com/Temikus/alfred-octopress/">at GitHub</a>.</p>
 
 <p>To me this is very useful since I don&#8217;t need to open iTerm first, navigate to my blog&#8217;s folder, create a new file using rake and open the file in vi(m) or <a href="http://mouapp.com/">Mou</a>.</p>
+
+<p>This is my Git workflow to test the blog locally and add new posts:</p>
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>alias octopush='git push origin source && rake generate && rake deploy'
+</span><span class='line'>alias octoprev='rake generate && rake preview'</span></code></pre></td></tr></table></div></figure>
+
+
+<p>Place that into your .zshrc or .bashrc or whatever you use and you only have to do the following before:</p>
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>git add .
+</span><span class='line'>git commit -am "My fancy message"</span></code></pre></td></tr></table></div></figure>
+
+
+<p>Basically I test before commiting with <code>octoprev</code> and use <code>octopush</code> afterwards to push to GitHub.</p>
 </div>
   
   
