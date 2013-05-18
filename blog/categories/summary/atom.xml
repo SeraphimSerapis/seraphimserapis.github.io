@@ -4,7 +4,7 @@
   <title><![CDATA[Category: Summary | timmesserschmidt]]></title>
   <link href="http://seraphimserapis.github.io/blog/categories/summary/atom.xml" rel="self"/>
   <link href="http://seraphimserapis.github.io/"/>
-  <updated>2013-05-18T11:16:38-07:00</updated>
+  <updated>2013-05-18T11:18:54-07:00</updated>
   <id>http://seraphimserapis.github.io/</id>
   <author>
     <name><![CDATA[Tim Messerschmidt]]></name>
@@ -15,9 +15,9 @@
   
   <entry>
     <title type="html"><![CDATA[Summary Google I/O 2013]]></title>
-    <link href="http://seraphimserapis.github.io/blog/2013/05/18/summary-google-i-slash-o-2013/"/>
+    <link href="http://seraphimserapis.github.io/blog/2013/05/18/summary-google-io-2013/"/>
     <updated>2013-05-18T10:20:00-07:00</updated>
-    <id>http://seraphimserapis.github.io/blog/2013/05/18/summary-google-i-slash-o-2013</id>
+    <id>http://seraphimserapis.github.io/blog/2013/05/18/summary-google-io-2013</id>
     <content type="html"><![CDATA[<p>Yesterday this year's Google I/O officially ended with a series of Code Labs, Fireside Chats and talks about more general techniques. For me it was the second I/O in a row and I'll try to briefly summarize the event in this post.</p>
 
 <h2>Day 0 - Tuesday</h2>
