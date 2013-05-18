@@ -38,7 +38,7 @@ A very pleasant thing is the big focus of Google on education. As an example the
 
 The Keynote was being ended by Larry Page coming up on stage (first time since a very loooong time) and talking about the important role of technology for education, Google's focus for the next few years and much more. After his really moving talk he accepted some questions from the audience and tried to answer them as good as possible.
 
-The only person I missed was Sergey Brin. Last year he took over a big part of the Keynote by having people jumping out of an airplane using Google Glass and this year he just wasn't there. The Keynote's speed & rythm was very different compared to last year's. This didn't make it any better or worse.
+The only person I missed was Sergey Brin. Last year he took over a big part of the Keynote by having people jumping out of an airplane using Google Glass and this year he just wasn't there. The Keynote's speed & rhythm was very different compared to last year's. This didn't make it any better or worse.
 
 
 **After the Keynote:** I met tons of people, walked through the Sandboxes and tried a lot of new hardware. Google did a very interesting selection with products like [Leap Motion](http://www.leapmotion.com/) or [Oculus Rift](http://www.oculusvr.com/).
@@ -61,7 +61,7 @@ This year's second day didn't bring another Keynote. This day was very much focu
  
 - Developing For Glass
 - Building Glass Services with the Google Mirror API
-- Voiding Your Warranty: Hackign Glass
+- Voiding Your Warranty: Hacking Glass
 - Fireside Chat with the Glass Team
 - Fireside Chat with the Android Team
 
