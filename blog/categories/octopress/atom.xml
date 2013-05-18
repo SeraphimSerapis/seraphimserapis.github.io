@@ -4,7 +4,7 @@
   <title><![CDATA[Category: Octopress | timmesserschmidt]]></title>
   <link href="http://seraphimserapis.github.io/blog/categories/octopress/atom.xml" rel="self"/>
   <link href="http://seraphimserapis.github.io/"/>
-  <updated>2013-05-11T10:19:31+01:00</updated>
+  <updated>2013-05-18T11:16:38-07:00</updated>
   <id>http://seraphimserapis.github.io/</id>
   <author>
     <name><![CDATA[Tim Messerschmidt]]></name>
@@ -16,7 +16,7 @@
   <entry>
     <title type="html"><![CDATA[Octopress Alfred Workflow]]></title>
     <link href="http://seraphimserapis.github.io/blog/2013/05/11/octopress-alfred-workflow/"/>
-    <updated>2013-05-11T10:08:00+01:00</updated>
+    <updated>2013-05-11T10:08:00-07:00</updated>
     <id>http://seraphimserapis.github.io/blog/2013/05/11/octopress-alfred-workflow</id>
     <content type="html"><![CDATA[<p>This is just a very short post highlighting a very nice Alfred workflow that adds support for creating new posts for Octopress or regenerating the site. Furthermore I'll quickly describe how I post my stuff to GitHub.</p>
 

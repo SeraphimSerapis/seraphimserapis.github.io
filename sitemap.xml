@@ -2,42 +2,46 @@
 <urlset xmlns='http://www.sitemaps.org/schemas/sitemap/0.9'>
     <url>
         <loc>http://seraphimserapis.github.io/blog/2013/05/06/a-new-start-using-octopress/</loc>
-        <lastmod>2013-05-06T14:55:43+01:00</lastmod>
+        <lastmod>2013-05-06T06:55:43-07:00</lastmod>
     </url>
     <url>
         <loc>http://seraphimserapis.github.io/blog/2013/05/06/summary-angelhack-berlin-2013/</loc>
-        <lastmod>2013-05-06T13:52:04+01:00</lastmod>
+        <lastmod>2013-05-06T05:52:04-07:00</lastmod>
     </url>
     <url>
         <loc>http://seraphimserapis.github.io/blog/2013/05/08/whats-in-your-bag/</loc>
-        <lastmod>2013-05-09T09:22:22+01:00</lastmod>
+        <lastmod>2013-05-09T01:22:22-07:00</lastmod>
     </url>
     <url>
         <loc>http://seraphimserapis.github.io/blog/2013/05/11/octopress-alfred-workflow/</loc>
-        <lastmod>2013-05-11T10:18:58+01:00</lastmod>
+        <lastmod>2013-05-11T02:18:58-07:00</lastmod>
+    </url>
+    <url>
+        <loc>http://seraphimserapis.github.io/blog/2013/05/18/summary-google-i-slash-o-2013/</loc>
+        <lastmod>2013-05-18T11:15:22-07:00</lastmod>
     </url>
     <url>
         <loc>http://seraphimserapis.github.io/about/</loc>
-        <lastmod>2013-05-07T06:26:15+01:00</lastmod>
+        <lastmod>2013-05-06T22:26:15-07:00</lastmod>
     </url>
     <url>
         <loc>http://seraphimserapis.github.io/blog/archives/</loc>
-        <lastmod>2013-05-11T10:18:58+01:00</lastmod>
+        <lastmod>2013-05-18T11:15:22-07:00</lastmod>
     </url>
     <url>
         <loc>http://seraphimserapis.github.io/events/</loc>
-        <lastmod>2013-05-11T09:41:55+01:00</lastmod>
+        <lastmod>2013-05-11T01:41:55-07:00</lastmod>
     </url>
     <url>
         <loc>http://seraphimserapis.github.io/imprint/</loc>
-        <lastmod>2013-05-07T06:28:08+01:00</lastmod>
+        <lastmod>2013-05-06T22:28:08-07:00</lastmod>
     </url>
     <url>
         <loc>http://seraphimserapis.github.io/</loc>
-        <lastmod>2013-05-11T10:18:58+01:00</lastmod>
+        <lastmod>2013-05-18T11:15:22-07:00</lastmod>
     </url>
     <url>
         <loc>http://seraphimserapis.github.io/robots.txt</loc>
-        <lastmod>2013-05-06T09:39:23+01:00</lastmod>
+        <lastmod>2013-05-06T01:39:23-07:00</lastmod>
     </url>
 </urlset>
