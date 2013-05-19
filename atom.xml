@@ -4,7 +4,7 @@
   <title><![CDATA[timmesserschmidt]]></title>
   <link href="http://seraphimserapis.github.io/atom.xml" rel="self"/>
   <link href="http://seraphimserapis.github.io/"/>
-  <updated>2013-05-18T16:54:16-07:00</updated>
+  <updated>2013-05-18T17:11:49-07:00</updated>
   <id>http://seraphimserapis.github.io/</id>
   <author>
     <name><![CDATA[Tim Messerschmidt]]></name>
@@ -18,7 +18,10 @@
     <link href="http://seraphimserapis.github.io/blog/2013/05/18/summary-google-io-2013/"/>
     <updated>2013-05-18T10:20:00-07:00</updated>
     <id>http://seraphimserapis.github.io/blog/2013/05/18/summary-google-io-2013</id>
-    <content type="html"><![CDATA[<p>Yesterday this year&#8217;s Google I/O officially ended with a series of Code Labs, Fireside Chats and talks about more general techniques. For me it was the second I/O in a row and I&#8217;ll try to briefly summarize the event in this post.</p>
+    <content type="html"><![CDATA[<p>Yesterday this year&#8217;s Google I/O officially ended with a series of Code Labs, Fireside Chats and talks about more general techniques. For me it was the second I/O in a row and I&#8217;ll try to briefly summarize the conference and side events I attended in this post. As always I&#8217;m happy to hear your feedback &amp; thoughts in the comments below.</p>
+
+<!-- more -->
+
 
 <h2>Day 0 - Tuesday</h2>
 
@@ -113,6 +116,9 @@ A meet-up with tons of I/O attendees. It was next to the Moscone Center at <a hr
     <id>http://seraphimserapis.github.io/blog/2013/05/11/octopress-alfred-workflow</id>
     <content type="html"><![CDATA[<p>This is just a very short post highlighting a very nice Alfred workflow that adds support for creating new posts for Octopress or regenerating the site. Furthermore I&#8217;ll quickly describe how I post my stuff to GitHub.</p>
 
+<!-- more -->
+
+
 <p>You can find the workflow over <a href="http://www.alfredforum.com/topic/2289-octopress-publisher/">at the Alfred forums</a> or <a href="https://github.com/Temikus/alfred-octopress/">at GitHub</a>.</p>
 
 <p>To me this is very useful since I don&#8217;t need to open iTerm first, navigate to my blog&#8217;s folder, create a new file using rake and open the file in vi(m) or <a href="http://mouapp.com/">Mou</a>.</p>
@@ -143,6 +149,9 @@ A meet-up with tons of I/O attendees. It was next to the Moscone Center at <a hr
     <updated>2013-05-08T17:48:00-07:00</updated>
     <id>http://seraphimserapis.github.io/blog/2013/05/08/whats-in-your-bag</id>
     <content type="html"><![CDATA[<p>One of the things I do a lot working as Developer Evangelist is traveling. Flying from Berlin to Amsterdam, Amsterdam to London and back to Berlin. From Berlin to Vilnius and from Vilnius to Stockholm and back. And so on and so on and so on. When I meet people who travel as much as I do one of the big topic is mostly organizing and optimizing travels. Especially: What do you take with you when traveling? This post tries to highlight some key important things to me when traveling light (for max 2 days), medium (2 to 5 days) or heavy (5 days and above).</p>
+
+<!-- more -->
+
 
 <h2>Traveling light</h2>
 
@@ -224,6 +233,9 @@ A meet-up with tons of I/O attendees. It was next to the Moscone Center at <a hr
     <id>http://seraphimserapis.github.io/blog/2013/05/06/summary-angelhack-berlin-2013</id>
     <content type="html"><![CDATA[<p>Over the last weekend the famous <a href="http://angelhack.com/">AngelHack</a> came to Berlin to find the best local hackers. The winning teams are going to be mentored for 3 months and will be shipped over to the US afterwards to raise investments, meet VCs etc. in the Valley.</p>
 
+<!-- more -->
+
+
 <p><img class="no-box center" src="http://seraphimserapis.github.io/images/posts/angelhack.png" title="AngelHack" ></p>
 
 <p>This years winner was <a href="http://www.hackathon.io/edgar">edgar</a> - a beautiful product that tries to help small medium business that are not as Internet-oriented as others to build an online presence for their product and tell the story behind them.</p>
@@ -269,6 +281,9 @@ A meet-up with tons of I/O attendees. It was next to the Moscone Center at <a hr
     <updated>2013-05-06T11:16:00-07:00</updated>
     <id>http://seraphimserapis.github.io/blog/2013/05/06/a-new-start-using-octopress</id>
     <content type="html"><![CDATA[<p>After I&#8217;ve spent some time <a href="http://timmesserschmidt.blogspot.com">blogging on Blogger</a> I wanted to try something new. The reason for that is not necessarily Blogger not being a good platform for your blog but me being eager to learn new stuff.</p>
+
+<!-- more -->
+
 
 <p>Having <a href="http://battlehack.org">worked with Jekyll before</a> it was pretty obvious to me that I wanted to go for a solution that allows me to configure my blog and adds some pretty cool functionality like nicely formatted code embeds, writing posts in Markdown and of course deploying my site to GitHub pages. I could have either used Jekyll itself (<a href="http://blog.parkermoore.de/2013/05/06/jekyll-1-dot-0-released/">which just got bumped to version 1.0</a>) or used Octopress (which I do).</p>
 
