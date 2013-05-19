@@ -5,8 +5,8 @@ date: 2013-05-18 10:20
 comments: true
 categories: [Summary]
 ---
-Yesterday this year's Google I/O officially ended with a series of Code Labs, Fireside Chats and talks about more general techniques. For me it was the second I/O in a row and I'll try to briefly summarize the event in this post.
-
+Yesterday this year's Google I/O officially ended with a series of Code Labs, Fireside Chats and talks about more general techniques. For me it was the second I/O in a row and I'll try to briefly summarize the conference and side events I attended in this post. As always I'm happy to hear your feedback & thoughts in the comments below.
+<!-- more -->
 Day 0 - Tuesday
 ----
 At about 2pm people can check-in at the Moscone Center to get their badge (and their shirt). For me this day is great because you meet lots of old friends in the line waiting in front of the Moscone Center or inside after having checked-in.

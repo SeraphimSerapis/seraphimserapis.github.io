@@ -6,7 +6,7 @@ comments: true
 categories: [Travel, General] 
 ---
 One of the things I do a lot working as Developer Evangelist is traveling. Flying from Berlin to Amsterdam, Amsterdam to London and back to Berlin. From Berlin to Vilnius and from Vilnius to Stockholm and back. And so on and so on and so on. When I meet people who travel as much as I do one of the big topic is mostly organizing and optimizing travels. Especially: What do you take with you when traveling? This post tries to highlight some key important things to me when traveling light (for max 2 days), medium (2 to 5 days) or heavy (5 days and above).
-
+<!-- more -->
 Traveling light
 ---
 Traveling light is from the baggage perspective my most favorite thing to do. The reason why: I don't get to carry around to much stuff when being at the airport, getting to the hotel using public transport or a cab or being at events.
