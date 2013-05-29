@@ -23,10 +23,10 @@ Analytics
 Whenever creating a project it absolutely makes sense to analyze your activities and optimizing them to have the best possible outcome.
 
 **Newsletters:**
-Newsletters are possibly one of the best ways to reach a broad audience. To optimize your outcome using a tool that allows for deep analytics makes absolutely sense. In the case of Battle Hack we're using [Campaign Monitor](http://www.campaignmonitor.com/). This will help to target users that already registered for the event or users that might have opened the email but didn't register yet.
+Sending out newsletters is possibly one of the best ways to reach a broad audience. To optimize your outcome using a tool that allows for deep analytics makes absolutely sense. In the case of Battle Hack we're using [Campaign Monitor](http://www.campaignmonitor.com/). This will help to target users who've already registered for the event or users that might have opened the email but didn't register yet.
 
 **Registration:**
-Of course building a registration can be big fun but to be honest: Use something that users already know (and maybe even have a dedicated account for). For Battle Hack we needed a scalable solution that allows to track 10 local stages. We've been trying [Splash](http://splashthat.com/) initially but quickly dropped it in favour of [Eventbrite](http://www.eventbrite.com/). While Splash might allow for nicer looking sites and more customization, Eventbrite simply has the best dashboard & adminstration. We're heavily using the analytics & charts that Eventbrite provides us to check the outcome of different campaigns and adjust our buzz generation for the hacks and are pretty happy with the available tools.
+Of course building a registration can be big fun but to be honest: Use something that users already know (and maybe even have a dedicated account for). For Battle Hack we needed a scalable solution that allows to track 10 local stages. We've been trying [Splash](http://splashthat.com/) initially but quickly dropped it in favour of [Eventbrite](http://www.eventbrite.com/). While Splash might allow for nicer looking sites and more customization, Eventbrite simply has the best adminstration tools. We're heavily using the analytics and charts that Eventbrite provides us to check the outcome of different campaigns and adjust our buzz generation for the hacks and are pretty happy with the available tools.
 
 These are some metrics that we use to track the registration:
 
