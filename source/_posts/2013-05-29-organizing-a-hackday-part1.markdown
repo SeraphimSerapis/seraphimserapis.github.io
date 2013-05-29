@@ -5,7 +5,7 @@ date: 2013-05-29 18:32
 comments: true
 categories: Hackathon
 ---
-Right now I'm deeply involved with organizing the Berlin stage of PayPal's series of hackathons called Battle Hack. If you've ever organized a hackathon or in case you're interested in doing so this post might be a great help for getting started.
+Right now I'm deeply involved with organizing the [Berlin stage](http://battlehack.org/berlin/) of PayPal's series of hackathons called Battle Hack. If you've ever organized a hackathon or in case you're interested in doing so this post might be a great help for getting started.
 <!-- more -->
 
 This is going to be a series of 2 posts. This post is going to focus mostly on the Hack Day Manifesto and doing analytics right. The second post (to be release in the next two or three days) will focus on finding the right partners and working on your message.
