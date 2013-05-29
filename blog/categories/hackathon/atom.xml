@@ -4,7 +4,7 @@
   <title><![CDATA[Category: Hackathon | timmesserschmidt]]></title>
   <link href="http://seraphimserapis.github.io/blog/categories/hackathon/atom.xml" rel="self"/>
   <link href="http://seraphimserapis.github.io/"/>
-  <updated>2013-05-29T14:58:30+02:00</updated>
+  <updated>2013-05-29T20:06:37+02:00</updated>
   <id>http://seraphimserapis.github.io/</id>
   <author>
     <name><![CDATA[Tim Messerschmidt]]></name>
@@ -12,6 +12,81 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[Organizing a hackday - part 1]]></title>
+    <link href="http://seraphimserapis.github.io/blog/2013/05/29/organizing-a-hackday-part1/"/>
+    <updated>2013-05-29T18:32:00+02:00</updated>
+    <id>http://seraphimserapis.github.io/blog/2013/05/29/organizing-a-hackday-part1</id>
+    <content type="html"><![CDATA[<p>Right now I'm deeply involved with organizing the <a href="http://battlehack.org/berlin/">Berlin stage</a> of PayPal's series of hackathons called Battle Hack. If you've ever organized a hackathon or in case you're interested in doing so this post might be a great help for getting started.</p>
+
+<!-- more -->
+
+
+<p>This is going to be a series of 2 posts. This post is going to focus mostly on the Hack Day Manifesto and doing analytics right. The second post (to be release in the next two or three days) will focus on finding the right partners and working on your message.</p>
+
+<h2>The Hack Day Manifesto</h2>
+
+<p>First of all: Read the <a href="http://hackdaymanifesto.com/">Hack Day Manifesto</a>. Now read it again. This is an amazingly useful how-to that covers most of the really important topics like finding a decent venue and making sure that your network doesn't suck. This amazing project was started by the <a href="http://geeksoflondon.com/">Geeks of London</a> and is easily one of the most interesting sources of information out there.</p>
+
+<p>I'll not try to write another Hack Day Manifesto over here. This post is more about some useful additions that might help to make your event awesome.</p>
+
+<p>Some of the content of the Manifesto might not make sense for your hackday but at least you might consider it.</p>
+
+<h2>Analytics</h2>
+
+<p>Whenever creating a project it absolutely makes sense to analyze your activities and optimizing them to have the best possible outcome.</p>
+
+<p><strong>Newsletters:</strong>
+Newsletters are possibly one of the best ways to reach a broad audience. To optimize your outcome using a tool that allows for deep analytics makes absolutely sense. In the case of Battle Hack we're using <a href="http://www.campaignmonitor.com/">Campaign Monitor</a>. This will help to target users that already registered for the event or users that might have opened the email but didn't register yet.</p>
+
+<p><strong>Registration:</strong>
+Of course building a registration can be big fun but to be honest: Use something that users already know (and maybe even have a dedicated account for). For Battle Hack we needed a scalable solution that allows to track 10 local stages. We've been trying <a href="http://splashthat.com/">Splash</a> initially but quickly dropped it in favour of <a href="http://www.eventbrite.com/">Eventbrite</a>. While Splash might allow for nicer looking sites and more customization, Eventbrite simply has the best dashboard &amp; adminstration. We're heavily using the analytics &amp; charts that Eventbrite provides us to check the outcome of different campaigns and adjust our buzz generation for the hacks and are pretty happy with the available tools.</p>
+
+<p>These are some metrics that we use to track the registration:</p>
+
+<ul>
+<li>Total page views</li>
+<li>Daily page views</li>
+<li>Total registrations</li>
+<li>Daily registrations</li>
+<li>Attendee geography</li>
+</ul>
+
+
+<p>Especially geography was interesting for us in order to check if we should contact more local communities from specific cities or even countries.</p>
+
+<p><strong>Online:</strong>
+This is not a big surprise: Google Analytics. Not sure you need to add anything over here.</p>
+
+<p>Interesting metrics:</p>
+
+<ul>
+<li>% New visits</li>
+<li>% Mobile users</li>
+<li>Bounce rate</li>
+<li>Location of visitors</li>
+<li>Visitors flow</li>
+</ul>
+
+
+<p><strong>Social Media:</strong>
+I'm heavily using <a href="http://bufferapp.com">Buffer</a> to keep track of my social activities on LinkedIn, Twitter &amp; Facebook. This provides me the "reach" of my activity and the resulting reactions. Buffer easily became one of my favourite apps and really deserves a mention over here.</p>
+
+<p>Interesting metrics:</p>
+
+<ul>
+<li># of retweets</li>
+<li># of favourites</li>
+<li># of clicks</li>
+</ul>
+
+
+<h2>Bottom line</h2>
+
+<p>Organizing a great hackday takes huge effort and work before the actual event. Doing analytics to check if your work acutally makes sense is a great help. Refining your message and reshaping your content / site is sometimes necessary and can be pretty rewarding. I'm more than happy to hear your feedback and even add more points that might help future organizers.</p>
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[Summary AngelHack Berlin 2013]]></title>
