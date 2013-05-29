@@ -4,7 +4,7 @@
   <title><![CDATA[timmesserschmidt]]></title>
   <link href="http://seraphimserapis.github.io/atom.xml" rel="self"/>
   <link href="http://seraphimserapis.github.io/"/>
-  <updated>2013-05-29T19:27:19+02:00</updated>
+  <updated>2013-05-29T19:31:10+02:00</updated>
   <id>http://seraphimserapis.github.io/</id>
   <author>
     <name><![CDATA[Tim Messerschmidt]]></name>
@@ -51,7 +51,7 @@ I&#8217;m heavily using <a href="http://bufferapp.com">Buffer</a> to keep track 
 
 <p>Creating a site for your hack &amp; making it right takes lots of time. While we decided swiftly on the architecture to use (<a href="http://jekyllrb.com/">Jekyll</a> on <a href="http://pages.github.com/">GitHub Pages</a>), we had to do a few iterations until we were happy with the design of <a href="http://battlehack.org">Battle Hack&#8217;s main page</a>. The focus of our site was not just one event but 10 or 11 (including the finals). Having a great conversion between people visiting your site and people signing up for an event usually is a result of time that you need to spend looking for information &amp; actually navigating to the registration page / registration button. This is why our design truely focusses on the registration and showing the different dates.</p>
 
-<p>We decided to go for a one page design as this helped to keep the content clear and minimum. To archieve this we&#8217;ve leveraged <a href="http://github.com/kswedberg/jquery-smooth-scroll">Karl Swedberg&#8217;s Smooth Scroll</a>.</p>
+<p>We decided to go for a one page design as this helped to keep the content clear and minimum. To achieve this we&#8217;ve leveraged <a href="http://github.com/kswedberg/jquery-smooth-scroll">Karl Swedberg&#8217;s Smooth Scroll</a>.</p>
 
 <p>Lots of features like the sign up for the Newsletter and the <a href="http://battlehack.org/news/">News</a> section where added after our initial release as we tried to focus on the most important things first. Gladly Jekyll is already designed to support blogging - adding this didn&#8217;t take much longer than a few hours.</p>
 
