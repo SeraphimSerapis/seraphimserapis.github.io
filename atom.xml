@@ -4,7 +4,7 @@
   <title><![CDATA[timmesserschmidt]]></title>
   <link href="http://seraphimserapis.github.io/atom.xml" rel="self"/>
   <link href="http://seraphimserapis.github.io/"/>
-  <updated>2013-05-29T19:31:10+02:00</updated>
+  <updated>2013-05-29T19:45:39+02:00</updated>
   <id>http://seraphimserapis.github.io/</id>
   <author>
     <name><![CDATA[Tim Messerschmidt]]></name>
@@ -14,14 +14,16 @@
 
   
   <entry>
-    <title type="html"><![CDATA[Organizing a hackday]]></title>
-    <link href="http://seraphimserapis.github.io/blog/2013/05/29/organizing-a-hackday/"/>
+    <title type="html"><![CDATA[Organizing a hackday - part 1]]></title>
+    <link href="http://seraphimserapis.github.io/blog/2013/05/29/organizing-a-hackday-part1/"/>
     <updated>2013-05-29T18:32:00+02:00</updated>
-    <id>http://seraphimserapis.github.io/blog/2013/05/29/organizing-a-hackday</id>
-    <content type="html"><![CDATA[<p>Right now I&#8217;m deeply involved with organizing the Berlin stage of PayPal&#8217;s series of hackathons called Battle Hack. If you&#8217;ve ever organized a hackathon or in case you&#8217;re interested in do so this post might help getting started.</p>
+    <id>http://seraphimserapis.github.io/blog/2013/05/29/organizing-a-hackday-part1</id>
+    <content type="html"><![CDATA[<p>Right now I&#8217;m deeply involved with organizing the Berlin stage of PayPal&#8217;s series of hackathons called Battle Hack. If you&#8217;ve ever organized a hackathon or in case you&#8217;re interested in doing so this post might be a great help for getting started.</p>
 
 <!-- more -->
 
+
+<p>This is going to be a series of 2 posts. This post is going to focus mostly on the Hack Day Manifesto and doing analytics right. The second post (to be release in the next two or three days) will focus on finding the right partners and working on your message.</p>
 
 <h2>The Hack Day Manifesto</h2>
 
@@ -47,37 +49,9 @@ This is not a big surprise: Google Analytics. Not sure you need to add anything 
 <p><strong>Social Media:</strong>
 I&#8217;m heavily using <a href="http://bufferapp.com">Buffer</a> to keep track of my social activities on LinkedIn, Twitter &amp; Facebook. This provides me the &#8220;reach&#8221; of my activity and the resulting reactions. Buffer easily became one of my favourite apps and really deserves a mention over here.</p>
 
-<h2>The Site</h2>
-
-<p>Creating a site for your hack &amp; making it right takes lots of time. While we decided swiftly on the architecture to use (<a href="http://jekyllrb.com/">Jekyll</a> on <a href="http://pages.github.com/">GitHub Pages</a>), we had to do a few iterations until we were happy with the design of <a href="http://battlehack.org">Battle Hack&#8217;s main page</a>. The focus of our site was not just one event but 10 or 11 (including the finals). Having a great conversion between people visiting your site and people signing up for an event usually is a result of time that you need to spend looking for information &amp; actually navigating to the registration page / registration button. This is why our design truely focusses on the registration and showing the different dates.</p>
-
-<p>We decided to go for a one page design as this helped to keep the content clear and minimum. To achieve this we&#8217;ve leveraged <a href="http://github.com/kswedberg/jquery-smooth-scroll">Karl Swedberg&#8217;s Smooth Scroll</a>.</p>
-
-<p>Lots of features like the sign up for the Newsletter and the <a href="http://battlehack.org/news/">News</a> section where added after our initial release as we tried to focus on the most important things first. Gladly Jekyll is already designed to support blogging - adding this didn&#8217;t take much longer than a few hours.</p>
-
-<h2>Partners</h2>
-
-<p>There is simply no awesome hackday without great partners and great prizes to be won. Personally I really love prizes that can be used for your next hack. Stuff like <a href="http://mindstorms.lego.com/">Lego Mindstorms</a>, <a href="http://www.raspberrypi.org/">Raspberry Pis</a> and <a href="http://www.makeymakey.com/">Makey Makey</a> are great for this!</p>
-
-<p>When scouting for partners you should be aware that they should either power an infrastructure that developers want to use for their hack or they have some really cool API that can help to supplement hacks with extra functionality.</p>
-
-<p><strong>Pitches:</strong>
-Please make sure that your partners can pitch their API. You want to have technical people over at the hack that can support developers.</p>
-
-<p><strong>Buzz:</strong>
-Make sure to work with your partners on doing buzz for the event. Everyone has contacts to the community and it absolutely makes sense to leverage them in an aligned way.</p>
-
-<h2>Be approachable</h2>
-
-<p>Be approachable pre, during and post the event. Developers might have questions / problems or feedback that you want to help with. We&#8217;re using mostly Twitter for this and offer developers to reach us via mail, too.</p>
-
-<h2>Be clear</h2>
-
-<p>The Hack Day Manifesto already mentions a lot of things regarding managing expectations, communicating rules and interacting with the crowd but I really want to stress this. We even faced the challenge to do this twice for Europe and North America. Since our event ends with a big final and a big money prize we really had to work on our <a href="http://battlehack.org/#rules">Terms and Condition</a> and <a href="http://battlehack.org/#faq">FAQ</a>.</p>
-
 <h2>Bottom line</h2>
 
-<p>Organizing a great hackday takes huge effort and work before the actual event. I&#8217;m more than happy to hear your feedback and even add more points that might help future organizers.</p>
+<p>Organizing a great hackday takes huge effort and work before the actual event. Doing analytics to check if your work acutally makes sense is a great help. Refining your message and reshaping your content / site is sometimes necessary and can be pretty rewarding. I&#8217;m more than happy to hear your feedback and even add more points that might help future organizers.</p>
 ]]></content>
   </entry>
   
