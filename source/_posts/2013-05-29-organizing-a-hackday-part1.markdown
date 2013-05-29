@@ -60,4 +60,6 @@ Interesting metrics:
 
 Bottom line
 ---
-Organizing a great hackday takes huge effort and work before the actual event. Doing analytics to check if your work acutally makes sense is a great help. Refining your message and reshaping your content / site is sometimes necessary and can be pretty rewarding. I'm more than happy to hear your feedback and even add more points that might help future organizers.
+Organizing a great hackday takes huge effort and work long before the actual event. Doing analytics to check your event's impact really makes sense and is a great help. Refining your message and reshaping your content based on your new insights can be pretty rewarding.
+
+I'm more than happy to hear your feedback and even add more points that might help future organizers.
