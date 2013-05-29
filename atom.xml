@@ -4,7 +4,7 @@
   <title><![CDATA[timmesserschmidt]]></title>
   <link href="http://seraphimserapis.github.io/atom.xml" rel="self"/>
   <link href="http://seraphimserapis.github.io/"/>
-  <updated>2013-05-29T20:04:48+02:00</updated>
+  <updated>2013-05-29T20:06:37+02:00</updated>
   <id>http://seraphimserapis.github.io/</id>
   <author>
     <name><![CDATA[Tim Messerschmidt]]></name>
@@ -63,6 +63,7 @@ This is not a big surprise: Google Analytics. Not sure you need to add anything 
 
 <ul>
 <li>% New visits</li>
+<li>% Mobile users</li>
 <li>Bounce rate</li>
 <li>Location of visitors</li>
 <li>Visitors flow</li>
