@@ -28,11 +28,34 @@ Newsletters are possibly one of the best ways to reach a broad audience. To opti
 **Registration:**
 Of course building a registration can be big fun but to be honest: Use something that users already know (and maybe even have a dedicated account for). For Battle Hack we needed a scalable solution that allows to track 10 local stages. We've been trying [Splash](http://splashthat.com/) initially but quickly dropped it in favour of [Eventbrite](http://www.eventbrite.com/). While Splash might allow for nicer looking sites and more customization, Eventbrite simply has the best dashboard & adminstration. We're heavily using the analytics & charts that Eventbrite provides us to check the outcome of different campaigns and adjust our buzz generation for the hacks and are pretty happy with the available tools.
 
+These are some metrics that we use to track the registration:
+
+- Total page views
+- Daily page views
+- Total registrations
+- Daily registrations
+- Attendee geography
+
+Especially geography was interesting for us in order to check if we should contact more local communities from specific cities or even countries. 
+
 **Online:**
 This is not a big surprise: Google Analytics. Not sure you need to add anything over here.
 
+Interesting metrics:
+
+- % New visits
+- Bounce rate
+- Location of visitors
+- Visitors flow
+
 **Social Media:**
 I'm heavily using [Buffer](http://bufferapp.com) to keep track of my social activities on LinkedIn, Twitter & Facebook. This provides me the "reach" of my activity and the resulting reactions. Buffer easily became one of my favourite apps and really deserves a mention over here.
+
+Interesting metrics:
+
+- \# of retweets
+- \# of favourites
+- \# of clicks
 
 Bottom line
 ---
