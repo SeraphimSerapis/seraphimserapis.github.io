@@ -4,7 +4,7 @@
   <title><![CDATA[Category: Hackathon | timmesserschmidt]]></title>
   <link href="http://seraphimserapis.github.io/blog/categories/hackathon/atom.xml" rel="self"/>
   <link href="http://seraphimserapis.github.io/"/>
-  <updated>2013-05-29T19:48:45+02:00</updated>
+  <updated>2013-05-29T20:04:48+02:00</updated>
   <id>http://seraphimserapis.github.io/</id>
   <author>
     <name><![CDATA[Tim Messerschmidt]]></name>
@@ -43,11 +43,43 @@ Newsletters are possibly one of the best ways to reach a broad audience. To opti
 <p><strong>Registration:</strong>
 Of course building a registration can be big fun but to be honest: Use something that users already know (and maybe even have a dedicated account for). For Battle Hack we needed a scalable solution that allows to track 10 local stages. We've been trying <a href="http://splashthat.com/">Splash</a> initially but quickly dropped it in favour of <a href="http://www.eventbrite.com/">Eventbrite</a>. While Splash might allow for nicer looking sites and more customization, Eventbrite simply has the best dashboard &amp; adminstration. We're heavily using the analytics &amp; charts that Eventbrite provides us to check the outcome of different campaigns and adjust our buzz generation for the hacks and are pretty happy with the available tools.</p>
 
+<p>These are some metrics that we use to track the registration:</p>
+
+<ul>
+<li>Total page views</li>
+<li>Daily page views</li>
+<li>Total registrations</li>
+<li>Daily registrations</li>
+<li>Attendee geography</li>
+</ul>
+
+
+<p>Especially geography was interesting for us in order to check if we should contact more local communities from specific cities or even countries.</p>
+
 <p><strong>Online:</strong>
 This is not a big surprise: Google Analytics. Not sure you need to add anything over here.</p>
 
+<p>Interesting metrics:</p>
+
+<ul>
+<li>% New visits</li>
+<li>Bounce rate</li>
+<li>Location of visitors</li>
+<li>Visitors flow</li>
+</ul>
+
+
 <p><strong>Social Media:</strong>
 I'm heavily using <a href="http://bufferapp.com">Buffer</a> to keep track of my social activities on LinkedIn, Twitter &amp; Facebook. This provides me the "reach" of my activity and the resulting reactions. Buffer easily became one of my favourite apps and really deserves a mention over here.</p>
+
+<p>Interesting metrics:</p>
+
+<ul>
+<li># of retweets</li>
+<li># of favourites</li>
+<li># of clicks</li>
+</ul>
+
 
 <h2>Bottom line</h2>
 
