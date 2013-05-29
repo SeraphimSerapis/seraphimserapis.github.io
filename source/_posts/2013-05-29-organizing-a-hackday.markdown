@@ -3,7 +3,7 @@ layout: post
 title: "Organizing a hackday"
 date: 2013-05-29 18:32
 comments: true
-categories: [Berlin, Hackathon]
+categories: Hackathon
 ---
 Right now I'm deeply involved with organizing the Berlin stage of PayPal's series of hackathons called Battle Hack. If you've ever organized a hackathon or in case you're interested in do so this post might help getting started.
 <!-- more -->
