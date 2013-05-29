@@ -5,7 +5,7 @@ comments: false
 sharing: false
 footer: true
 ---
-You can see my upcoming events and my event history over here. If you want me to speak at your event please use the contact form.
+You can see my upcoming events and my event history over here. If you want me to speak at your event please drop me [an email](mailto:tmesserschmidt@paypal.com).
 
 Upcoming (to be refreshed)
 --
