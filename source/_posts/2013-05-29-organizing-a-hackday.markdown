@@ -36,7 +36,7 @@ The Site
 ---
 Creating a site for your hack & making it right takes lots of time. While we decided swiftly on the architecture to use ([Jekyll](http://jekyllrb.com/) on [GitHub Pages](http://pages.github.com/)), we had to do a few iterations until we were happy with the design of [Battle Hack's main page](http://battlehack.org). The focus of our site was not just one event but 10 or 11 (including the finals). Having a great conversion between people visiting your site and people signing up for an event usually is a result of time that you need to spend looking for information & actually navigating to the registration page / registration button. This is why our design truely focusses on the registration and showing the different dates.
 
-We decided to go for a one page design as this helped to keep the content clear and minimum. To archieve this we've leveraged [Karl Swedberg's Smooth Scroll](http://github.com/kswedberg/jquery-smooth-scroll).
+We decided to go for a one page design as this helped to keep the content clear and minimum. To achieve this we've leveraged [Karl Swedberg's Smooth Scroll](http://github.com/kswedberg/jquery-smooth-scroll).
 
 Lots of features like the sign up for the Newsletter and the [News](http://battlehack.org/news/) section where added after our initial release as we tried to focus on the most important things first. Gladly Jekyll is already designed to support blogging - adding this didn't take much longer than a few hours.
 
