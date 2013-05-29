@@ -15,21 +15,26 @@ a.category {
   padding: 4px 8px;
   font-weight: bold;
   line-height: 14px;
-  color: #ffffff;
+  color: #f8f8f8;
   text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25);
   white-space: nowrap;
   vertical-align: baseline;
-  background-color: #333;
-  -webkit-border-radius: 3px;
-  -moz-border-radius: 3px;
-  border-radius: 3px;
+  background-color: #0181eb;
+  -webkit-border-radius: 2px;
+  -moz-border-radius: 2px;
+  border-radius: 2px;
   text-decoration: none;
 }
 
-a.category:hover, a.category:focus, a.category:active, #blog-archives a.category:hover, #blog-archives a.category:active, #blog-archives a.category:focus {
-  background-color: #002b36;
+a.category:hover, a.category:focus, a.category:active, #blog-archives a.category:hover, #blog-archives a.category:active, #blog-archives a.category:focus, #content .blog-index a[rel=full-article]:hover {
+  background-color: #ebebeb;
+  color: #666;
 }
 
-#blog-archives a.category {
-  color: #fff;
+#content .blog-index a[rel=full-article], #blog-archives a.category {
+  color: #f8f8f8;
+  background-color: #0181eb;
+  -webkit-border-radius: 2px;
+  -moz-border-radius: 2px;
+  border-radius: 2px;
 }
