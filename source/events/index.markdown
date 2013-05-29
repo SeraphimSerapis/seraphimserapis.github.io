@@ -1,7 +1,6 @@
 ---
 layout: page
 title: "events"
-date: 2013-05-07 07:28
 comments: false
 sharing: false
 footer: true

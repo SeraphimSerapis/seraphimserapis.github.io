@@ -1,7 +1,6 @@
 ---
 layout: page
 title: "Imprint & Contact"
-date: 2013-05-06 12:35
 comments: false
 sharing: false
 footer: true
