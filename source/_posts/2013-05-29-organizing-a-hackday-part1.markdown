@@ -50,7 +50,7 @@ Interesting metrics:
 - Visitors flow
 
 **Social Media:**
-I'm heavily using [Buffer](http://bufferapp.com) to keep track of my social activities on LinkedIn, Twitter & Facebook. This provides me the "reach" of my activity and the resulting reactions. Buffer easily became one of my favourite apps and really deserves a mention over here.
+I'm heavily using [Buffer](http://bufferapp.com) to keep track of my social activities on LinkedIn, Twitter and Facebook. This provides me the "reach" of my activities and the resulting reactions. Buffer easily became one of my favourite apps and really deserves a mention over here.
 
 Interesting metrics:
 
