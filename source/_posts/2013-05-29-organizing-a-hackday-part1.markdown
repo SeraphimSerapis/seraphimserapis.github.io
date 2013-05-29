@@ -44,6 +44,7 @@ This is not a big surprise: Google Analytics. Not sure you need to add anything 
 Interesting metrics:
 
 - % New visits
+- % Mobile users
 - Bounce rate
 - Location of visitors
 - Visitors flow
