@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Organizing a hackday - part 1"
+title: "Organizing a Hackday - Part 1"
 date: 2013-05-29 18:32
 comments: true
 categories: Hackathon
