@@ -4,3 +4,27 @@
 #content .blog-index article h1, h1.entry-title {
   font-size: 2.0em
 }
+
+a.category {
+  display: inline-block;
+  padding: 4px 8px;
+  font-weight: bold;
+  line-height: 14px;
+  color: #ffffff;
+  text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25);
+  white-space: nowrap;
+  vertical-align: baseline;
+  background-color: #333;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  border-radius: 3px;
+  text-decoration: none;
+}
+
+a.category:hover, a.category:focus, a.category:active, #blog-archives a.category:hover, #blog-archives a.category:active, #blog-archives a.category:focus {
+  background-color: #002b36;
+}
+
+#blog-archives a.category {
+  color: #fff;
+}
