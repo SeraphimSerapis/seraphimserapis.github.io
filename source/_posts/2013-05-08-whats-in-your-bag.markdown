@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "What's in your bag?"
+title: "What's in Your bag?"
 date: 2013-05-08 17:48
 comments: true
 categories: [Travel, General] 

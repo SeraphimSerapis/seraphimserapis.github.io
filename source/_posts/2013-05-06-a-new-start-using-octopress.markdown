@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "A new start using Octopress"
+title: "A New Start Using Octopress"
 date: 2013-05-06 11:16
 comments: true
 categories: General 
