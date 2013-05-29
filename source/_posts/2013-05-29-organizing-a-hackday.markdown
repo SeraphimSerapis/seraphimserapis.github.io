@@ -62,4 +62,4 @@ The Hack Day Manifesto already mentions a lot of things regarding managing expec
 
 Bottom line
 ---
-Organizing a great effort already takes huge effort and work before the actual event. I'm more than happy to hear your feedback and even add more points that might help future organizers.
+Organizing a great hackday takes huge effort and work before the actual event. I'm more than happy to hear your feedback and even add more points that might help future organizers.
