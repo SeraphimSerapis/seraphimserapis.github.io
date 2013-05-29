@@ -8,15 +8,15 @@ categories: Hackathon
 Right now I'm deeply involved with organizing the [Berlin stage](http://battlehack.org/berlin/) of PayPal's series of hackathons called Battle Hack. If you've ever organized a hackathon or in case you're interested in doing so this post might be a great help for getting started.
 <!-- more -->
 
-This is going to be a series of 2 posts. This post is going to focus mostly on the Hack Day Manifesto and doing analytics right. The second post (to be release in the next two or three days) will focus on finding the right partners and working on your message.
+I'll be dividing this topic up into two posts. This post is going to focus mostly on the Hack Day Manifesto and doing analytics right. The second post (to be released in the next two or three days) will focus on finding the right partners and working on your message.
 
 The Hack Day Manifesto
 ---
-First of all: Read the [Hack Day Manifesto](http://hackdaymanifesto.com/). Now read it again. This is an amazingly useful how-to that covers most of the really important topics like finding a decent venue and making sure that your network doesn't suck. This amazing project was started by the [Geeks of London](http://geeksoflondon.com/) and is easily one of the most interesting sources of information out there.
+First of all: Read the [Hack Day Manifesto](http://hackdaymanifesto.com/). Now read it again. This is an amazingly useful how-to that covers most of the really important topics like finding a decent venue and making sure that your network doesn't suck. The project was started by the [Geeks of London](http://geeksoflondon.com/) and is easily one of the most interesting sources of information out there.
 
-I'll not try to write another Hack Day Manifesto over here. This post is more about some useful additions that might help to make your event awesome.
+I don't intent trying to write another Hack Day Manifesto over here. This is about some useful additions that might help to make your event *even more* awesome.
 
-Some of the content of the Manifesto might not make sense for your hackday but at least you might consider it.
+Some of the content of the Manifesto might not make sense for your hackday but at least you might want to consider it (as it's a result of lots of experience in running events like hackathons and barcamps).
 
 Analytics
 ---
