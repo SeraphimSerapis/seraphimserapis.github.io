@@ -10,6 +10,8 @@ Right now I'm deeply involved with organizing the [Berlin stage](http://battleha
 
 I'll be dividing this topic up into two posts. This post is going to focus mostly on the Hack Day Manifesto and doing analytics right. The second post (to be released in the next two or three days) will focus on finding the right partners and working on your message.
 
+*Update*: [The second post](http://timmesserschmidt.com/blog/2013/06/01/organizing-a-hackday-part2/) got published.
+
 The Hack Day Manifesto
 ---
 First of all: Read the [Hack Day Manifesto](http://hackdaymanifesto.com/). Now read it again. This is an amazingly useful how-to that covers most of the really important topics like finding a decent venue and making sure that your network doesn't suck. The project was started by the [Geeks of London](http://geeksoflondon.com/) and is easily one of the most interesting sources of information out there.
