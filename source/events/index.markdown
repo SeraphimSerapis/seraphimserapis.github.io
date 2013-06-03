@@ -27,11 +27,12 @@ Upcoming (to be refreshed)
 History 2013
 --
 - 06/02/2013 - hy! - Berlin
-- 05/30/2013 - apps.berlin.js
+- 05/30/2013 - apps.berlin.js - Berlin
 - 05/15/2013 - Google I/O - San Francisco
 - 05/10/2013 - Codemotion Conference - Berlin
 - 05/09/2013 - Codemotion Hackathon - Berlin
 - 05/08/2013 - Echtzeit - Munich
+- 05/07/2013 - STING Day - Stockholm
 - 05/07/2013 - Seedcamp - Stockholm
 - 05/04/2013 - AngelHack - Berlin
 - 04/30/2013 - Hack & Tell - Berlin
