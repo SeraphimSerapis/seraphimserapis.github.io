@@ -23,11 +23,11 @@ Upcoming (to be refreshed)
 - 06/14/2013 - Android Developer Days - Ankara
 - 06/08/2013 - Battle Hack - Berlin
 - 06/05/2013 - Echtzeit - Berlin
-- 06/02/2013 - hy! - Berlin
-- 05/30/2013 - apps.berlin.js
 
 History 2013
 --
+- 06/02/2013 - hy! - Berlin
+- 05/30/2013 - apps.berlin.js
 - 05/15/2013 - Google I/O - San Francisco
 - 05/10/2013 - Codemotion Conference - Berlin
 - 05/09/2013 - Codemotion Hackathon - Berlin
