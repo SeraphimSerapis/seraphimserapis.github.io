@@ -18,11 +18,11 @@ a.category {
   padding: 4px 8px;
   font-weight: bold;
   line-height: 14px;
-  color: #f8f8f8;
+  color: $tag-color;
   text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25);
   white-space: nowrap;
   vertical-align: baseline;
-  background-color: #0181eb;
+  background-color: $tag-color-bg;
   -webkit-border-radius: 2px;
   -moz-border-radius: 2px;
   border-radius: 2px;
@@ -30,14 +30,32 @@ a.category {
 }
 
 a.category:hover, a.category:focus, a.category:active, #blog-archives a.category:hover, #blog-archives a.category:active, #blog-archives a.category:focus, #content .blog-index a[rel=full-article]:hover {
-  background-color: #ebebeb;
-  color: #666;
+  background-color: $tag-color-bg-hover;
+  color: $tag-color-hover;
 }
 
 #content .blog-index a[rel=full-article], #blog-archives a.category {
-  color: #f8f8f8;
-  background-color: #0181eb;
+  color: $tag-color;
+  background-color: $tag-color-bg;
   -webkit-border-radius: 2px;
   -moz-border-radius: 2px;
   border-radius: 2px;
+}
+
+.circular {
+  float: left;
+	width: 100px;
+	height: 100px;
+	margin-right: 14px;
+	border-radius: 100px;
+	-webkit-border-radius: 100px;
+	-moz-border-radius: 100px;
+	background: url(/images/me.png) no-repeat;
+	box-shadow: 0 0 8px rgba(0, 0, 0, .8);
+	-webkit-box-shadow: 0 0 8px rgba(0, 0, 0, .8);
+	-moz-box-shadow: 0 0 8px rgba(0, 0, 0, .8);
+}
+
+.header {
+  padding-top: 4px;
 }
