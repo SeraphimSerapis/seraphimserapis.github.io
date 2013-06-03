@@ -28,7 +28,9 @@ History 2013
 --
 - 06/02/2013 - hy! - Berlin
 - 05/30/2013 - apps.berlin.js - Berlin
+- 05/16/2013 - I/O Nightcap - San Francisco
 - 05/15/2013 - Google I/O - San Francisco
+- 05/14/2013 - Facebook Kickoff @ I/O - San Francisco
 - 05/10/2013 - Codemotion Conference - Berlin
 - 05/09/2013 - Codemotion Hackathon - Berlin
 - 05/08/2013 - Echtzeit - Munich
