@@ -16,16 +16,20 @@ Upcoming (to be refreshed)
 - 10/24/2013 - Droidcon - London
 - 10/23/2013 - Future Of Web Apps - London
 - 10/22/2013 - AppsWorld - London
+- 09/07/2013 - Battle Hack - Moscow
 - 09/03/2013 - Reaktor Dev Day - Helsinki
 - 08/07/2013 - Echtzeit - Hamburg
+- 07/25/2013 - Battle Hack - Tel Aviv
+- 07/20/2013 - Battle Hack - New York
 - 06/24/2013 - Developer Week - Nuremberg
-- 06/17/2013 - Droidcon Paris
-- 06/14/2013 - Android Developer Days - Ankara
-- 06/08/2013 - Battle Hack - Berlin
-- 06/05/2013 - Echtzeit - Berlin
+- 06/21/2013 - Pub Summit - Berlin
 
 History 2013
 --
+- 06/17/2013 - Droidcon Paris
+- 06/13/2013 - Spätschicht - Berlin
+- 06/08/2013 - Battle Hack - Berlin
+- 06/05/2013 - Echtzeit - Berlin
 - 06/02/2013 - hy! - Berlin
 - 05/30/2013 - apps.berlin.js - Berlin
 - 05/23/2013 - Tech Meet-up - Berlin
