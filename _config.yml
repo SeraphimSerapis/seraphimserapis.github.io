@@ -6,6 +6,7 @@ url: http://seraphimserapis.github.io
 title: timmesserschmidt
 subtitle: Developer Evangelist
 author: Tim Messerschmidt
+author_short: Tim
 simple_search: http://google.com/search
 description:
 
@@ -43,6 +44,18 @@ excerpt_link: "Read on &rarr;"  # "Continue reading" link text at the bottom of 
 
 titlecase: true       # Converts page and post titles to titlecase
 
+navigation:
+- text: home
+  url: /index.html
+- text: archive
+  url: /blog/archives
+- text: about me
+  url: /about
+- text: events
+  url: /events
+- text: imprint &amp; contact
+  url: /imprint
+
 # list each of the sidebar modules you want to include, in the order you want them to appear.
 # To add custom asides, create files in /source/_includes/custom/asides/ and add them to the list like 'custom/asides/custom_aside_name.html'
 default_asides: [asides/recent_posts.html, asides/github.html, asides/social.html, asides/googleplus.html, asides/twitter.html]
@@ -66,6 +79,9 @@ github_skip_forks: true
 # Twitter
 twitter_user: SeraAndroid
 twitter_tweet_button: true
+
+# LinkedIn
+linkedin_user: timmesserschmidt
 
 # Google +1
 google_plus_one: true
