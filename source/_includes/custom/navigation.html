@@ -1,7 +1,5 @@
-<ul class="main-navigation">
-  <li><a href="{{ root_url }}/">blog</a></li>
-  <li><a href="{{ root_url }}/blog/archives">archives</a></li>
-  <li><a href="{{ root_url }}/about">about me</a></li>
-  <li><a href="{{ root_url }}/events">events</a></li>
-  <li><a href="{{ root_url }}/imprint">contact & imprint</a></li>
+<ul class="nav">
+    {% for link in site.navigation %}
+        <li {% if page.url == link.url %}class="active"{% endif %}><a href="{{ link.url }}">{{ link.text }}</a></li>
+    {% endfor %}
 </ul>
