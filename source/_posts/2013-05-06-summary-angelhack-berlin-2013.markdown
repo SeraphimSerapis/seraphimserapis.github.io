@@ -7,7 +7,9 @@ categories: [Summary, Hackathon, Berlin]
 ---
 Over the last weekend the famous [AngelHack](http://angelhack.com/) came to Berlin to find the best local hackers. The winning teams are going to be mentored for 3 months and will be shipped over to the US afterwards to raise investments, meet VCs etc. in the Valley.
 <!-- more -->
-{% img no-box center /images/posts/angelhack.png AngelHack %}
+<center>
+{% img /images/posts/angelhack.png AngelHack %}
+</center>  
 
 This years winner was [edgar](http://www.hackathon.io/edgar) - a beautiful product that tries to help small medium business that are not as Internet-oriented as others to build an online presence for their product and tell the story behind them.
 
