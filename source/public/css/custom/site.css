@@ -68,6 +68,10 @@ td.code {
   margin-bottom: 8px;
 }
 
+.event {
+  padding-bottom: 2px;
+}
+
 .header {
   margin-top: 0px;
 }
@@ -108,6 +112,16 @@ td.code {
 .pagination>li>a {
   background: #34495E;
   color: #FFFFFF;
+}
+
+.bio.center-block {
+  margin-top: 40px;
+  padding-bottom: 24px;
+  text-align: center;
+}
+
+.face {
+  border: 2px solid #E1E4E6;
 }
 
 .pagination>li>a:focus, .pagination>li>a:hover, .pagination>li>span:focus, .pagination>li>span:hover {
@@ -154,6 +168,10 @@ td.code {
   background: #2C3E50;
 }
 
+#main {
+  margin-bottom: 48px;
+}
+
 @media (max-width: 767px) {
   #social>ul>li>a>i::before {
     position: relative;
@@ -162,5 +180,9 @@ td.code {
 
   #social>ul>li>a:hover {
     background-color: #34495E;
+  }
+
+  .event {
+    padding-bottom: 14px;
   }
 }
