@@ -1,0 +1,364 @@
+{
+  "years": [
+    {
+      "year": 2015,
+      "events": [
+        {
+          "name": "JSConf.Asia",
+          "location": "Singapore",
+          "date": "November 19th - 20th"
+        },
+        {
+          "name": "Droidcon",
+          "location": "London",
+          "date": "October 29th - 30th"
+        },
+        {
+          "name": "OSCON EU",
+          "location": "Amsterdam",
+          "date": "October 26th - 28th"
+        },
+        {
+          "name": "HTML5 DevConf",
+          "location": "San Francisco",
+          "date": "October 19th - 20th"
+        },
+        {
+          "name": "Hackference",
+          "location": "Birmingham",
+          "date": "October 2nd"
+        },
+        {
+          "name": "Web European Conference",
+          "location": "Milan",
+          "date": "September 26th"
+        },
+        {
+          "name": "HackCon EU",
+          "location": "London",
+          "date": "August 29th - 30th"
+        },
+        {
+          "name": "Geek Picnic",
+          "location": "Moscow",
+          "date": "June 13th - 14th"
+        },
+        {
+          "name": "Überall App",
+          "location": "Vienna",
+          "date": "June 10th - 11th"
+        },
+        {
+          "name": "Android Developer Days",
+          "location": "Ankara",
+          "date": "May 11th - 12th"
+        },
+        {
+          "name": "Hackference",
+          "location": "Birmingham",
+          "date": "October 2nd"
+        },
+        {
+          "name": "Uberall App",
+          "location": "Zurich",
+          "date": "April 30th"
+        },
+        {
+          "name": "O'Reilly Fluent",
+          "location": "San Francisco",
+          "date": "April 20th - 22nd"
+        },
+        {
+          "name": "Droidcon",
+          "location": "Turin",
+          "date": "April 9th - 10th"
+        },
+        {
+          "name": "MobCon",
+          "location": "Sofia",
+          "date": "April 5th"
+        },
+        {
+          "name": "SXSW Interactive",
+          "location": "Austin",
+          "date": "March 13th - 17th"
+        },
+        {
+          "name": "Droidcon",
+          "location": "Hammaret",
+          "date": "March 6th - 8th"
+        },
+        {
+          "name": "mdevcon",
+          "location": "Amsterdam",
+          "date": "March 5th - 6th"
+        }
+      ]
+    },
+    {
+      "year": 2014,
+      "events": [
+        {
+          "name": "APIdays",
+          "location": "Paris",
+          "date": "December 2nd - 3rd"
+        },
+        {
+          "name": "Codemotion",
+          "location": "Milan",
+          "date": "November 28th"
+        },
+        {
+          "name": "Droidcon",
+          "location": "Amsterdam",
+          "date": "Novemer 23rd - 25th"
+        },
+        {
+          "name": "Codemotion",
+          "location": "Madrid",
+          "date": "November 21st - 22nd"
+        },
+        {
+          "name": "Samsung DevCon",
+          "location": "San Francisco",
+          "date": "November 11th - 13th"
+        },
+        {
+          "name": "Droidcon",
+          "location": "London",
+          "date": "October 30th - 31st"
+        },
+        {
+          "name": "#MBLTDev",
+          "location": "Moscow",
+          "date": "October 28th"
+        },
+        {
+          "name": "Droidcon",
+          "location": "Stockholm",
+          "date": "October 9th - 10th"
+        },
+        {
+          "name": "Droidcon",
+          "location": "Paris",
+          "date": "September 22nd - 23rd"
+        },
+        {
+          "name": "JSConf EU",
+          "location": "Berlin",
+          "date": "September 13th - 14th"
+        },
+        {
+          "name": "Samsung DevCon",
+          "location": "San Francisco",
+          "date": "November 11th - 13th"
+        },
+        {
+          "name": "MobileTechCon",
+          "location": "Berlin",
+          "date": "September 1st - 4th"
+        },
+        {
+          "name": "Droidcon",
+          "location": "Tel Aviv",
+          "date": "June 11th - 12th"
+        },
+        {
+          "name": "Israel Mobile Summit",
+          "location": "Tel Aviv",
+          "date": "June 10th"
+        },
+        {
+          "name": "DevCon",
+          "location": "Tel Aviv",
+          "date": "June 5th"
+        },
+        {
+          "name": "AnDevCon",
+          "location": "Boston",
+          "date": "May 27th - 30th"
+        },
+        {
+          "name": "Android Developer Days",
+          "location": "Ankara",
+          "date": "May 16th - 17th"
+        },
+        {
+          "name": "Droidcon",
+          "location": "Berlin",
+          "date": "May 8th - 10th"
+        },
+        {
+          "name": "Front-Trends",
+          "location": "Warsaw",
+          "date": "May 7th - 8th"
+        },
+        {
+          "name": "Codemotion",
+          "location": "Rome",
+          "date": "April 9th - 12th"
+        },
+        {
+          "name": "Mobile Days",
+          "location": "Ankara",
+          "date": "April 4th - 6th"
+        },
+        {
+          "name": "MobileTechCOn",
+          "location": "Munich",
+          "date": "March 17th - 20th"
+        },
+        {
+          "name": "WIPJam",
+          "location": "Barcelona",
+          "date": "February 24th - 27th"
+        },
+        {
+          "name": "JS Conf Spring",
+          "location": "London",
+          "date": "February 13th"
+        },
+        {
+          "name": "Mobile Trends Conference",
+          "location": "Krakow",
+          "date": "January 16th - 17th"
+        }
+      ]
+    },
+    {
+      "year": 2013,
+      "events": [
+        {
+          "name": "GDG DevFest",
+          "location": "Zurich",
+          "date": "October 19th - 21st"
+        },
+        {
+          "name": "Droidcon",
+          "location": "Amsterdam",
+          "date": "November 25th - 26th"
+        },
+        {
+          "name": "WebIt Congress",
+          "location": "Istanbul",
+          "date": "November 6th - 7th"
+        },
+        {
+          "name": "GDG DevFest",
+          "location": "Berlin",
+          "date": "November 1st - 3rd"
+        },
+        {
+          "name": "Droidcon",
+          "location": "London",
+          "date": "October 24th - 27th"
+        },
+        {
+          "name": "Apps World",
+          "location": "London",
+          "date": "October 22nd - 23rd"
+        },
+        {
+          "name": "GDG DevFest",
+          "location": "Vienna",
+          "date": "October 18th - 20th"
+        },
+        {
+          "name": "Droidcon",
+          "location": "Bucharest",
+          "date": "October 7th"
+        },
+        {
+          "name": "Reaktor Dev Day",
+          "location": "Helsinki",
+          "date": "October 4th"
+        },
+        {
+          "name": "JSConf EU",
+          "location": "Berlin",
+          "date": "September 14th - 15th"
+        },
+        {
+          "name": "Developer Week",
+          "location": "Nuremberg",
+          "date": "June 24th - 27th"
+        },
+        {
+          "name": "Droidcon",
+          "location": "Paris",
+          "date": "June 17th - 18th"
+        },
+        {
+          "name": "Codemotion",
+          "location": "Berlin",
+          "date": "May 9th - 11th"
+        },
+        {
+          "name": "LOGIN",
+          "location": "Vilnius",
+          "date": "April 18th - 19th"
+        },
+        {
+          "name": "Droidcon",
+          "location": "Berlin",
+          "date": "April 7th - 10th"
+        },
+        {
+          "name": "Mobile World Congress",
+          "location": "Barcelona",
+          "date": "February 25th - 28th"
+        }
+      ]
+    },
+    {
+      "year": 2012,
+      "events": [
+        {
+          "name": "API Days",
+          "location": "Paris",
+          "date": "December 3rd - 4th"
+        },
+        {
+          "name": "Droidcon",
+          "location": "Amsterdam",
+          "date": "November 22nd - 23rd"
+        },
+        {
+          "name": "GDG DevFest",
+          "location": "Vienna",
+          "date": "November 10th - 11th"
+        },
+        {
+          "name": "GDG DevFest",
+          "location": "Karlsruhe",
+          "date": "November 3rd"
+        },
+        {
+          "name": "GDG DevFest",
+          "location": "Zurich",
+          "date": "October 19th - 21st"
+        },
+        {
+          "name": "GDG DevFest",
+          "location": "Berlin",
+          "date": "October 12th - 14th"
+        },
+        {
+          "name": "MobileCamp",
+          "location": "Hamburg",
+          "date": "August 3rd - 5th"
+        }
+      ]
+    },
+    {
+      "year": 2010,
+      "events": [
+        {
+          "name": "Droidcamp",
+          "location": "Stuttgart",
+          "date": "June 18th - 19th"
+        }
+      ]
+    }
+  ]
+}
