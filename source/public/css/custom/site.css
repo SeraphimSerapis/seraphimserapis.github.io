@@ -7,11 +7,11 @@ body {
   color: #E1E4E6;
 }
 
-a, h1, h2, h3 {
+a, h1, h2, h3, h4, h5 {
   color: #F4511E;
 }
 
-h1, h2, h3 {
+h1, h2, h3, h4, h5 {
   font-family: 'Quicksand';
 }
 
