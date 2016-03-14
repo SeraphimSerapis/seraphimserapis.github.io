@@ -60,7 +60,7 @@ activate :deploy do |deploy|
   deploy.deploy_method = :git
   # Optional Settings
   #deploy.remote   = 'custom-remote' # remote name or git url, default: origin
-  deploy.branch   = 'source' # default: gh-pages
+  deploy.branch   = 'master' # default: gh-pages
   # deploy.strategy = :submodule      # commit strategy: can be :force_push or :submodule, default: :force_push
 end
 
@@ -136,6 +136,6 @@ end
 # Build-specific configuration
 configure :build do
   activate :minify_css
-  # activate :minify_javascript
-  # activate :asset_hash
+  activate :minify_javascript
+  activate :asset_hash
 end
