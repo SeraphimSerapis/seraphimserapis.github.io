@@ -98,5 +98,4 @@ I also had to add a file called `.nojekyll` in order to [avoid issues with GitHu
 
 I'm looking for ways to further optimize the site's appearance, loading times and work around issues like having to remove the `build` folder before deploying an update version of my blog. Over the course of the next few weeks and months many gems will start to officially support Middleman v4 and the Middleman team is working on v4.1 which will bring back some cool functionality to the site generator's core.
 
-Any feedback is welcome,  
-Tim
+Any feedback is welcome!
