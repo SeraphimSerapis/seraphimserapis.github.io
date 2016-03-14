@@ -142,15 +142,6 @@ td.code {
   color: #F4511E;
 }
 
-#social>ul>li>a {
-  height: 50px;
-}
-
-#social>ul>li>a>i::before {
-  position: relative;
-  bottom: 6px;
-}
-
 #navbar {
   background: #34495E;
   border-bottom: 1px solid;
@@ -172,16 +163,18 @@ td.code {
   margin-bottom: 48px;
 }
 
-@media (max-width: 767px) {
+@media (min-width: 768px) {
+  #social>ul>li>a {
+    height: 50px;
+  }
+
   #social>ul>li>a>i::before {
     position: relative;
-    top: 6px;
+    bottom: 6px;
   }
+}
 
-  #social>ul>li>a:hover {
-    background-color: #34495E;
-  }
-
+@media (max-width: 767px) {
   .event {
     padding-bottom: 14px;
   }

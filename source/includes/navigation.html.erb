@@ -16,19 +16,18 @@
         <li><%= link_to 'About', '/about' %></li>
       </ul>
       <div class="navbar-right" id="social">
-        <ul class="nav navbar-nav hidden-xs">
-          <li><%= mail_to data.social.mail, '<i class="fa fa-envelope fa-2x fa-fw"></i>' %><span class="sr-only">Mail</span></a></li>
-          <li><a href="<%= data.social.gplus %>"><i class="fa fa-google-plus-square fa-2x fa-fw"></i><span class="sr-only">Google Plus</span></a></li>
-          <li><a href="<%= data.social.twitter %>"><i class="fa fa-twitter-square fa-2x fa-fw"></i><span class="sr-only">Twitter</span></a></li>
-          <li><a href="<%= data.social.linkedin %>"><i class="fa fa-linkedin-square fa-2x fa-fw"></i><span class="sr-only">LinkedIn</span></a></li>
-          <li><a href="<%= data.social.github %>"><i class="fa fa-github-square fa-2x fa-fw"></i><span class="sr-only">GitHub</span></a></li>
-        </ul><!-- nav navbar-nav -->
-        <ul class="nav navbar-nav visible-xs-inline-block">
-          <li><%= mail_to 'timmesserschmidt@gmail.com', '<i class="fa fa-envelope fa-2x fa-fw"></i>&nbsp; Mail' %></li>
-          <li><a href="<%= data.social.gplus %>"><i class="fa fa-google-plus-square fa-2x fa-fw"></i>&nbsp; Google Plus</a></li>
-          <li><a href="<%= data.social.twitter %>"><i class="fa fa-twitter-square fa-2x fa-fw"></i>&nbsp; Twitter</span></a></li>
-          <li><a href="<%= data.social.linkedin %>"><i class="fa fa-linkedin-square fa-2x fa-fw"></i>&nbsp; LinkedIn</a></li>
-          <li><a href="<%= data.social.github %>"><i class="fa fa-github-square fa-2x fa-fw"></i>&nbsp; GitHub</a></li>
+        <ul class="nav navbar-nav">
+          <li>
+            <% link_to data.social.mail do %>
+              <i class="hidden-xs fa fa-envelope fa-2x fa-fw"></i>
+              <span class="sr-only">Mail</span>
+              <span class="visible-xs-inline-block">Mail</span>
+            <% end %>
+          </li>
+          <li><a href="<%= data.social.gplus %>"><i class="hidden-xs fa fa-google-plus-square fa-2x fa-fw"></i><span class="sr-only">Google Plus</span><span class="visible-xs-inline-block">Google Plus</span></a></li>
+          <li><a href="<%= data.social.twitter %>"><i class="hidden-xs fa fa-twitter-square fa-2x fa-fw"></i><span class="sr-only">Twitter</span><span class="visible-xs-inline-block">Twitter</span></a></li>
+          <li><a href="<%= data.social.linkedin %>"><i class="hidden-xs fa fa-linkedin-square fa-2x fa-fw"></i><span class="sr-only">LinkedIn</span><span class="visible-xs-inline-block">LinkedIn</span></a></li>
+          <li><a href="<%= data.social.github %>"><i class="hidden-xs fa fa-github-square fa-2x fa-fw"></i><span class="sr-only">GitHub</span><span class="visible-xs-inline-block">GitHub Plus</span></a></li>
         </ul><!-- nav navbar-nav -->
       </div><!-- navbar-right -->
     </div><!-- collapse navbar-collapse -->
