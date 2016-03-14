@@ -10,7 +10,6 @@ On Monday & Tuesday last week our Developer Relations team has been visiting Dro
 
 ## The Event
 
-{% img right /images/posts/droidcon.png Speaking at Droidcon %}
 I'm not really sure if you can say that Droidcon Paris is a first time event since Droidcon is basically the biggest series of Android events (at least in Europe) and organized by a really professional team. In Paris the guys of [WIPConnector](http://www.wipconnector.com/) did a pretty damn good job in finding a venue, getting good speakers and nailing there target audience.
 
 In total 450 attendees came to the event and made sure that we had 2 busy days at our booth speaking with everyone, meeting some old friends from other Android-related events and enjoying of course Paris as a city.
