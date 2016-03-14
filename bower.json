@@ -1,0 +1,25 @@
+{
+  "name": "Tim's blog",
+  "authors": [
+    "Tim Messerschmidt <timmesserschmidt@gmail.com>"
+  ],
+  "description": "Tim Messerschmidt's blog",
+  "main": "build/index.html",
+  "moduleType": [],
+  "keywords": [
+    "blog"
+  ],
+  "license": "MIT",
+  "homepage": "timmesserschmidt.com",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "jquery": "^2.2.1"
+  }
+}

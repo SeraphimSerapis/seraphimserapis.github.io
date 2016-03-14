@@ -1,0 +1,18 @@
+<!doctype html>
+<html>
+  <head>
+    <%= partial "includes/head" %>
+  </head>
+  <body>
+    <%= partial "includes/navigation" %>
+
+    <div class="container">
+      <div id="main" role="main">
+        <%= yield %>
+      </div>
+    </div>
+
+    <%= partial "includes/ga" %>
+    <%= partial "includes/footer" %>
+  </body>
+</html>
