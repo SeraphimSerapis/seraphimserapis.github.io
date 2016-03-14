@@ -3,7 +3,7 @@ title: 'Events'
 ---
 <div class="events">
   <h1>Events</h1>
-  <p>These are some of the events I have spoken at before. You can find more information on <%= link_to "Lanyrd", "http://lanyrd.com/profile/seraandroid/" %>.</p>
+  <p>These are some of the events I have spoken at before. You can find more information on <%= link_to "Lanyrd", data.social.lanyrd %>.</p>
   <% data.events.years.each do |year| %>
     <h3 class="page-header"><%= year.year %></h3>
     <% year.events.each do |event| %>
