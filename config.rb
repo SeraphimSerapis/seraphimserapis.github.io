@@ -56,12 +56,6 @@ activate :google_analytics do |ga|
   ga.tracking_id = "UA-40700707-1"
 end
 
-activate :deploy do |deploy|
-  deploy.deploy_method = :git
-  deploy.branch   = "master"
-  deploy.build_before = true
-end
-
 set :images_dir, "public/img"
 set :js_dir, "public/js"
 set :css_dir, "public/css"
