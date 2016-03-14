@@ -4,5 +4,9 @@
   "gplus": "http://plus.google.com/+TimMesserschmidt",
   "github": "http://github.com/seraphimserapis",
   "mail": "mailto:timmesserschmidt@gmail.com",
-  "lanyrd": "http://lanyrd.com/profile/seraandroid/"
+  "lanyrd": "http://lanyrd.com/profile/seraandroid/",
+  "facebook": {
+    "profile": "https://www.facebook.com/tim.messerschmidt",
+    "app_id": "969436346421526"
+  }
 }

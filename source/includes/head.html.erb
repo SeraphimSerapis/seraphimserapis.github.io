@@ -45,7 +45,7 @@
 <meta property="og:title" content="<%= title %>" />
 <meta property="og:site_name" content="<%= site_title %>" />
 <meta property="og:description" content="<%= truncate(description, length: 500) %>" />
-<meta property="fb:app_id" content="969436346421526" />
+<meta property="fb:app_id" content="<% data.social.facebook.app_id %>" />
 <meta property="og:type" content="<%= current_article.nil? ? "website" : "article" %>" />
 <meta property="og:image" content="<%= image %>" />
 <meta property="og:url" content="<%= url_root + current_page.url %>" />
@@ -53,7 +53,7 @@
 <title><%= title + " - " unless title.blank? %><%= site_title %></title>
 
 <% unless current_article.nil?  %>
-<meta property="article:author" content="https://www.facebook.com/tim.messerschmidt" />
+<meta property="article:author" content="<%= data.social.facebook.profile %>" />
 <% end %>
 
 <%= favicon_tag 'favicon.png' %>
