@@ -1,0 +1,252 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+<meta http-equiv='X-UA-Compatible' content='IE=edge;chrome=1' />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+
+<meta name="theme-color" content="#2E3AA1">
+
+<!-- Web Application Manifest -->
+<link rel="manifest" href="manifest.json">
+
+<!-- Chrome on Android -->
+<meta name="theme-color" content="#2E3AA1">
+<meta name="mobile-web-app-capable" content="yes">
+<meta name="application-name" content="PSK">
+<link rel="icon" sizes="192x192" href="/public/img/chrome192x192-ea9eee88.png">
+
+<!-- Safari on iOS -->
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black">
+<meta name="apple-mobile-web-app-title" content="timmesserschmidt">
+
+<link rel="apple-touch-icon" href="/public/img/apple192x192-9e2108cb.png">
+<link rel="apple-touch-icon" sizes="76x76" href="/public/img/apple76x76-ff095116.png">
+<link rel="apple-touch-icon" sizes="120x120" href="/public/img/apple120x120-dd0a525c.png">
+<link rel="apple-touch-icon" sizes="152x152" href="/public/img/apple152x152-70887e32.png">
+
+<!-- Windows 8 -->
+<meta name="msapplication-TileColor" content="#3372DF">
+<meta name="msapplication-TileImage" content="/public/img/ms144x144-039ccbb5.png">
+
+<!-- Fonts -->
+<link href="https://fonts.googleapis.com/css?family=Quicksand" rel="stylesheet" type="text/css">
+<link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet" type="text/css">
+
+<!-- Font Awesome Icons -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+
+<!-- Twitter Cards -->
+<meta name="twitter:card" content="summary" />
+<meta name="twitter:site" content="@seraandroid" />
+<meta name="twitter:title" content="Summary Google I/O 2013" />
+<meta name="twitter:description" content="Yesterday this year’s Google I/O officially ended with a series of Code Labs, Fireside Chats and talks about more general techniques. For me it was the second I/O in a row and I’ll try to briefly s..." />
+<meta name="twitter:image" content="http://timmesserschmidt.com/public/img/profile-5f12c267.png" />
+
+<!-- Facebook Open Graph -->
+<meta property="og:title" content="Summary Google I/O 2013" />
+<meta property="og:site_name" content="timmesserschmidt" />
+<meta property="og:description" content="Yesterday this year’s Google I/O officially ended with a series of Code Labs, Fireside Chats and talks about more general techniques. For me it was the second I/O in a row and I’ll try to briefly summarize the conference and side events I attended in this post. As always I’m happy to hear your feedback & thoughts in the comments below." />
+<meta property="fb:app_id" content="969436346421526" />
+<meta property="og:type" content="article" />
+<meta property="og:image" content="http://timmesserschmidt.com/public/img/profile-5f12c267.png" />
+<meta property="og:url" content="http://timmesserschmidt.com/blog/2013/05/18/summary-google-io-2013/" />
+
+<title>Summary Google I/O 2013 - timmesserschmidt</title>
+
+<meta property="article:author" content="https://www.facebook.com/tim.messerschmidt" />
+
+<link href="/public/img/favicon.png" rel="icon" type="image/png" />
+
+<link rel="alternate" type="application/atom+xml" title="Atom Feed" href="/blog/feed.xml" />
+
+<!--<script src="/components/jquery/dist/jquery.min.js"></script>-->
+<script src="https://code.jquery.com/jquery-2.2.1.min.js" integrity="sha256-gvQgAFzTH6trSrAWoH1iPo9Xc96QxSZ3feW6kem+O00=" crossorigin="anonymous"></script>
+
+<script src="/public/js/bootstrap.min-bd001eb1.js"></script>
+<link href="/public/css/site-f209d7a4.css" rel="stylesheet" />
+
+  </head>
+  <body>
+    <nav class="navbar navbar-inverse navbar-static-top" id="navbar">
+  <div class="container">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-navbar-collapse" aria-expanded="false">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="/">timmesserschmidt</a>
+    </div>
+    <div class="collapse navbar-collapse" id="bs-navbar-collapse">
+      <div class="navbar-right" id="social">
+        <ul class="nav navbar-nav hidden-xs">
+          <li><a href="mailto:timmesserschmidt@gmail.com"><i class="fa fa-envelope fa-2x fa-fw"></i></a><span class="sr-only">Mail</span></a></li>
+          <li><a href="http://plus.google.com/+TimMesserschmidt"><i class="fa fa-google-plus-square fa-2x fa-fw"></i><span class="sr-only">Google Plus</span></a></li>
+          <li><a href="http://twitter.com/seraandroid"><i class="fa fa-twitter-square fa-2x fa-fw"></i><span class="sr-only">Twitter</span></a></li>
+          <li><a href="http://linkedin.com/in/timmesserschmidt"><i class="fa fa-linkedin-square fa-2x fa-fw"></i><span class="sr-only">LinkedIn</span></a></li>
+          <li><a href="http://github.com/seraphimserapis"><i class="fa fa-github-square fa-2x fa-fw"></i><span class="sr-only">GitHub</span></a></li>
+        </ul><!-- nav navbar-nav -->
+        <ul class="nav navbar-nav visible-xs-inline-block">
+          <li><a href="mailto:timmesserschmidt@gmail.com"><i class="fa fa-envelope fa-2x fa-fw"></i>&nbsp; Mail</a></li>
+          <li><a href="http://plus.google.com/+TimMesserschmidt"><i class="fa fa-google-plus-square fa-2x fa-fw"></i>&nbsp; Google Plus</a></li>
+          <li><a href="http://twitter.com/seraandroid"><i class="fa fa-twitter-square fa-2x fa-fw"></i>&nbsp; Twitter</span></a></li>
+          <li><a href="http://linkedin.com/in/timmesserschmidt"><i class="fa fa-linkedin-square fa-2x fa-fw"></i>&nbsp; LinkedIn</a></li>
+          <li><a href="http://github.com/seraphimserapis"><i class="fa fa-github-square fa-2x fa-fw"></i>&nbsp; GitHub</a></li>
+        </ul><!-- nav navbar-nav -->
+      </div><!-- navbar-right -->
+    </div><!-- collapse navbar-collapse -->
+  </div><!-- container -->
+</nav>
+
+
+    <div class="container">
+      <div id="main" role="main">
+          <article>
+    <div class="page-header title">
+      <h1><a href="#">Summary Google I/O 2013</a></h1>
+      <i class="fa fa-calendar"></i>
+      <span class="date">May 18th</span>
+      <div class="tags">
+<a href="/blog/categories/summary">          <button class="btn btn-tag">summary</button>
+</a>      </div>
+    </div>
+    <p>Yesterday this year&rsquo;s Google I/O officially ended with a series of Code Labs, Fireside Chats and talks about more general techniques. For me it was the second I/O in a row and I&rsquo;ll try to briefly summarize the conference and side events I attended in this post. As always I&rsquo;m happy to hear your feedback &amp; thoughts in the comments below.</p>
+
+
+
+<h2>Day 0 - Tuesday</h2>
+
+<p>At about 2pm people can check-in at the Moscone Center to get their badge (and their shirt). For me this day is great because you meet lots of old friends in the line waiting in front of the Moscone Center or inside after having checked-in.</p>
+
+<p>Nothing really special happens here but you can clearly see that everybody is super-excited about the day after.</p>
+
+<p><strong>Facebook Developer Party:</strong><br>
+A meet-up with tons of I/O attendees. It was next to the Moscone Center at <a href="http://www.jillianssf.com/">Jillian&rsquo;s</a>. I had good food and some nice talks but left early to meet some colleagues from our San Jose office.</p>
+
+<h2>Day 1 - Wednesday</h2>
+
+<p>For me this day started at 7am standing in the line of people that wants to get into the Moscone. Google serves some breakfast (not the best, not the worst) and people queue up inside in front of the escalators that get you on the 2nd level of Moscone. Basically this means 1 hour of standing in a queue, chatting with old &amp; new friends and getting super excited about what&rsquo;s being announced at the Keynote.</p>
+
+<p>At 8:15am they finally opened up the escalators and the crowd is running (yes, running) up to the 2nd level where they have to wait again for a bit. Then at 8:30am people are allowed to use the escalators to the 3rd and final level of Moscone. Basically everybody runs into the big room to get a decent seat that let&rsquo;s you enjoy the Keynote. There is really that much people that some of them have to stand outside and have to use the monitors to watch what happens on stage.</p>
+
+<p><strong>The Keynote:</strong>  After some fancy music &amp; visualizations finally the Keynote starts and people like Hugo Barra, Vic Gundotra and even Larry Page enter the stage.</p>
+
+<p>The big announcements were not as big as last year. This year&rsquo;s theme seemed to be <em>evolution instead of revolution</em>. Google Maps became a nice update and finally looks fancy on all platforms (even the iPad - yay). Google Music becomes All Access and offers streaming of music similar to Spotify (US credit cards only - not so yay). Android&rsquo;s Play Services become a serious foundation of Android by bringing lots of new services like Google&rsquo;s Gaming Service to Android. Furthermore really interesting features for location are now accessible for developers on all important API levels. They presented a Samsung Galaxy S4 running stock Android 4.2.2 (but didn&rsquo;t give it away). You could clearly see that Google get&rsquo;s the ecosystem to play after their rules and behave nicely.</p>
+
+<p>The often critized Android Developer Console (that&rsquo;s where you upload your apps for the Google Play Store) got a total revamp and offers finally lots of really good features. Developer can upload Alpha and Beta versions of their apps and get some interesting statistics. Additionally they can use a staged rollout to distribute new versions of their app in a more controlled way. <em>All</em> developers are now able to reply to comments on the Play Store and much more really useful things like inbuilt translation services (paid).</p>
+
+<p><strong>BUT:</strong> They didn&rsquo;t announce a new version of Android. It seems like they wanted to wait with 4.3 or 5.0 - or whatever it will be called - until it&rsquo;s really ready for rollout (which I support).</p>
+
+<p>The real <em>big</em> focus this year was Chrome. Google highlighted a lot of interesting features like Google Now for Chrome and gave away a Chromebook Pixel to every attendee. Google wants to make sure to push the web as much as they pushed Android before. Therefore they announced Web Components which serve as bits and pieces to build your own web app. Furthermore they introduced an interesting <em>PayPal-like</em> Google Wallet feature that allows for auto-completing checkout forms.</p>
+
+<p>Google+ got some big updates, too: The UI got redisgned and looks now very sleek. They basically used the nice mobile layout and made it desktop friendly by allowing multiple columns with big focus on media like pictures. Additionally they reworked the photos. Uploaded pictures are being enhanced to produce optimum quality. I tried this functionality with a few different pictures and liked it so far. Furthermore there was a heavy focus on Google+ Sign-in for all platforms. The most kick-ass feature is the <em>Over The Air Install</em>-feature that allows to install an app and automatically login on your Android device after logging in on the associated website.</p>
+
+<p>A very pleasant thing is the big focus of Google on education. As an example they opened up an Android store for schools &amp; universities that allows teachers to purchase apps for their whole class.</p>
+
+<p>The Keynote was being ended by Larry Page coming up on stage (first time since a very loooong time) and talking about the important role of technology for education, Google&rsquo;s focus for the next few years and much more. After his really moving talk he accepted some questions from the audience and tried to answer them as good as possible.</p>
+
+<p>The only person I missed was Sergey Brin. Last year he took over a big part of the Keynote by having people jumping out of an airplane using Google Glass and this year he just wasn&rsquo;t there. The Keynote&rsquo;s speed &amp; rhythm was very different compared to last year&rsquo;s. This didn&rsquo;t make it any better or worse.</p>
+
+<p><strong>After the Keynote:</strong> I met tons of people, walked through the Sandboxes and tried a lot of new hardware. Google did a very interesting selection with products like <a href="http://www.leapmotion.com/">Leap Motion</a> or <a href="http://www.oculusvr.com/">Oculus Rift</a>.</p>
+
+<p><strong>Sessions attended:</strong></p>
+
+<ul>
+<li>What&rsquo;s new in Android Developer Tools</li>
+<li>An Introduction to Integrating Google+ Sign-in</li>
+<li>Writing Custom Views for Android</li>
+<li>Volley: Easy, Fast Networking for Android</li>
+<li>In-App Billing Version 3</li>
+</ul>
+
+<p><strong>The After Hours Party:</strong> Robots, Drinks, Food &amp; Billy Idol. What more can I say? This was amazing. People expected <em>Daft Punk</em> to be there, too - due to a lot of mentiones during the keynote and <em>Get Lucky</em> being played everywhere - but this year the electric part was taken over by a guy called <em>Steve Aoki</em>.</p>
+
+<h2>Day 2 - Thursday</h2>
+
+<p>This year&rsquo;s second day didn&rsquo;t bring another Keynote. This day was very much focussed on sessions &amp; Fireside Chats instead. One of the main topics this day was <em>Google Glass</em>. Funnily it didn&rsquo;t really even get mentioned during Wednesday&rsquo;s Keynote.</p>
+
+<p><strong>Sessions attended:</strong></p>
+
+<ul>
+<li>Developing For Glass</li>
+<li>Building Glass Services with the Google Mirror API</li>
+<li>Voiding Your Warranty: Hacking Glass</li>
+<li>Fireside Chat with the Glass Team</li>
+<li>Fireside Chat with the Android Team</li>
+</ul>
+
+<p><strong>Google I/O Nightcap:</strong> This was a fun event in the evening at <a href="http://www.thirstybear.com/">Thirsty Bear Brewery</a> where I met lots of GDG people, had a few drinks and good food. Sadly the event closed at 10pm.</p>
+
+<h2>Day 3 - Friday</h2>
+
+<p>This day is the &ldquo;saying goodbye&rdquo;-day. Lots of people have already left San Francisco to leave for their hometowns.</p>
+
+<p><strong>Sessions attended:</strong>  </p>
+
+<ul>
+<li>The New Android SDK Build System</li>
+<li>What&rsquo;s new for Developers in Google Play</li>
+<li>Android Design in Action</li>
+</ul>
+
+<h2>Bottom line:</h2>
+
+<p>As last year&rsquo;s I/O this year was very special. There is not lots of conferences where you meet top-notch developers like at this event. Not wearing Glass made you feel bad (due to the <em>high</em> concentration of people wearing it) and not too many details about the plans for Glass were shared. Still nobody knows when &amp; if Glass is coming to Europe and how to enroll for the next wave of trials. Google made this event special and I&rsquo;m sure that next I/O will rock, too.</p>
+
+<p>I&rsquo;ll have to take the time to watch the recorded sessions that I couldn&rsquo;t attend due to clashs or just because the audience was that big that you couldn&rsquo;t get into the room (happened a few times to me).</p>
+
+  </article>
+  <!-- Disqus -->
+<div id='disqus_thread'></div>
+<script type='text/javascript'>
+//<![CDATA[
+                  var disqus_shortname = 'tmecoffee';
+          
+    (function() {
+        var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+        dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    })();
+//]]>
+</script>
+<noscript>Please enable JavaScript to view the <a href='http://disqus.com/?ref_noscript'>comments powered by Disqus.</a></noscript>
+<a href='http://disqus.com' class='dsq-brlink'>comments powered by <span class='logo-disqus'>Disqus</span></a>
+
+<script type="text/javascript">
+//<![CDATA[
+    var disqus_shortname = 'tmecoffee';
+    (function () {
+        var s = document.createElement('script'); s.async = true;
+        s.type = 'text/javascript';
+        s.src = '//' + disqus_shortname + '.disqus.com/count.js';
+        (document.getElementsByTagName('HEAD')[0] || document.getElementsByTagName('BODY')[0]).appendChild(s);
+    }());
+//]]>
+</script>
+
+<!-- End Disqus -->
+
+
+      </div>
+    </div>
+
+    <!-- Google Analytics -->
+<script type="text/javascript">
+  var _gaq = _gaq || [];
+  _gaq.push(["_setAccount", "UA-40700707-1"]);
+  _gaq.push(["_trackPageview"]);
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? '//ssl' : '//www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+</script>
+<!-- End Google Analytics -->
+
+    <!-- Footer -->
+
+  </body>
+</html>

@@ -1,0 +1,184 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+<meta http-equiv='X-UA-Compatible' content='IE=edge;chrome=1' />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+
+<meta name="theme-color" content="#2E3AA1">
+
+<!-- Web Application Manifest -->
+<link rel="manifest" href="manifest.json">
+
+<!-- Chrome on Android -->
+<meta name="theme-color" content="#2E3AA1">
+<meta name="mobile-web-app-capable" content="yes">
+<meta name="application-name" content="PSK">
+<link rel="icon" sizes="192x192" href="/public/img/chrome192x192-ea9eee88.png">
+
+<!-- Safari on iOS -->
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black">
+<meta name="apple-mobile-web-app-title" content="timmesserschmidt">
+
+<link rel="apple-touch-icon" href="/public/img/apple192x192-9e2108cb.png">
+<link rel="apple-touch-icon" sizes="76x76" href="/public/img/apple76x76-ff095116.png">
+<link rel="apple-touch-icon" sizes="120x120" href="/public/img/apple120x120-dd0a525c.png">
+<link rel="apple-touch-icon" sizes="152x152" href="/public/img/apple152x152-70887e32.png">
+
+<!-- Windows 8 -->
+<meta name="msapplication-TileColor" content="#3372DF">
+<meta name="msapplication-TileImage" content="/public/img/ms144x144-039ccbb5.png">
+
+<!-- Fonts -->
+<link href="https://fonts.googleapis.com/css?family=Quicksand" rel="stylesheet" type="text/css">
+<link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet" type="text/css">
+
+<!-- Font Awesome Icons -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+
+<!-- Twitter Cards -->
+<meta name="twitter:card" content="summary" />
+<meta name="twitter:site" content="@seraandroid" />
+<meta name="twitter:title" content="Node.js Tutorial" />
+<meta name="twitter:description" content="At PayPal one of the biggest efforts in the last few months was getting rid of the old architecture and revamping it by using modern techniques and frameworks like Node.js, Express and Dust." />
+<meta name="twitter:image" content="http://timmesserschmidt.com/public/img/profile-5f12c267.png" />
+
+<!-- Facebook Open Graph -->
+<meta property="og:title" content="Node.js Tutorial" />
+<meta property="og:site_name" content="timmesserschmidt" />
+<meta property="og:description" content="At PayPal one of the biggest efforts in the last few months was getting rid of the old architecture and revamping it by using modern techniques and frameworks like Node.js, Express and Dust." />
+<meta property="fb:app_id" content="969436346421526" />
+<meta property="og:type" content="article" />
+<meta property="og:image" content="http://timmesserschmidt.com/public/img/profile-5f12c267.png" />
+<meta property="og:url" content="http://timmesserschmidt.com/blog/2013/09/22/node-dot-js-tutorial/" />
+
+<title>Node.js Tutorial - timmesserschmidt</title>
+
+<meta property="article:author" content="https://www.facebook.com/tim.messerschmidt" />
+
+<link href="/public/img/favicon.png" rel="icon" type="image/png" />
+
+<link rel="alternate" type="application/atom+xml" title="Atom Feed" href="/blog/feed.xml" />
+
+<!--<script src="/components/jquery/dist/jquery.min.js"></script>-->
+<script src="https://code.jquery.com/jquery-2.2.1.min.js" integrity="sha256-gvQgAFzTH6trSrAWoH1iPo9Xc96QxSZ3feW6kem+O00=" crossorigin="anonymous"></script>
+
+<script src="/public/js/bootstrap.min-bd001eb1.js"></script>
+<link href="/public/css/site-f209d7a4.css" rel="stylesheet" />
+
+  </head>
+  <body>
+    <nav class="navbar navbar-inverse navbar-static-top" id="navbar">
+  <div class="container">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-navbar-collapse" aria-expanded="false">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="/">timmesserschmidt</a>
+    </div>
+    <div class="collapse navbar-collapse" id="bs-navbar-collapse">
+      <div class="navbar-right" id="social">
+        <ul class="nav navbar-nav hidden-xs">
+          <li><a href="mailto:timmesserschmidt@gmail.com"><i class="fa fa-envelope fa-2x fa-fw"></i></a><span class="sr-only">Mail</span></a></li>
+          <li><a href="http://plus.google.com/+TimMesserschmidt"><i class="fa fa-google-plus-square fa-2x fa-fw"></i><span class="sr-only">Google Plus</span></a></li>
+          <li><a href="http://twitter.com/seraandroid"><i class="fa fa-twitter-square fa-2x fa-fw"></i><span class="sr-only">Twitter</span></a></li>
+          <li><a href="http://linkedin.com/in/timmesserschmidt"><i class="fa fa-linkedin-square fa-2x fa-fw"></i><span class="sr-only">LinkedIn</span></a></li>
+          <li><a href="http://github.com/seraphimserapis"><i class="fa fa-github-square fa-2x fa-fw"></i><span class="sr-only">GitHub</span></a></li>
+        </ul><!-- nav navbar-nav -->
+        <ul class="nav navbar-nav visible-xs-inline-block">
+          <li><a href="mailto:timmesserschmidt@gmail.com"><i class="fa fa-envelope fa-2x fa-fw"></i>&nbsp; Mail</a></li>
+          <li><a href="http://plus.google.com/+TimMesserschmidt"><i class="fa fa-google-plus-square fa-2x fa-fw"></i>&nbsp; Google Plus</a></li>
+          <li><a href="http://twitter.com/seraandroid"><i class="fa fa-twitter-square fa-2x fa-fw"></i>&nbsp; Twitter</span></a></li>
+          <li><a href="http://linkedin.com/in/timmesserschmidt"><i class="fa fa-linkedin-square fa-2x fa-fw"></i>&nbsp; LinkedIn</a></li>
+          <li><a href="http://github.com/seraphimserapis"><i class="fa fa-github-square fa-2x fa-fw"></i>&nbsp; GitHub</a></li>
+        </ul><!-- nav navbar-nav -->
+      </div><!-- navbar-right -->
+    </div><!-- collapse navbar-collapse -->
+  </div><!-- container -->
+</nav>
+
+
+    <div class="container">
+      <div id="main" role="main">
+          <article>
+    <div class="page-header title">
+      <h1><a href="#">Node.js Tutorial</a></h1>
+      <i class="fa fa-calendar"></i>
+      <span class="date">September 22nd</span>
+      <div class="tags">
+<a href="/blog/categories/tutorial">          <button class="btn btn-tag">tutorial</button>
+</a><a href="/blog/categories/paypal">          <button class="btn btn-tag">paypal</button>
+</a>      </div>
+    </div>
+    <p>At PayPal one of the biggest efforts in the last few months was getting rid of the old architecture and revamping it by using modern techniques and frameworks like Node.js, Express and Dust.</p>
+
+
+
+<p>By getting people like <a href="http://www.crockford.com/">Doug Crockford</a> and <a href="http://looksgoodworkswell.blogspot.de/">Bill Scott</a> into our company this approach is being led by some great people that contribute heavily to the rising JavaScript community.</p>
+
+<p>Naturally this leads to our Developer Relations team focussing on tech like Node, too and we&rsquo;ve published a great SDK that allows a very convenient implementation of PayPal and credit card payments. To help people with getting started, I&rsquo;ve published a series of blog posts over at the <a href="http://devblog.paypal.com/">PayPal Developer blog</a> that explain in detail how to set up the project, handle the SDK and deploy it.</p>
+
+<p>The first post of <a href="http://devblog.paypal.com/building-a-node-and-paypal-app/">Building a web app with Node.js &amp; the PayPal SDK</a> introduces Node and <a href="http://expressjs.com/">Express</a> itself and explains the different components of the project. This is really for people who&rsquo;ve never dealt with Express and should hopefully help with getting started.</p>
+
+<p>The <a href="http:">second part of this tutorial</a> goes into installing the PayPal Node SDK via NPM and configuring it to handle both credit card and PayPal payments. Personally I love the very JavaScriptesque way of handling the payloads via JSON directly.</p>
+
+<p>Finally the third part of the tutorial explains how to interact with the templating engine <a href="http://jade-lang.com/">Jade</a> and which modifications are needed for the deployment to Heroku.</p>
+
+<p>I enjoyed writing these posts and got great feedback so far! In the next few weeks I might continue writing more tutorials based on topics like User Authentication via OpenID Connect and OAuth 2.0 for Node. This is something <a href="http://2013.jsconf.eu/speakers/tim-messerschmidt-getting-to-know-your-users.html">I briefly spoke about at this year&rsquo;s JSConfEU</a> in Berlin.</p>
+
+  </article>
+  <!-- Disqus -->
+<div id='disqus_thread'></div>
+<script type='text/javascript'>
+//<![CDATA[
+                  var disqus_shortname = 'tmecoffee';
+          
+    (function() {
+        var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+        dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    })();
+//]]>
+</script>
+<noscript>Please enable JavaScript to view the <a href='http://disqus.com/?ref_noscript'>comments powered by Disqus.</a></noscript>
+<a href='http://disqus.com' class='dsq-brlink'>comments powered by <span class='logo-disqus'>Disqus</span></a>
+
+<script type="text/javascript">
+//<![CDATA[
+    var disqus_shortname = 'tmecoffee';
+    (function () {
+        var s = document.createElement('script'); s.async = true;
+        s.type = 'text/javascript';
+        s.src = '//' + disqus_shortname + '.disqus.com/count.js';
+        (document.getElementsByTagName('HEAD')[0] || document.getElementsByTagName('BODY')[0]).appendChild(s);
+    }());
+//]]>
+</script>
+
+<!-- End Disqus -->
+
+
+      </div>
+    </div>
+
+    <!-- Google Analytics -->
+<script type="text/javascript">
+  var _gaq = _gaq || [];
+  _gaq.push(["_setAccount", "UA-40700707-1"]);
+  _gaq.push(["_trackPageview"]);
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? '//ssl' : '//www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+</script>
+<!-- End Google Analytics -->
+
+    <!-- Footer -->
+
+  </body>
+</html>
