@@ -11,6 +11,10 @@ a, h1, h2, h3, h4, h5 {
   color: #F4511E;
 }
 
+p {
+  font-weight: 300;
+}
+
 h1, h2, h3, h4, h5 {
   font-family: 'Quicksand';
 }
