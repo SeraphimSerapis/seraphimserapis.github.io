@@ -352,6 +352,21 @@
           "name": "MobileCamp",
           "location": "Hamburg, DE",
           "date": "August 3rd - 5th"
+        },
+        {
+          "name": "Global Android DevCamp",
+          "location": "Berlin, DE",
+          "date": "February 17th - 19th"
+        }
+      ]
+    },
+    {
+      "year": 2011,
+      "events": [
+        {
+          "name": "GTUG Bootcamp",
+          "location": "Berlin, DE",
+          "date": "November 18th"
         }
       ]
     },
