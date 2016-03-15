@@ -16,7 +16,7 @@ description: "timmesserschmidt - Developer Relations"
   </div>
   <div class="col-md-10">
     <h2 class="header"><%= link_to article.title, article %></h2>
-    <%= article.summary(260) %>
+    <p><%= Nokogiri::HTML(article.summary(260)).text.split(" ").join(" ") %></p>
     <a href="<%= article.url %>"><button class="btn btn-more" aria-label="More">More <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span></button></a>
   </div>
 </div>
