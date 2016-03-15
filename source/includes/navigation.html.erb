@@ -19,7 +19,7 @@
         <ul class="nav navbar-nav">
           <li>
             <% link_to data.social.mail do %>
-              <i class="hidden-xs fa fa-envelope fa-2x fa-fw"></i>
+              <i class="hidden-xs fa fa-envelope-square fa-2x fa-fw"></i>
               <span class="sr-only">Mail</span>
               <span class="visible-xs-inline-block">Mail</span>
             <% end %>
@@ -27,7 +27,14 @@
           <li><a href="<%= data.social.gplus %>"><i class="hidden-xs fa fa-google-plus-square fa-2x fa-fw"></i><span class="sr-only">Google Plus</span><span class="visible-xs-inline-block">Google Plus</span></a></li>
           <li><a href="<%= data.social.twitter %>"><i class="hidden-xs fa fa-twitter-square fa-2x fa-fw"></i><span class="sr-only">Twitter</span><span class="visible-xs-inline-block">Twitter</span></a></li>
           <li><a href="<%= data.social.linkedin %>"><i class="hidden-xs fa fa-linkedin-square fa-2x fa-fw"></i><span class="sr-only">LinkedIn</span><span class="visible-xs-inline-block">LinkedIn</span></a></li>
-          <li><a href="<%= data.social.github %>"><i class="hidden-xs fa fa-github-square fa-2x fa-fw"></i><span class="sr-only">GitHub</span><span class="visible-xs-inline-block">GitHub Plus</span></a></li>
+          <li><a href="<%= data.social.github %>"><i class="hidden-xs fa fa-github-square fa-2x fa-fw"></i><span class="sr-only">GitHub</span><span class="visible-xs-inline-block">GitHub</span></a></li>
+          <li>
+            <% link_to '/feed.xml' do %>
+              <i class="hidden-xs fa fa-rss-square fa-2x fa-fw"></i>
+              <span class="sr-only">RSS</span>
+              <span class="visible-xs-inline-block">RSS</span>
+            <% end %>
+          </li>
         </ul><!-- nav navbar-nav -->
       </div><!-- navbar-right -->
     </div><!-- collapse navbar-collapse -->
