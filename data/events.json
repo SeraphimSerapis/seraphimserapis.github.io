@@ -214,6 +214,11 @@
           "date": "March 17th - 20th"
         },
         {
+          "name": "Developer Playground",
+          "location": "Hannover, DE",
+          "date": "March 12th - 14th"
+        },
+        {
           "name": "WIPJam",
           "location": "Barcelona, ES",
           "date": "February 24th - 27th"
@@ -299,6 +304,11 @@
           "date": "May 9th - 11th"
         },
         {
+          "name": "Startup Day Sweden",
+          "location": "Stockholm, SE",
+          "date": "April 20th"
+        },
+        {
           "name": "LOGIN",
           "location": "Vilnius, LT",
           "date": "April 18th - 19th"
@@ -307,6 +317,11 @@
           "name": "Droidcon",
           "location": "Berlin, DE",
           "date": "April 7th - 10th"
+        },
+        {
+          "name": "moosecon",
+          "location": "Hannover, DE",
+          "date": "March 6th - 8th"
         },
         {
           "name": "Mobile World Congress",
