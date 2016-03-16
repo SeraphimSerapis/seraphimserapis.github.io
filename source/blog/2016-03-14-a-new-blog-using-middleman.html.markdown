@@ -39,7 +39,7 @@ Another gem that had to be (re-)added was `middleman-sprockets` - Middleman's de
 
 A feature I especially love is called Data Files. Developers are allowed to store data sets in the `data` folder as JSON or YAML files; by doing so you can avoid cluttering up your templates!
 
-A good example is [this blog's events](timmesserschmidt.com/events) page:
+A good example is [this blog's events](/events) page:
 
 ```javascript
 {
