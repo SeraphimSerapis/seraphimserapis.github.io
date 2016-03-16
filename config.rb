@@ -125,6 +125,9 @@ helpers do
   end
 end
 
+set :url_root, 'http://timmesserschmidt.com'
+activate :search_engine_sitemap
+
 # Build-specific configuration
 configure :build do
   activate :minify_css

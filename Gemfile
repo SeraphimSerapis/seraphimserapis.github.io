@@ -18,6 +18,7 @@ gem "middleman-sprockets", "~> 4.0.0.rc"
 gem "middleman-disqus"
 gem "middleman-google-analytics", "~> 2.1"
 gem "middleman-gh-pages"
+gem 'middleman-search_engine_sitemap', :git => "https://github.com/angeloashmore/middleman-search_engine_sitemap"
 
 # Markdown
 gem "redcarpet", "~> 3.3", ">= 3.3.3"

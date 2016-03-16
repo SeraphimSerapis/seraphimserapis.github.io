@@ -1,4 +1,12 @@
 GIT
+  remote: https://github.com/angeloashmore/middleman-search_engine_sitemap
+  revision: 72132b800d9785f476a923f6e3504b3b8efa5eec
+  specs:
+    middleman-search_engine_sitemap (1.3.0)
+      builder
+      middleman (>= 4.0.0)
+
+GIT
   remote: https://github.com/rossta/middleman-meta-tags
   revision: ac02e8b31d1dc6b25de7835dc51fe218a3ba1655
   specs:
@@ -158,6 +166,7 @@ DEPENDENCIES
   middleman-google-analytics (~> 2.1)
   middleman-livereload
   middleman-meta-tags!
+  middleman-search_engine_sitemap!
   middleman-sprockets (~> 4.0.0.rc)
   middleman-syntax
   rails-assets-bootstrap!
