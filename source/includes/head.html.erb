@@ -58,7 +58,7 @@
 
 <%= favicon_tag 'favicon.png' %>
 
-<%= feed_tag :atom, "#{blog.options.prefix.to_s}/feed.xml", title: "Atom Feed" %>
+<%= feed_tag :atom, url_root + "/feed.xml", title: "Atom Feed" %>
 
 <!--<script src="/components/jquery/dist/jquery.min.js"></script>-->
 <script src="https://code.jquery.com/jquery-2.2.1.min.js" integrity="sha256-gvQgAFzTH6trSrAWoH1iPo9Xc96QxSZ3feW6kem+O00=" crossorigin="anonymous"></script>
