@@ -1,7 +1,7 @@
 <% page_articles.each_with_index do |article, i| %>
 <div class="row entry">
   <div class="col-md-2 date">
-    <i class="fa fa-calendar"></i>
+    <span class="glyphicon glyphicon-calendar" aria-hidden="true"></span>
     <span class="date"><%= article.date.strftime("%B #{article.date.day.ordinalize}, %Y") %></span>
   </div>
   <div class="col-md-10">

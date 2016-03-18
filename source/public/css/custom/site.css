@@ -62,6 +62,10 @@ td.code {
   font-size: 14px;
 }
 
+.date.article {
+  font-size: 18px;
+}
+
 .tags {
   margin-top: 8px;
   margin-bottom: 8px;
