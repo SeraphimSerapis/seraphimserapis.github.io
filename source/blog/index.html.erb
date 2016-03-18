@@ -4,37 +4,8 @@ per_page: 5
 description: "timmesserschmidt - Developer Relations"
 ---
 
-<div class="page-header banner">
-  <h1>Developer Relations</h1>
-</div>
+<%= partial "includes/banner" %>
 
-<% page_articles.each_with_index do |article, i| %>
-<div class="row entry">
-  <div class="col-md-2 date">
-    <i class="fa fa-calendar"></i>
-    <span class="date"><%= article.date.strftime("%B #{article.date.day.ordinalize}, %Y") %></span>
-  </div>
-  <div class="col-md-10">
-    <h2 class="header"><%= link_to article.title, article %></h2>
-    <p><%= Nokogiri::HTML(article.summary(260)).text.split(" ").join(" ") %></p>
-    <a href="<%= article.url %>"><button class="btn btn-more" aria-label="More">More <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span></button></a>
-  </div>
-</div>
-<% end %>
+<%= partial "includes/articles" %>
 
-<% if paginate %>
-<nav>
-  <ul class="pagination">
-    <% if num_pages > 1 && prev_page %>
-    <li>
-      <%= link_to '&laquo; Previous ', prev_page %>
-    </li>
-    <% end %>
-    <% if next_page %>
-    <li>
-      <%= link_to 'Next &raquo;', next_page %>
-    </li>
-    <% end %>
-  </ul>
-</nav>
-<% end %>
+<%= partial "includes/paginate" %>

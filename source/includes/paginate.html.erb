@@ -1,0 +1,16 @@
+<% if paginate %>
+<nav>
+  <ul class="pagination">
+    <% if num_pages > 1 && prev_page %>
+    <li>
+      <%= link_to '&laquo; Previous ', prev_page %>
+    </li>
+    <% end %>
+    <% if next_page %>
+    <li>
+      <%= link_to 'Next &raquo;', next_page %>
+    </li>
+    <% end %>
+  </ul>
+</nav>
+<% end %>

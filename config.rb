@@ -103,7 +103,7 @@ helpers do
   end
 
   def url_root
-    "http://timmesserschmidt.com"
+    "https://timmesserschmidt.com"
   end
 
   def title
@@ -125,7 +125,7 @@ helpers do
   end
 end
 
-set :url_root, 'http://timmesserschmidt.com'
+set :url_root, 'https://timmesserschmidt.com'
 activate :search_engine_sitemap
 
 # Build-specific configuration
