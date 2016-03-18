@@ -130,6 +130,12 @@ td.code {
   border: 2px solid #E1E4E6;
 }
 
+article>p>img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
 .pagination>li>a:focus, .pagination>li>a:hover, .pagination>li>span:focus, .pagination>li>span:hover {
   background: #2C3E50;
   color: #F4511E;
