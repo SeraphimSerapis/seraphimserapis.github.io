@@ -1,3 +1,6 @@
+<!-- Web Fonts -->
+<%= partial 'includes/fonts' %>
+
 <meta charset="utf-8" />
 <meta http-equiv='X-UA-Compatible' content='IE=edge;chrome=1' />
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
@@ -53,7 +56,6 @@
 
 <%= feed_tag :atom, url_root + "/feed.xml", title: "Atom Feed" %>
 
-<!--<script src="/components/jquery/dist/jquery.min.js"></script>-->
 <script src="https://code.jquery.com/jquery-2.2.1.min.js" integrity="sha256-gvQgAFzTH6trSrAWoH1iPo9Xc96QxSZ3feW6kem+O00=" crossorigin="anonymous"></script>
 
 <%= javascript_include_tag 'bootstrap.min.js' %>

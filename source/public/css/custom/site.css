@@ -7,26 +7,22 @@ body {
   color: #E1E4E6;
 }
 
-a, h1, h2, h3, h4, h5 {
+h1, h2, h3, h4, h5 {
+  font-family: 'Quicksand', 'Helvetica Neue', Helvetica, Arial, sans-serif;
   color: #F4511E;
+}
+
+a, a:hover, a:visited {
+  color: #F4511E;
+  text-decoration: none;
 }
 
 p {
   font-weight: 300;
 }
 
-h1, h2, h3, h4, h5 {
-  font-family: 'Quicksand', 'Helvetica Neue', Helvetica, Arial, sans-serif;
-}
-
-a:hover {
-  color: #F4511E;
-  text-decoration: none;
-}
-
-a:visited {
-  color: #F4511E;
-  text-decoration: none;
+footer {
+  margin-bottom: 16px;
 }
 
 td.code {
