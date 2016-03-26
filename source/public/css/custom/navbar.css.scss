@@ -24,19 +24,26 @@
     color: $highlight;
   }
 
+  .navbar-collapse {
+    border-color: $white;
+    color: $white;
+  }
+
+  .navbar-toggle {
+    color: $white;
+    border-color: $white;
+    background: $background-light;
+
+    &:hover {
+      background: $background;
+    }
+  }
+
   .navbar-nav {
     .active {
       .a {
         background: $background-light;
       }
     }
-  }
-
-  &.navbar-toggle {
-    border-color: $white;
-  }
-
-  &.navbar-toggle:hover {
-    background: $background;
   }
 }
