@@ -1,0 +1,42 @@
+// navbar.css
+
+@import 'colors';
+
+#navbar {
+  background: $background-light;
+  border-bottom: 1px solid;
+  -webkit-box-shadow: 0 1px 10px rgba(0,0,0,0.1);
+  -moz-box-shadow: 0 1px 10px rgba(0,0,0,0.1);
+  box-shadow: 0 1px 10px rgba(0,0,0,0.1);
+
+  li>a {
+    color: $white;
+  }
+
+  a:hover {
+    color: $highlight;
+    background: $background;
+  }
+}
+
+.navbar-inverse {
+  .navbar-brand {
+    color: $highlight;
+  }
+
+  .navbar-nav {
+    .active {
+      .a {
+        background: $background-light;
+      }
+    }
+  }
+
+  &.navbar-toggle {
+    border-color: $white;
+  }
+
+  &.navbar-toggle:hover {
+    background: $background;
+  }
+}

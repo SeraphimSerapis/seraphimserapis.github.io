@@ -1,0 +1,24 @@
+// code.css
+
+@import 'colors';
+@import 'sizes';
+
+.highlight {
+  margin: 2em 0;
+  overflow: scroll;
+
+  code {
+    font-family: 'Cutive Mono', "Lucida Console", Monaco, monospace;
+    line-height: 1.5em;
+    font-size: $text;
+  }
+
+  pre {
+    border: 0;
+    background-color: $grey-light;
+  }
+}
+
+td.code {
+  width: 100%;
+}

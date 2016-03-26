@@ -1,0 +1,47 @@
+// site.css
+
+@import 'colors';
+@import 'sizes';
+
+body {
+  background: $background;
+  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-size: $text;
+  color: $grey;
+}
+
+p {
+  font-weight: 300;
+}
+
+h1, h2, h3, h4, h5 {
+  font-weight: 500;
+  letter-spacing: -1px;
+  color: $highlight;
+}
+
+a, a:hover, a:visited {
+  color: $highlight;
+  text-decoration: none;
+}
+
+#main {
+  margin-bottom: 48px;
+}
+
+@media (min-width: 768px) {
+  #social>ul>li>a {
+    height: 50px;
+  }
+
+  #social>ul>li>a>i::before {
+    position: relative;
+    bottom: 6px;
+  }
+}
+
+@media (max-width: 767px) {
+  .event {
+    padding-bottom: 14px;
+  }
+}

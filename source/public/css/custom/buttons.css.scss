@@ -1,0 +1,36 @@
+// buttons.css
+
+@import 'colors';
+
+.btn {
+  &.btn-tag {
+    outline: none;
+    background: $highlight;
+    color: $white;
+  }
+
+  &.btn-more {
+    background: $background-light;
+    border: 1px solid $white;
+    color: $white;
+
+    &:hover {
+      background: $background;
+      color: $highlight;
+    }
+  }
+}
+
+.pagination {
+  li {
+    a, span {
+      background: $background-light;
+      color: $white;
+
+      &:focus, &:hover {
+        background: $background;
+        color: $highlight;
+      }
+    }
+  }
+}

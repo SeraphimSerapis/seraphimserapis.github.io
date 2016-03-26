@@ -1,0 +1,23 @@
+// articles.css
+
+@import 'colors';
+@import 'sizes';
+
+article {
+  p {
+    img {
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+    }
+  }
+
+  .date {
+    font-size: $text;
+  }
+
+  .tags {
+    margin-top: 8px;
+    margin-bottom: 8px;
+  }
+}
