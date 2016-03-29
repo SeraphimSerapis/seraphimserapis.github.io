@@ -1,13 +1,13 @@
 <% page_articles.each_with_index do |article, i| %>
 <div class="row entry">
   <div class="col-md-2 date">
-    <span class="glyphicon glyphicon-calendar" aria-hidden="true"></span>
+    <i class="fa fa-calendar" aria-hidden="true"></i>
     <span class="date"><%= article.date.strftime("%B #{article.date.day.ordinalize}, %Y") %></span>
   </div>
   <div class="col-md-10">
     <h2 class="header"><%= link_to article.title, article %></h2>
     <p><%= Nokogiri::HTML(article.summary(260)).text.split(" ").join(" ") %></p>
-    <a href="<%= article.url %>"><button class="btn btn-more" aria-label="More">More <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span></button></a>
+    <a href="<%= article.url %>"><button class="btn btn-more" aria-label="More">More &raquo;</button></a>
   </div>
 </div>
 <% end %>

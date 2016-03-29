@@ -3,7 +3,7 @@
   <article>
     <div class="page-header title">
       <h1><%= link_to current_article.title, current_article.data.url %></h1>
-      <span class="glyphicon glyphicon-calendar" aria-hidden="true"></span>
+      <i class="fa fa-calendar" aria-hidden="true"></i>
       <span class="date"><%= current_article.date.strftime("%B #{current_article.date.day.ordinalize}, %Y") %></span>
       <div class="tags">
         <% current_article.tags.each_with_index do |tag, j|%>
