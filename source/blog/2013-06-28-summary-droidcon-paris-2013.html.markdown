@@ -18,13 +18,7 @@ Especially the after-party on Monday is worth mentioning: The guys from WIP occu
 
 ## My Talk
 
-As mentioned before I've been talking about our newly released Android SDK and our Identity product called *Log In with PayPal*. Objective of the talk was to present how easy an integration of payments into Android apps can be and which benefits using identites like Twitter, Facebook or PayPal sign-in can provide:
-<div class="slide_big">
-<iframe src="http://www.slideshare.net/slideshow/embed_code/23150212?rel=0" width="597" height="486" frameborder="0" marginwidth="0" marginheight="0" scrolling="no" style="border:1px solid #CCC;border-width:1px 1px 0;margin-bottom:5px" allowfullscreen webkitallowfullscreen mozallowfullscreen> </iframe> <div style="margin-bottom:5px"> <strong> <a href="http://www.slideshare.net/PayPal/droidcon-paris-the-new-android-sdk" title="Droidcon Paris: The new Android SDK" target="_blank">Droidcon Paris: The new Android SDK</a> </strong> from <strong><a href="http://www.slideshare.net/PayPal" target="_blank">PayPal</a></strong> </div>
-</div>
-<div class="slide_tiny">
-<iframe src="http://www.slideshare.net/slideshow/embed_code/23150212?rel=0" width="342" height="291" frameborder="0" marginwidth="0" marginheight="0" scrolling="no" style="border:1px solid #CCC;border-width:1px 1px 0;margin-bottom:5px" allowfullscreen webkitallowfullscreen mozallowfullscreen> </iframe> <div style="margin-bottom:5px"> <strong> <a href="http://www.slideshare.net/PayPal/droidcon-paris-the-new-android-sdk" title="Droidcon Paris: The new Android SDK" target="_blank">Droidcon Paris: The new Android SDK</a> </strong> from <strong><a href="http://www.slideshare.net/PayPal" target="_blank">PayPal</a></strong> </div>
-</div>
+As mentioned before I've been talking about our newly released Android SDK and our Identity product called *Log In with PayPal*. Objective of the talk was to present how easy an integration of payments into Android apps can be and which benefits using identities like Twitter, Facebook or PayPal sign-in can provide - [you can find the slides on SlideShare](http://www.slideshare.net/PayPal/droidcon-paris-the-new-android-sdk).
 
 ## Bottom line:
 
