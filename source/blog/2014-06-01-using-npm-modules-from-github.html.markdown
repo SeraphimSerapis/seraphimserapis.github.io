@@ -21,7 +21,7 @@ The dependencies section in `package.json`'would look like the following after r
 }
 ```
 
-As you can see in [my GitHub profile](http://github.com/seraphimserapis/) I've [forked the repository](http://github.com/SeraphimSerapis/passport-paypal-oauth) to update the code and [filed a pull request](http://github.com/jaredhanson/passport-paypal-oauth/pull/3). As it didn't get accepted yet there is no simple way for people to use [link](http://developer.paypal.com/docs/integration/direct/identity/)Log In with PayPal within their Node projects (without implementing it themself).
+As you can see in [my GitHub profile](http://github.com/seraphimserapis/) I've [forked the repository](http://github.com/SeraphimSerapis/passport-paypal-oauth) to update the code and [filed a pull request](http://github.com/jaredhanson/passport-paypal-oauth/pull/3). As it didn't get accepted yet there is no simple way for people to use [Log In with PayPal](http://developer.paypal.com/docs/integration/direct/identity/) in their Node projects (without implementing it themself).
 
 To change this we'll update our package.json to point to the GitHub repository:
 
