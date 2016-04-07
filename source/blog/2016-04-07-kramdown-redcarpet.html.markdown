@@ -8,9 +8,7 @@ Since [my switch to Middleman](/blog/2016/03/14/a-new-blog-using-middleman/) I'v
 
 <!-- more -->
 
-Middleman gladly supports a variety of engines (including [kramdown](http://kramdown.gettalong.org/)) and I figured it might be worth switching in order to obtain that extra bit of flexibility.
-
-kramdown comes with a non-standard syntax for CSS-classes:
+Middleman gladly supports a variety of engines (including [kramdown](http://kramdown.gettalong.org/)) and I figured it might be worth switching in order to obtain that extra bit of flexibility. kramdown comes with a non-standard syntax for CSS-classes:
 
 ~~~ markdown
 ![an-image-description](someimage.png){: .img-responsive }
