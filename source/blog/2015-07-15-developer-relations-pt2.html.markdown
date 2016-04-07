@@ -33,16 +33,17 @@ My terminal of choice is iTerm, since it gives me a lot of flexibility when it c
 
 A prominent example is creating a new screen session called `node` that handles starting and reloading my app’s components. Try opening up a new tab or pane in iTerm and entering:
 
-```bash
+~~~ bash
 screen -S node
 nodemon
-```
+~~~
+
 Then I open up a new session that I'll use for coding in vim:
 
-```bash
+~~~ bash
 screen -S vim  
 vim
-```
+~~~
 
 The last step in my screen setup would be attaching the live code session to another iTerm tab/window/pane by typing `screen -x vim`.
 

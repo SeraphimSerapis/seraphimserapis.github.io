@@ -13,35 +13,35 @@ Gladly there is a way to modules that were hosted on GitHub by modifying your pr
 
 The dependencies section in `package.json`'would look like the following after running both `npm install passport --save` and `npm install passport-paypal-oauth --save`:
 
-```javascript
+~~~ javascript
 "dependencies": {  
 	[...],  
 	"passport": "^0.2.0",  
 	"passport-paypal-oauth": "^0.1.0"  
 }
-```
+~~~
 
 As you can see in [my GitHub profile](http://github.com/seraphimserapis/) I've [forked the repository](http://github.com/SeraphimSerapis/passport-paypal-oauth) to update the code and [filed a pull request](http://github.com/jaredhanson/passport-paypal-oauth/pull/3). As it didn't get accepted yet there is no simple way for people to use [Log In with PayPal](http://developer.paypal.com/docs/integration/direct/identity/) in their Node projects (without implementing it themself).
 
 To change this we'll update our package.json to point to the GitHub repository:
 
-```javascript
+~~~ javascript
 "dependencies": {
 	[...],
 	"passport": "^0.2.0",
 	"passport-paypal-oauth": "https://github.com/SeraphimSerapis/passport-paypal-oauth/tarball/master"
 }
-```
+~~~
 
 By adding the Node modules repository and adding `/tarball/master` to the URL you provide a mechanism for `npm` to hook into the updated module and avoid messy things like editing the module yourself or copy pasting code.
 
 When looking into the [documentation](http://www.npmjs.org/doc/cli/npm-install.html) for `npm install` you'll notice that a few different notations and methods are supported. You can even do thinks like accessing certain tags or branches:
 
-```bash
+~~~ bash
 git+ssh://git@github.com:npm/npm.git#v1.0.27
 git+https://isaacs@github.com/npm/npm.git
 git://github.com/npm/npm.git#v1.0.27
-```
+~~~
 
 Let me know what you think,  
 Tim

@@ -16,6 +16,7 @@ On top of that we've got TripIt for Teams to see where the other people of our D
 For me this app (& website) is basically the swiss army knife of travel planning and execution. Still I'm always looking for new ideas or recommendations that help to improve my travels - anything is welcome.
 
 ### Update:
+
 My friend [Aygul](http://www.aygul.de/) made an interesting comment about this post on Facebook. Basically she stated that TripIt didn't change a lot regarding UX & UI since about 3 years. I have to agree with that - the site doesn't feel very modern and the app could be a bit more responsive and could benefit from a nicer UI. Still TripIt is very functional.
 
 Another thing she mentioned (which is correct): You don't need to spend any money for using the core functionality. All the Pro or Team features are pure comfort and not really required.

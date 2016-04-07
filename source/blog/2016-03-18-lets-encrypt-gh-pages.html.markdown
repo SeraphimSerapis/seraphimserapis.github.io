@@ -16,6 +16,6 @@ While searching for possible solution a GitHub issue came up that asked GitHub t
 
 An amazing startup from Singapore, [Kloudsec](http://kloudsec.com), tackled the issue by creating a CDN that works directly with Let's Encrypt and offers SSL protection - plus a few [other optimizations](http://kloudsec.com/#/features) - with very little configuration effort. The whole procedure involved changing merely 3 DNS records and after a few minutes my SSL certificate was issued.
 
-![ssl](posts/ssl.png)
+![ssl](posts/ssl.png){: .img-responsive}
 
 I'm pretty happy with this solution and am keen to see what else they come up with.

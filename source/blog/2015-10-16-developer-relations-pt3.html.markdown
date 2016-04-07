@@ -12,21 +12,21 @@ Live coding is an awesome way to show how easy it is to implement and use a cert
 
 I rely on [Dash](http://kapeli.com/dash), a documentation browser and snippet manager for Mac OS, to handle the credentials I use for working with PayPal and Braintree SDKs and APIs. Dash allows me to paste snippets like this one without first navigating to [Braintree's sandbox](http://sandbox.braintreegateway.com/login) and copying the right bit of information before going back to my code:
 
-```ruby
+~~~ ruby
 Braintree::Configuration.environment = :sandbox
 Braintree::Configuration.merchant_id = 'ffdqc9fyffn7yn2j'
 Braintree::Configuration.public_key = 'qj65nndbnn6qyjkp'
 Braintree::Configuration.private_key = 'a3de3bb7dddf68ed3c33f4eb6d9579ca'
-```
+~~~
 
 Realistically, this snippet saves me about 30 to 45 seconds of precious stage time that I'd rather dedicate to entertaining my audience.
 
 Another example would be adding [Gradle dependencies](http://developers.braintreepayments.com/android+ruby/guides/client-sdk#gradle) to my Android demos:
 
-```
+~~~
 compile 'com.braintreepayments.api:braintree:1.+'  
 compile 'com.loopj.android:android-async-http:1.4.4'
-```
+~~~
 
 Typing the package names is error-prone and not tremendously important compared to the actual implementation of the SDK.
 

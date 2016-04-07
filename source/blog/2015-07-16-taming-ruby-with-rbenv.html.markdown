@@ -11,29 +11,29 @@ My colleague [Cristiano](http://cristianobetta.com) told me about [rbenv](http:/
 
 A quick example would be working with gemfiles and different ruby versions across mutiple projects. My blog is using Ruby 1.9.3, whereas my newer projects run on 2.2.2. When I entered `bundle install` for the first time after cloning the source in order to install all the gems my Octopress-based blog relies on rbenv gave me the following feedback:
 
-```bash
+~~~ bash
 rbenv: version `1.9.3-p194' is not installed
-```
+~~~
 
 The logical step was installing and setting up that particular version of Ruby: `rbenv install 1.9.3-p194`.
 
 After the installation finished I ran `bundle install` again and rbenv told me that I did not set up bundle for Ruby 1.9.3 (but for 2.2.2):
 
-```
+~~~
 blog git:(source) bundler install
 rbenv: bundler: command not found
 
 The `bundler' command exists in these Ruby versions:
   2.2.2
-```
+~~~
 
 All I had to do was running the following commands in order to complete the setup:
 
-```bash
+~~~ bash
 gem install bundler
 rbenv rehash
 bundler
-```
+~~~
 
 During this whole process rbenv held my hand. I really like the constant feedback. It always tells me what to do next and keeps me informed why certain things don't work. Especially as a hobby-Rubyist and mostly Android & Node developer this was incredibly helpful.
 

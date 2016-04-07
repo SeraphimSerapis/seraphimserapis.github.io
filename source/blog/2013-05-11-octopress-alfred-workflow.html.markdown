@@ -13,15 +13,16 @@ To me this is very useful since I don't need to open iTerm first, navigate to my
 
 This is my Git workflow to test the blog locally and add new posts:
 
-```
+~~~
 alias octopush='git push origin source && rake generate && rake deploy'
 alias octoprev='rake generate && rake preview'
-```
+~~~
 
 Place that into your .zshrc or .bashrc or whatever you use and you only have to do the following before:
 
-```
+~~~
 git add .
 git commit -am "My fancy message"
-```
+~~~
+
 Basically I test before commiting with `octoprev` and use `octopush` afterwards to push to GitHub.

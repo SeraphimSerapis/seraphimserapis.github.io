@@ -17,7 +17,7 @@ The blog is now based on the latest release of Middleman - version 4 - which com
 
 Skimming over my blog's Gemfile will reveal that I had to use a couple of gems from other sources than ruby-gems.org:
 
-```
+~~~
 # Middleman Gems
 gem "middleman", "~> 4.0.0"
 gem "middleman-blog"
@@ -29,7 +29,7 @@ gem "middleman-sprockets", "~> 4.0.0.rc"
 gem "middleman-disqus"
 gem "middleman-google-analytics", "~> 2.1"
 gem "middleman-gh-pages"
-```
+~~~
 
 `middleman-meta-tags` - a useful extension for setting HTML meta tags isn't compatible with Middleman v4 anymore; gladly a user on GitHub forked the project and implemented the changes needed in order to make the gem work with Middleman 4 again.
 
@@ -41,7 +41,7 @@ A feature I especially love is called Data Files. Developers are allowed to stor
 
 A good example is [this blog's events](/events) page:
 
-```javascript
+~~~ javascript
 {
   "years": [
     {
@@ -57,11 +57,11 @@ A good example is [this blog's events](/events) page:
     }
   ]
 }
-````
+~~~
 
 Rendering the data is as easy as accessing it via the templates:
 
-```erb
+~~~ erb
 <% data.events.years.each do |year| %>
   <h3 class="page-header"><%= year.year %></h3>
   <% year.events.each do |event| %>
@@ -72,7 +72,7 @@ Rendering the data is as easy as accessing it via the templates:
     </div>
   <% end %>
 <% end %>
-```
+~~~
 
 ### Deploying to GH Pages
 
@@ -82,13 +82,13 @@ I tried to work with [middleman-deploy](http://github.com/middleman-contrib/midd
 
 One of the alternatives that has been suggested is the gem [middleman-gh-pages](http://github.com/edgecase/middleman-gh-pages) which gladly did the trick for me. I've configured my project's Rakefile to publish to `master` and got everything to work:
 
-```
+~~~
 require "middleman-gh-pages"
 
 ENV["BRANCH_NAME"] = "master"
 
 task :default => [:publish]
-```
+~~~
 
 Currently the `build` folder has to be removed before pushing the newly generated blog to the `master` branch. The reason is a change in Middleman`s site generation mechanisms.
 

@@ -63,7 +63,8 @@ set :css_dir, "public/css"
 activate :directory_indexes
 page "/components/**", :directory_index => false
 
-set :markdown_engine, :redcarpet
+set :markdown_engine, :kramdown
+# set :markdown_engine, :redcarpet
 set :markdown, :fenced_code_blocks => true, :smartypants => true
 
 activate :syntax, line_numbers: true
