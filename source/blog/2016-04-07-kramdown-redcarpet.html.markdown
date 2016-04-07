@@ -22,7 +22,7 @@ When you're looking into switching your Markdown engine you'll have to set the f
 set :markdown_engine, :kramdown
 ~~~
 
-Another engine that allows using custom CSS-classes via attribute lists is [Maruku](http://maruku.rubyforge.org/proposal.html#attribute_lists). I might give it a spin soon in order to see if there are any advantages over kramdown.
+Another engine that allows using custom CSS-classes via attribute lists is [Maruku](http://maruku.rubyforge.org/proposal.html#attribute_lists). Feature-wise it looks quite similar to kramdown but there has been little activity in [it's GitHub repository](http://github.com/bhollis/maruku).
 
 I hope this short post helps a few of you,  
 Tim
