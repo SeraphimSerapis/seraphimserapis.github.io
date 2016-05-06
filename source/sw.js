@@ -1,12 +1,13 @@
+var toCache = [
+  '/',
+  '/public/css/site.css',
+  '/public/js/bootstrap.min.js'
+];
+
 self.addEventListener('install', function(e) {
   e.waitUntil(
     caches.open('tme.coffee').then(function(cache) {
-      return cache.addAll([
-        '/',
-        '/index.html',
-        '/public/css/site.css',
-        '/public/js/bootstrap.min.js',
-      ]).then(function() {
+      return cache.addAll(toCache).then(function() {
         return self.skipWaiting();
       });
     })
