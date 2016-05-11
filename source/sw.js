@@ -1,3 +1,5 @@
+var version = '0.0.1';
+
 var toCache = [
   '/',
   '/public/css/site.css',
