@@ -36,13 +36,13 @@ self.addEventListener('install', function(e) {
 });
 ~~~
 
-In my case I choose to cache my page's CSS and Bootstrap. This saves valuable time and resources when (re-)visiting this blog, resulting in a performance gain. To force an update you'll need to modify the Service Worker's file (the update is determined based on the file's size). Depending on your site's `cache-control` headers the update might actually not happen directly.
-
-A simple trick to force the update is bumping a version number (or making any other change that affects the file's size):
+In my case I choose to cache my page's CSS and Bootstrap. This saves valuable time and resources when (re-)visiting this blog, resulting in a performance gain. To force an update you'll need to modify the Service Worker's file - a simple trick to force an update is bumping a version number:
 
 ~~~js
 var version = '0.0.1'; // increment in order to force a cache update
 ~~~
+
+Depending on your site's `cache-control` headers the update might actually not happen directly.
 
 You'll notice the usage of `skipWaiting()` while handling the `install` event; this method works in relation to `clients.claim()` and ensures that updates to the worker take immediate effect on all clients.
 
