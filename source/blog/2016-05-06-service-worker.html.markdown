@@ -4,7 +4,7 @@ date: 2016-05-06
 tags: general
 ---
 
-In today's blog post I'd like to write about an essential component of [Progressive Web Apps](http://developers.google.com/web/progressive-web-apps?hl=en): the [Service Worker](http://slightlyoff.github.io/ServiceWorker/spec/service_worker/) - an event-driven background processing tool that enables fetching resources and managing your application's cache. The result is a gain in performance.
+In today's blog post I'd like to write about an essential component of [Progressive Web Apps](http://developers.google.com/web/progressive-web-apps?hl=en): the [Service Worker](http://slightlyoff.github.io/ServiceWorker/spec/service_worker/) - an event-driven background processing tool that enables fetching resources and managing your application's cache. The result is a gain in reliable performance; connection quality and network performance loose in importance when it comes to enjoying your application.
 
 <!-- more -->
 
