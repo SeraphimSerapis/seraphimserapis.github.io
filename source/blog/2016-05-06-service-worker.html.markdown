@@ -8,7 +8,7 @@ In today's blog post I'd like to write about an essential component of [Progress
 
 <!-- more -->
 
-Service Worker got introduced as feature with Chrome 40 and since then made it into a number of other browsers such as Firefox, Opera, Edge (currently in the works) and hopefully soon Safari, too. You can find a complete overview about [browser support for Service Workers here](http://jakearchibald.github.io/isserviceworkerready/). A requirement for making use of Service Worker is HTTPs-enabling your application.
+Service Worker got introduced as feature with Chrome 40 and since then made it into a number of other browsers such as Firefox, Opera, Edge (currently in the works) and hopefully soon Safari, too. You can find a complete overview about [browser support for Service Workers here](http://jakearchibald.github.io/isserviceworkerready/). A requirement for making use of Service Worker is HTTPs - this prevents things like injecting malicious code into a site that persists due to being cached.
 
 ## Putting the Service Worker to work
 
