@@ -4,19 +4,19 @@ date: 2016-05-06
 tags: general
 ---
 
-In today's blog post I'd like to write about an essential component of [Progressive Web Apps](http://developers.google.com/web/progressive-web-apps?hl=en): the [Service Worker](http://slightlyoff.github.io/ServiceWorker/spec/service_worker/) - an event-driven background processing tool that enables fetching resources and managing your application's cache efficiently.
+In today's blog post I'd like to write about an essential component of [Progressive Web Apps](http://developers.google.com/web/progressive-web-apps?hl=en): the [Service Worker](http://slightlyoff.github.io/ServiceWorker/spec/service_worker/) - an event-driven background processing tool that enables fetching resources and managing your application's cache. The result is a gain in performance.
 
 <!-- more -->
 
-Service Worker got introduced as feature with Chrome 40 and since then made it into a number of other browsers such as Firefox, Opera, Edge (currently in the works) and hopefully soon Safari, too. You can find a complete overview about [browser support for Service Workers here](http://jakearchibald.github.io/isserviceworkerready/).
+Service Worker got introduced as feature with Chrome 40 and since then made it into a number of other browsers such as Firefox, Opera, Edge (currently in the works) and hopefully soon Safari, too. You can find a complete overview about [browser support for Service Workers here](http://jakearchibald.github.io/isserviceworkerready/). A requirement for making use of Service Worker is HTTPs-enabling your application.
 
 ## Putting the Service Worker to work
 
-As I've mentioned in this post's introduction, a Service Worker can handle fetching resources, application caching and much more. In order to make this happen Service Workers rely on ES6's [Promises](http://developer.mozilla.org/en/docs/Web/JavaScript/Reference/Global_Objects/Promise#Description) - a new (and awesomely efficient) way to handle asynchronous requests.
+As I've mentioned in this post's introduction, a Service Worker can handle fetching resources, application caching and much more. In order to make this happen Service Workers rely on ES2015's [Promises](http://developer.mozilla.org/en/docs/Web/JavaScript/Reference/Global_Objects/Promise#Description) - a new (and awesomely efficient) way to handle asynchronous requests.
 
 First of all we'll need to start adding event listener's that subscribe to a number of important events (namely `install`, `activate` & `fetch`). There are a [few more events](http://developer.mozilla.org/en-US/docs/Web/API/Service_Worker_API/Using_Service_Workers#Basic_architecture) that can add additional functionality but we'll ignore them for now.
 
-`install` is fired when the site loads initially - this is where we want to define which files to cache. You'll noticed that I've provided my domain `tme.coffee` as the cache's name. You can choose whatever works best (and hopefully is somehow unique) here.
+`install` is fired after `navigator.serviceWorker.register()` ran successfully - this is where we want to define which files to cache. You'll noticed that I've provided my domain `tme.coffee` as the cache's name. You can choose whatever works best (and hopefully is somehow unique) here.
 
 ~~~js
 var toCache = [
@@ -36,9 +36,17 @@ self.addEventListener('install', function(e) {
 });
 ~~~
 
-In my case I choose to cache my page's CSS and Bootstrap. This saves valuable time and resources when revisiting this blog. Whenever one of the cached resources changes (determined through a resources size) it'll go through the caching procedure, again.
+In my case I choose to cache my page's CSS and Bootstrap. This saves valuable time and resources when (re-)visiting this blog, resulting in a performance gain. To force an update you'll need to modify the Service Worker's file (the update is determined based on the file's size). Depending on your site's `cache-control` headers the update might actually not happen directly.
 
-The next event, `activate`, can be used to handle tasks like cache management. In this basic example we set our Service Worker as the client page's active worker:
+A simple trick to force the update is bumping a version number (or making any other change that affects the file's size):
+
+~~~js
+var version = '0.0.1'; // increment in order to force a cache update
+~~~
+
+You'll notice the usage of `skipWaiting()` while handling the `install` event; this method works in relation to `clients.claim()` and ensures that updates to the worker take immediate effect on all clients.
+
+The next event, `activate`, can be used to handle tasks like cache management. In this basic example we use `self.clients.claim()` to set our Service Worker as the client page's active worker:
 
 ~~~js
 self.addEventListener('activate', function(event) {
