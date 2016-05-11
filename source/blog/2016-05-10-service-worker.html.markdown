@@ -1,6 +1,6 @@
 ---
 title: "Using the Power of the Service Worker"
-date: 2016-05-06
+date: 2016-05-10
 tags: general
 ---
 
