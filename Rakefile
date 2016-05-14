@@ -9,6 +9,4 @@ task :sw do
   sh "echo \"Generating service-worker.js\n\" && cd build && sw-precache"
 end
 
-Rake::Task[":build"].enhance do
-  Rake::Task[:sw].invoke
-end
+task :publish => [:prevent_dirty_builds, :sync_build_dir, :build, :sw]
