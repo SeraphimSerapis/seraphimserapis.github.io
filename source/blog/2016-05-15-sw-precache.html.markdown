@@ -10,7 +10,7 @@ After we've taken the time to explore the basic functionality of Service Worker 
 
 As a quick reminder, Service Worker is a feature of Progressive Web Apps, that handles fetching and caching of resources and greatly increases application's performance.
 
-The Chrome team has released a  module called sw-precache that applies best practices around handling your application's workers and ensuring that your client always serve the newest version of your resources. In order to achieve this, sw-precache generates MD5 hashes of all your application's resources and stores them in the worker's file.
+The Chrome team has released a  module called sw-precache that applies best practices around handling your application's workers and ensuring that your client always serve the newest version of your resources. In order to achieve this, sw-precache generates MD5 hashes of all your application's resources and stores them in the worker's file:
 
 ~~~js
 var PrecacheConfig = [
@@ -20,7 +20,7 @@ var PrecacheConfig = [
 ];
 ~~~
 
-Whenever a file's size changes the related MD5 hash changes and the Service Worker can update your application's cache.
+Whenever a file's size changes the related MD5 hash changes, too, and the Service Worker can update your application's cache.
 
 ## Running sw-precache automatically
 
@@ -30,7 +30,7 @@ The perfect hook for using sw-precache would be the `publish` task - [as defined
 
 ~~~rb
 task :publish => [:prevent_dirty_builds, :sync_build_dir, :build] do
-  ...
+  # Fancy Ruby magic
 end
 ~~~
 
@@ -45,8 +45,12 @@ end
 
 During the build process Middleman creates a new directory called `build` in your project's root folder - this is where we want to run sw-precache before the code gets published.
 
-The last bit that needs to be done is overriding the publish task. In Rake lingo we enhance the task by adding another prerequisite to the task:
+The last bit that needs to be done is overriding the publish task. In Rake lingo we *enhance* the task by adding another prerequisite to the task:
 
 ~~~rb
 task :publish => [:prevent_dirty_builds, :sync_build_dir, :build, :sw]
 ~~~
+
+Once the Rake file has been modified, running `rake publish` leads to building the source, generating the service-worker.js file in your project's build folder and publishing the code to GitHub.
+
+I hope this proves to be useful to some of you out there - I'd be more than happy to hear your thoughts!
