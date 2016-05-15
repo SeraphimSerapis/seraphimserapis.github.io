@@ -4,9 +4,9 @@ ENV["BRANCH_NAME"] = "master"
 
 task :default => [:publish]
 
-"Runs service worker precache"
+desc "Runs service worker precache"
 task :sw do
-  sh "echo \"Generating service-worker.js\n\" && cd build && sw-precache"
+  sh "cd build && sw-precache"
 end
 
 task :publish => [:prevent_dirty_builds, :sync_build_dir, :build, :sw]
