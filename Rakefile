@@ -2,7 +2,7 @@ require "middleman-gh-pages"
 
 ENV["BRANCH_NAME"] = "master"
 
-desc "Runs service worker precache"
+desc "Runs sw-precache from the build directory"
 task :sw do
   sh "cd build && sw-precache"
 end
