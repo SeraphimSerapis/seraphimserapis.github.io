@@ -1,0 +1,46 @@
+{
+  "database": {
+    "rules": "database.rules.json"
+  },
+  "hosting": {
+    "public": "build"
+  },
+  "headers": [{
+    "source" : "**/*.@(eot|otf|ttf|ttc|woff|font.css)",
+    "headers" : [{
+      "key" : "Access-Control-Allow-Origin",
+      "value" : "*"
+    }]
+  }, {
+    "source" : "**/*.@(jpg|jpeg|gif|png)",
+    "headers" : [{
+      "key" : "Cache-Control",
+      "value" : "max-age=7200"
+    }]
+  }, {
+    // Sets the cache header for 404 pages to cache for 5 minutes
+    "source" : "404.html",
+    "headers" : [ {
+      "key" : "Cache-Control",
+      "value" : "max-age=300"
+    }]
+  }, {
+    "source": "https://ssl.google-analytics.com/ga.js",
+    "headers" : [ {
+      "key" : "Cache-Control",
+      "value" : "max-age=7200"
+    }]
+  }, {
+    "source": "/public/css/site.css",
+    "headers" : [ {
+      "key" : "Cache-Control",
+      "value" : "max-age=3600"
+    }]
+  }, {
+    "source": "public/js/bootstrap.min.js",
+    "headers" : [ {
+      "key" : "Cache-Control",
+      "value" : "max-age=3600"
+    }]
+  }]
+}
