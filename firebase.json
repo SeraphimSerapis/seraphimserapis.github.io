@@ -5,6 +5,8 @@
   "hosting": {
     "public": "build"
   },
+  "cleanUrls": true,
+  "trailingSlash": false,
   "headers": [{
     "source" : "**/*.@(eot|otf|ttf|ttc|woff|font.css)",
     "headers" : [{
