@@ -9,16 +9,20 @@ gem "wdm", "~> 0.1.0", platforms: [:mswin, :mingw]
 gem "tzinfo-data", platforms: [:mswin, :mingw, :jruby]
 
 # Middleman Gems
-gem "middleman", "~> 4.1", ">= 4.1.2"
+gem "middleman", "~> 4.1", ">= 4.1.10"
+gem "middleman-cli", "~> 4.1", ">= 4.1.10"
 gem "middleman-blog", "~> 4.0"
 gem "middleman-livereload"
 gem "middleman-meta-tags", :git => "https://github.com/rossta/middleman-meta-tags"
 gem "middleman-syntax"
-gem "middleman-sprockets", "~> 4.0.0.rc"
+gem "middleman-sprockets", "~> 4.0"
 gem "middleman-disqus"
 gem "middleman-google-analytics", "~> 2.1"
 gem "middleman-gh-pages"
 gem 'middleman-search_engine_sitemap', :git => "https://github.com/angeloashmore/middleman-search_engine_sitemap"
+
+# HTML validity
+gem "nokogiri"
 
 # Markdown
 gem "redcarpet", "~> 3.3", ">= 3.3.4"
