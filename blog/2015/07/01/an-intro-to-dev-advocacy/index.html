@@ -1,0 +1,236 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+<meta http-equiv='X-UA-Compatible' content='IE=edge;chrome=1' />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+
+<style>
+  body {
+    background-color: #2C3E50;
+    font-family: HelveticaNeue-Light,"Helvetica Neue Light","Helvetica Neue",Helvetica,"Open Sans",sans-serif;
+    font-size: 18px;
+    color: #E1E4E6;
+  }
+
+  p {
+    font-weight: 300;
+  }
+
+  h1, h2, h3, h4, h5 {
+    font-weight: 400;
+    letter-spacing: -1px;
+    color: #F4511E;
+  }
+
+  a, a:hover, a:visited {
+    color: #F4511E;
+    text-decoration: none;
+  }
+</style>
+
+
+<link href="/public/css/site.css" rel="stylesheet" />
+
+<meta name="theme-color" content="#2C3E50">
+
+<!-- Web Application Manifest -->
+<link rel="manifest" href="https://timmesserschmidt.com/manifest.json">
+
+<!-- Chrome on Android -->
+<meta name="theme-color" content="#2C3E50">
+<meta name="mobile-web-app-capable" content="yes">
+<meta name="application-name" content="timmesserschmidt">
+<link rel="icon" sizes="192x192" href="/public/img/chrome192x192.png">
+
+<!-- Safari on iOS -->
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black">
+<meta name="apple-mobile-web-app-title" content="timmesserschmidt">
+
+<link rel="apple-touch-icon" href="/public/img/apple192x192.png">
+<link rel="apple-touch-icon" sizes="76x76" href="/public/img/apple76x76.png">
+<link rel="apple-touch-icon" sizes="120x120" href="/public/img/apple120x120.png">
+<link rel="apple-touch-icon" sizes="152x152" href="/public/img/apple152x152.png">
+
+<!-- Windows 8 -->
+<meta name="msapplication-TileColor" content="#2C3E50">
+<meta name="msapplication-TileImage" content="/public/img/ms144x144.png">
+
+<!-- Twitter Cards -->
+<meta name="twitter:card" content="summary" />
+<meta name="twitter:site" content="@seraandroid" />
+<meta name="twitter:title" content="An Intro to Developer Advocacy" />
+<meta name="twitter:description" content="I started my career as Developer Advocate in the mobile industry and eventually joined PayPal in 2012, and then Braintree in 2014. Being an Advocate allows me to interact with an immense group of g..." />
+<meta name="twitter:image" content="https://timmesserschmidt.com/public/img/profile.png" />
+
+<!-- Facebook Open Graph -->
+<meta property="og:title" content="An Intro to Developer Advocacy" />
+<meta property="og:site_name" content="timmesserschmidt" />
+<meta property="og:description" content="I started my career as Developer Advocate in the mobile industry and eventually joined PayPal in 2012, and then Braintree in 2014. Being an Advocate allows me to interact with an immense group of global merchants and consumers that use our products..." />
+<meta property="fb:app_id" content="969436346421526" />
+<meta property="og:type" content="article" />
+<meta property="og:image" content="https://timmesserschmidt.com/public/img/profile.png" />
+<meta property="og:url" content="https://timmesserschmidt.com/blog/2015/07/01/an-intro-to-dev-advocacy/" />
+
+<title>An Intro to Developer Advocacy - timmesserschmidt</title>
+
+<meta property="article:author" content="https://www.facebook.com/tim.messerschmidt" />
+
+<link href="/favicon.ico" rel="icon" type="image/ico" />
+
+<link rel="alternate" type="application/atom+xml" title="Atom Feed" href="https://timmesserschmidt.com/feed.xml" />
+
+  </head>
+  <body>
+    <nav class="navbar navbar-inverse navbar-static-top" id="navbar">
+  <div class="container">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-navbar-collapse" aria-expanded="false">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="/">timmesserschmidt</a>
+    </div>
+    <div class="collapse navbar-collapse" id="bs-navbar-collapse">
+      <ul class="nav navbar-nav">
+        <li><a href="/">Blog</a></li>
+        <li><a href="/events">Events</a></li>
+        <li><a href="/about">About</a></li>
+      </ul>
+      <div class="navbar-right" id="social">
+        <ul class="nav navbar-nav">
+          <li>
+<a href="mailto:timmesserschmidt@gmail.com">              <i class="hidden-xs fa fa-envelope-square fa-2x fa-fw"></i>
+              <span class="sr-only">Mail</span>
+              <span class="visible-xs-inline-block">Mail</span>
+</a>          </li>
+          <li><a href="http://plus.google.com/+TimMesserschmidt"><i class="hidden-xs fa fa-google-plus-square fa-2x fa-fw"></i><span class="sr-only">Google Plus</span><span class="visible-xs-inline-block">Google Plus</span></a></li>
+          <li><a href="http://twitter.com/seraandroid"><i class="hidden-xs fa fa-twitter-square fa-2x fa-fw"></i><span class="sr-only">Twitter</span><span class="visible-xs-inline-block">Twitter</span></a></li>
+          <li><a href="http://linkedin.com/in/timmesserschmidt"><i class="hidden-xs fa fa-linkedin-square fa-2x fa-fw"></i><span class="sr-only">LinkedIn</span><span class="visible-xs-inline-block">LinkedIn</span></a></li>
+          <li><a href="http://github.com/seraphimserapis"><i class="hidden-xs fa fa-github-square fa-2x fa-fw"></i><span class="sr-only">GitHub</span><span class="visible-xs-inline-block">GitHub</span></a></li>
+          <li>
+<a href="/feed.xml">              <i class="hidden-xs fa fa-rss-square fa-2x fa-fw"></i>
+              <span class="sr-only">RSS</span>
+              <span class="visible-xs-inline-block">RSS</span>
+</a>          </li>
+        </ul><!-- nav navbar-nav -->
+      </div><!-- navbar-right -->
+    </div><!-- collapse navbar-collapse -->
+  </div><!-- container -->
+</nav>
+
+
+    <div class="container">
+      <div id="main" role="main">
+          <article>
+    <div class="page-header title">
+      <h1><a href="#">An Intro to Developer Advocacy</a></h1>
+      <i class="fa fa-calendar" aria-hidden="true"></i>
+      <span class="date">July 1st, 2015</span>
+      <div class="tags">
+<a href="/blog/categories/advocacy">          <button class="btn btn-tag">advocacy</button>
+</a><a href="/blog/categories/culture">          <button class="btn btn-tag">culture</button>
+</a>      </div>
+    </div>
+    <p>I started my career as Developer Advocate in the mobile industry and eventually joined PayPal in 2012, and then Braintree in 2014. Being an Advocate allows me to interact with an immense group of global merchants and consumers that use our products daily. It also allows for one of my other big passions – speaking at conferences; sharing my thoughts and learnings about technologies. I am fortunate to have turned my obsession – speaking publicly about tech – into my profession.</p>
+
+<p>Currently, I work with Jonathan LeBlanc who was one of the first Developer Evangelists, before it was ever a category on job searches. Another big cornerstone of our team is John Lunn. John launched developer outreach in 2009 and shaped heavily how developers perceive both PayPal and Braintree by creating authentic, focused initiatives like Startup Blueprint and BattleHack. Thanks to his philosophies and Braintree’s deep dedication towards the startup and developer ecosystem, our mission within Braintree_Dev is to advocate for the community; we want to ensure that they get to use the best products and enjoy the best programs.</p>
+
+<p>Over the last few years, more and more companies are doing developer outreach or developer marketing. Given this explosion, it has become apparent to me that there is need for discussion around our profession, to keep it as credible as possible.</p>
+
+<p>Whether a company is a small startup or a huge corporation, developer marketing is very flexible and can be approached through various ways. Online activities (blog posts or recorded workshops) and offline channels (developer conferences and meetups) are key when looking to address our audience where they already are.</p>
+
+<p>Great examples of successful Developer Relations teams are Google, Twilio, and SendGrid. Google is renowned for running great events, such as Google I/O, and manages to push the capabilities of the modern internet with their contributions to the web. Startups Twilio and SendGrid (our partners in BattleHack), excite developers with engaging demos, easy-to-use products, and commitment to global evangelism.</p>
+
+<p>Evangelism is still a very young trade and there are many daily challenges a Developer Advocate faces. It is a form of word-of-mouth marketing with a technical angle; building up and interacting with tech communities is a crucial part of this profession. Due to our constant interaction with the public, our credibility is everything, and we have to be committed to remain authentic, dedicated, and not burn out. Evangelism, in itself, is about being pure to our passion.</p>
+
+<p>This is why, after more than 5 years in Developer Evangelism, I am starting a series of blog posts that will cover challenges and successes around that evangelism. I’ll share difficulties and experiences I’ve faced: stage fright, traveling nearly 10x around the globe (289,646 miles and counting), and live coding. I’ll also share the good stuff: the solutions, the tools, and the methods I’ve learned to improve team workstreams (since airplanes are virtually our offices), and best practices around work-life balance.</p>
+
+<p>If you have any opinions or topics you’d like me to cover, please reach out – I would love to chat!</p>
+
+<p><em>Originally published at braintreepayments.com on July 01, 2015.</em></p>
+
+  </article>
+  <!-- Disqus -->
+<div id='disqus_thread'></div>
+<script type='text/javascript'>
+//<![CDATA[
+                  var disqus_shortname = 'tmecoffee';
+          
+    (function() {
+        var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+        dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    })();
+//]]>
+</script>
+<noscript>Please enable JavaScript to view the <a href='http://disqus.com/?ref_noscript'>comments powered by Disqus.</a></noscript>
+<a href='http://disqus.com' class='dsq-brlink'>comments powered by <span class='logo-disqus'>Disqus</span></a>
+
+<script type="text/javascript">
+//<![CDATA[
+    var disqus_shortname = 'tmecoffee';
+    (function () {
+        var s = document.createElement('script'); s.async = true;
+        s.type = 'text/javascript';
+        s.src = '//' + disqus_shortname + '.disqus.com/count.js';
+        (document.getElementsByTagName('HEAD')[0] || document.getElementsByTagName('BODY')[0]).appendChild(s);
+    }());
+//]]>
+</script>
+
+<!-- End Disqus -->
+
+
+      </div>
+      <footer>
+  <small>&copy; Tim Messerschmidt 2016 - The opinions stated here are my own, not those of my company.</small>
+</footer>
+
+    </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
+<script>window.jQuery || document.write('<script src="public/js/jquery-1.12.2.min.js"><\/script>')</script>
+<script src="/public/js/bootstrap.min.js"></script>
+<!-- Google Analytics -->
+<script type="text/javascript">
+  var _gaq = _gaq || [];
+  _gaq.push(["_setAccount", "UA-40700707-1"]);
+  _gaq.push(["_trackPageview"]);
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? '//ssl' : '//www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+</script>
+<!-- End Google Analytics -->
+
+<script type="text/javascript">
+  /* Async Font Awesome */
+  (function() {
+  	var css = document.createElement('link');
+  	css.href = '//maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css';
+  	css.rel = 'stylesheet';
+  	css.type = 'text/css';
+  	document.getElementsByTagName('head')[0].appendChild(css);
+  })();
+</script>
+
+<!-- <script>
+if('serviceWorker' in navigator) {
+  navigator.serviceWorker.register('/service-worker.js', { scope: '/' }).then(function(registration) {
+      console.log("SW registered");
+  });
+
+  navigator.serviceWorker.ready.then(function(registration) {
+    console.log("SW ready");
+  });
+}
+</script>
+ -->
+
+  </body>
+</html>

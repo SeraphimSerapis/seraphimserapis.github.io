@@ -1,0 +1,484 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+<meta http-equiv='X-UA-Compatible' content='IE=edge;chrome=1' />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+
+<style>
+  body {
+    background-color: #2C3E50;
+    font-family: HelveticaNeue-Light,"Helvetica Neue Light","Helvetica Neue",Helvetica,"Open Sans",sans-serif;
+    font-size: 18px;
+    color: #E1E4E6;
+  }
+
+  p {
+    font-weight: 300;
+  }
+
+  h1, h2, h3, h4, h5 {
+    font-weight: 400;
+    letter-spacing: -1px;
+    color: #F4511E;
+  }
+
+  a, a:hover, a:visited {
+    color: #F4511E;
+    text-decoration: none;
+  }
+</style>
+
+
+<link href="/public/css/site.css" rel="stylesheet" />
+
+<meta name="theme-color" content="#2C3E50">
+
+<!-- Web Application Manifest -->
+<link rel="manifest" href="https://timmesserschmidt.com/manifest.json">
+
+<!-- Chrome on Android -->
+<meta name="theme-color" content="#2C3E50">
+<meta name="mobile-web-app-capable" content="yes">
+<meta name="application-name" content="timmesserschmidt">
+<link rel="icon" sizes="192x192" href="/public/img/chrome192x192.png">
+
+<!-- Safari on iOS -->
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black">
+<meta name="apple-mobile-web-app-title" content="timmesserschmidt">
+
+<link rel="apple-touch-icon" href="/public/img/apple192x192.png">
+<link rel="apple-touch-icon" sizes="76x76" href="/public/img/apple76x76.png">
+<link rel="apple-touch-icon" sizes="120x120" href="/public/img/apple120x120.png">
+<link rel="apple-touch-icon" sizes="152x152" href="/public/img/apple152x152.png">
+
+<!-- Windows 8 -->
+<meta name="msapplication-TileColor" content="#2C3E50">
+<meta name="msapplication-TileImage" content="/public/img/ms144x144.png">
+
+<!-- Twitter Cards -->
+<meta name="twitter:card" content="summary" />
+<meta name="twitter:site" content="@seraandroid" />
+<meta name="twitter:title" content="" />
+<meta name="twitter:description" content="In this post I’d like to cover a great open source library: FirebaseUI (for Android and iOS). I’ve been pretty vocal about the need to come up with better patterns around dealing with passwords or ..." />
+<meta name="twitter:image" content="https://timmesserschmidt.com/public/img/profile.png" />
+
+<!-- Facebook Open Graph -->
+<meta property="og:title" content="" />
+<meta property="og:site_name" content="timmesserschmidt" />
+<meta property="og:description" content="In this post I’d like to cover a great open source library: FirebaseUI (for Android and iOS). I’ve been pretty vocal about the need to come up with better patterns around dealing with passwords or even ideally getting completely rid of them by using better alternatives and I feel like Firebase’s approach towards authentication is very much in line with what I’ve been demanding. What is FirebaseUI Auth? FirebaseUI Auth is a collection of UI bindings for Firebase that allows to handle presentin..." />
+<meta property="fb:app_id" content="969436346421526" />
+<meta property="og:type" content="website" />
+<meta property="og:image" content="https://timmesserschmidt.com/public/img/profile.png" />
+<meta property="og:url" content="https://timmesserschmidt.com/includes/articles/" />
+
+<title>timmesserschmidt</title>
+
+
+<link href="/favicon.ico" rel="icon" type="image/ico" />
+
+<link rel="alternate" type="application/atom+xml" title="Atom Feed" href="https://timmesserschmidt.com/feed.xml" />
+
+  </head>
+  <body>
+    <nav class="navbar navbar-inverse navbar-static-top" id="navbar">
+  <div class="container">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-navbar-collapse" aria-expanded="false">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="/">timmesserschmidt</a>
+    </div>
+    <div class="collapse navbar-collapse" id="bs-navbar-collapse">
+      <ul class="nav navbar-nav">
+        <li><a href="/">Blog</a></li>
+        <li><a href="/events">Events</a></li>
+        <li><a href="/about">About</a></li>
+      </ul>
+      <div class="navbar-right" id="social">
+        <ul class="nav navbar-nav">
+          <li>
+<a href="mailto:timmesserschmidt@gmail.com">              <i class="hidden-xs fa fa-envelope-square fa-2x fa-fw"></i>
+              <span class="sr-only">Mail</span>
+              <span class="visible-xs-inline-block">Mail</span>
+</a>          </li>
+          <li><a href="http://plus.google.com/+TimMesserschmidt"><i class="hidden-xs fa fa-google-plus-square fa-2x fa-fw"></i><span class="sr-only">Google Plus</span><span class="visible-xs-inline-block">Google Plus</span></a></li>
+          <li><a href="http://twitter.com/seraandroid"><i class="hidden-xs fa fa-twitter-square fa-2x fa-fw"></i><span class="sr-only">Twitter</span><span class="visible-xs-inline-block">Twitter</span></a></li>
+          <li><a href="http://linkedin.com/in/timmesserschmidt"><i class="hidden-xs fa fa-linkedin-square fa-2x fa-fw"></i><span class="sr-only">LinkedIn</span><span class="visible-xs-inline-block">LinkedIn</span></a></li>
+          <li><a href="http://github.com/seraphimserapis"><i class="hidden-xs fa fa-github-square fa-2x fa-fw"></i><span class="sr-only">GitHub</span><span class="visible-xs-inline-block">GitHub</span></a></li>
+          <li>
+<a href="/feed.xml">              <i class="hidden-xs fa fa-rss-square fa-2x fa-fw"></i>
+              <span class="sr-only">RSS</span>
+              <span class="visible-xs-inline-block">RSS</span>
+</a>          </li>
+        </ul><!-- nav navbar-nav -->
+      </div><!-- navbar-right -->
+    </div><!-- collapse navbar-collapse -->
+  </div><!-- container -->
+</nav>
+
+
+    <div class="container">
+      <div id="main" role="main">
+        <div class="row entry">
+  <div class="col-md-2 date">
+    <i class="fa fa-calendar" aria-hidden="true"></i>
+    <span class="date">September 9th, 2016</span>
+  </div>
+  <div class="col-md-10">
+    <h2 class="header"><a href="/blog/2016/09/09/firebaseui-auth/">Security UI&#47;UX best practices with FirebaseUI Auth</a></h2>
+    <p>In this post I’d like to cover a great open source library: FirebaseUI (for Android and iOS). I’ve been pretty vocal about the need to come up with better patterns around dealing with passwords or even ideally getting completely rid of them by using better alternatives...</p>
+    <a href="/blog/2016/09/09/firebaseui-auth/"><button class="btn btn-more" aria-label="More">More &raquo;</button></a>
+  </div>
+</div>
+<div class="row entry">
+  <div class="col-md-2 date">
+    <i class="fa fa-calendar" aria-hidden="true"></i>
+    <span class="date">May 25th, 2016</span>
+  </div>
+  <div class="col-md-10">
+    <h2 class="header"><a href="/blog/2016/05/25/hosting-with-firebase/">Hosting Static Web Apps with Firebase</a></h2>
+    <p>Amongst the major announcements of last week’s I/O, Google’s annual developer conference, was the release of the new (& awesome) Firebase. Firebase is renowned for it’s realtime database that allows for instantly synchronizing entries between mobile clients...</p>
+    <a href="/blog/2016/05/25/hosting-with-firebase/"><button class="btn btn-more" aria-label="More">More &raquo;</button></a>
+  </div>
+</div>
+<div class="row entry">
+  <div class="col-md-2 date">
+    <i class="fa fa-calendar" aria-hidden="true"></i>
+    <span class="date">May 15th, 2016</span>
+  </div>
+  <div class="col-md-10">
+    <h2 class="header"><a href="/blog/2016/05/15/sw-precache/">Service Worker Precache for Middleman</a></h2>
+    <p>After we’ve taken the time to explore the basic functionality of Service Worker in my most recent post, I’d like to expand on this topic by covering sw-precache (a module for generating a worker that handles precaching of your application’s resources) and how...</p>
+    <a href="/blog/2016/05/15/sw-precache/"><button class="btn btn-more" aria-label="More">More &raquo;</button></a>
+  </div>
+</div>
+<div class="row entry">
+  <div class="col-md-2 date">
+    <i class="fa fa-calendar" aria-hidden="true"></i>
+    <span class="date">May 10th, 2016</span>
+  </div>
+  <div class="col-md-10">
+    <h2 class="header"><a href="/blog/2016/05/10/service-worker/">Using the Power of the Service Worker</a></h2>
+    <p>In today’s blog post I’d like to write about an essential component of Progressive Web Apps: the Service Worker - an event-driven background processing tool that enables fetching resources and managing your application’s cache. The result is a gain in reliable...</p>
+    <a href="/blog/2016/05/10/service-worker/"><button class="btn btn-more" aria-label="More">More &raquo;</button></a>
+  </div>
+</div>
+<div class="row entry">
+  <div class="col-md-2 date">
+    <i class="fa fa-calendar" aria-hidden="true"></i>
+    <span class="date">April 7th, 2016</span>
+  </div>
+  <div class="col-md-10">
+    <h2 class="header"><a href="/blog/2016/04/07/kramdown-redcarpet/">kramdown instead of Redcarpet</a></h2>
+    <p>Since my switch to Middleman I’ve been using Redcarpet as Markdown engine. The rendering engine itself ran fine but sadly doesn’t offer a way to specify custom classes for elements - a shame when you’re looking for a way to declare a certain image as img-responsive</p>
+    <a href="/blog/2016/04/07/kramdown-redcarpet/"><button class="btn btn-more" aria-label="More">More &raquo;</button></a>
+  </div>
+</div>
+<div class="row entry">
+  <div class="col-md-2 date">
+    <i class="fa fa-calendar" aria-hidden="true"></i>
+    <span class="date">March 18th, 2016</span>
+  </div>
+  <div class="col-md-10">
+    <h2 class="header"><a href="/blog/2016/03/18/lets-encrypt-gh-pages/">Let's Encrypt for GitHub Pages</a></h2>
+    <p>In my most recent post I wrote about rewriting my blog from scratch and my attempts at improving it’s performance, reliability and ease of use. While exploring possible options I also investigated if it makes sense - and if it’s worth the hassle - to enable...</p>
+    <a href="/blog/2016/03/18/lets-encrypt-gh-pages/"><button class="btn btn-more" aria-label="More">More &raquo;</button></a>
+  </div>
+</div>
+<div class="row entry">
+  <div class="col-md-2 date">
+    <i class="fa fa-calendar" aria-hidden="true"></i>
+    <span class="date">March 14th, 2016</span>
+  </div>
+  <div class="col-md-10">
+    <h2 class="header"><a href="/blog/2016/03/14/a-new-blog-using-middleman/">A new blog using Middleman</a></h2>
+    <p>After nearly three years I’ve taken the time to look at my blog and realized that the Octopress (& Jekyll) based solution wasn’t good enough anymore. Octopress was outdated (the blog was based on version 2 instead of the current v3 version), leveraged Bootstrap...</p>
+    <a href="/blog/2016/03/14/a-new-blog-using-middleman/"><button class="btn btn-more" aria-label="More">More &raquo;</button></a>
+  </div>
+</div>
+<div class="row entry">
+  <div class="col-md-2 date">
+    <i class="fa fa-calendar" aria-hidden="true"></i>
+    <span class="date">February 29th, 2016</span>
+  </div>
+  <div class="col-md-10">
+    <h2 class="header"><a href="/blog/2016/02/29/time-for-change/">Time for change</a></h2>
+    <p>It’s time to officially announce that I am parting ways with PayPal. After more than three and a half years of working with the PayPal and Braintree Developer Relations team, it is time for me to move on, seek new adventures and expose myself to new challenges...</p>
+    <a href="/blog/2016/02/29/time-for-change/"><button class="btn btn-more" aria-label="More">More &raquo;</button></a>
+  </div>
+</div>
+<div class="row entry">
+  <div class="col-md-2 date">
+    <i class="fa fa-calendar" aria-hidden="true"></i>
+    <span class="date">October 16th, 2015</span>
+  </div>
+  <div class="col-md-10">
+    <h2 class="header"><a href="/blog/2015/10/16/developer-relations-pt3/">Developer Advocacy Part 3: Copy & Paste</a></h2>
+    <p>In a previous post I wrote about the six principles I use when it comes to live coding at events and a few of the tools that help create a smooth workflow. In this post, I’ll cover a topic that I’ve mentioned before: code snippets and relying on copy and paste...</p>
+    <a href="/blog/2015/10/16/developer-relations-pt3/"><button class="btn btn-more" aria-label="More">More &raquo;</button></a>
+  </div>
+</div>
+<div class="row entry">
+  <div class="col-md-2 date">
+    <i class="fa fa-calendar" aria-hidden="true"></i>
+    <span class="date">July 19th, 2015</span>
+  </div>
+  <div class="col-md-10">
+    <h2 class="header"><a href="/blog/2015/07/19/retinizer/">Retinizer</a></h2>
+    <p>I’ve been using a MacBook Air for the last couple of years and have not had the pleasure of working with a Retina resolution Mac. This changed last week when I finally got my new shiny 2015 MacBook Pro 15” and got introduced to the world of sharp text and proper...</p>
+    <a href="/blog/2015/07/19/retinizer/"><button class="btn btn-more" aria-label="More">More &raquo;</button></a>
+  </div>
+</div>
+<div class="row entry">
+  <div class="col-md-2 date">
+    <i class="fa fa-calendar" aria-hidden="true"></i>
+    <span class="date">July 16th, 2015</span>
+  </div>
+  <div class="col-md-10">
+    <h2 class="header"><a href="/blog/2015/07/16/taming-ruby-with-rbenv/">Taming Ruby with rbenv</a></h2>
+    <p>My colleague Cristiano told me about rbenv a couple of months ago. This was when I’ve already setup my Ruby development environment using rvm - I didn’t get to appreciate the real power of rbenv until a few days ago: I just got a new MacBook Pro as developer...</p>
+    <a href="/blog/2015/07/16/taming-ruby-with-rbenv/"><button class="btn btn-more" aria-label="More">More &raquo;</button></a>
+  </div>
+</div>
+<div class="row entry">
+  <div class="col-md-2 date">
+    <i class="fa fa-calendar" aria-hidden="true"></i>
+    <span class="date">July 15th, 2015</span>
+  </div>
+  <div class="col-md-10">
+    <h2 class="header"><a href="/blog/2015/07/15/developer-relations-pt2/">Developer Advocacy Part 2: Live Coding</a></h2>
+    <p>In the world of Developer Relations, there comes a time that fills a lot of us with dread: the moment when we’re required to perform live on stage. Live demos are the best way in which to showcase our company’s products and share knowledge with our community...</p>
+    <a href="/blog/2015/07/15/developer-relations-pt2/"><button class="btn btn-more" aria-label="More">More &raquo;</button></a>
+  </div>
+</div>
+<div class="row entry">
+  <div class="col-md-2 date">
+    <i class="fa fa-calendar" aria-hidden="true"></i>
+    <span class="date">July 1st, 2015</span>
+  </div>
+  <div class="col-md-10">
+    <h2 class="header"><a href="/blog/2015/07/01/an-intro-to-dev-advocacy/">An Intro to Developer Advocacy</a></h2>
+    <p>I started my career as Developer Advocate in the mobile industry and eventually joined PayPal in 2012, and then Braintree in 2014. Being an Advocate allows me to interact with an immense group of global merchants and consumers that use our products daily. It...</p>
+    <a href="/blog/2015/07/01/an-intro-to-dev-advocacy/"><button class="btn btn-more" aria-label="More">More &raquo;</button></a>
+  </div>
+</div>
+<div class="row entry">
+  <div class="col-md-2 date">
+    <i class="fa fa-calendar" aria-hidden="true"></i>
+    <span class="date">June 5th, 2015</span>
+  </div>
+  <div class="col-md-10">
+    <h2 class="header"><a href="/blog/2015/06/05/my-io-2015-highlights/">My I/O 2015 Highlights</a></h2>
+    <p>Last week the 8th edition of Google I/O, Google’s annual developer conference in San Francisco, was held in the Moscone Center. Personally, I’ve attended 4 of them so far and have to admit that I’ve never left without being impressed by Google pushing the technology...</p>
+    <a href="/blog/2015/06/05/my-io-2015-highlights/"><button class="btn btn-more" aria-label="More">More &raquo;</button></a>
+  </div>
+</div>
+<div class="row entry">
+  <div class="col-md-2 date">
+    <i class="fa fa-calendar" aria-hidden="true"></i>
+    <span class="date">September 10th, 2014</span>
+  </div>
+  <div class="col-md-10">
+    <h2 class="header"><a href="/blog/2014/09/10/hackathon-culture/">Toward an inclusive Hackathon culture</a></h2>
+    <p>In the last few days there has been a vivid (and sadly also depressing) discussion about how to behave properly at tech events to ensure a great experience for everyone. There have been posts like Hackathons are for Hacking by Cassidy Williams and The Future...</p>
+    <a href="/blog/2014/09/10/hackathon-culture/"><button class="btn btn-more" aria-label="More">More &raquo;</button></a>
+  </div>
+</div>
+<div class="row entry">
+  <div class="col-md-2 date">
+    <i class="fa fa-calendar" aria-hidden="true"></i>
+    <span class="date">June 1st, 2014</span>
+  </div>
+  <div class="col-md-10">
+    <h2 class="header"><a href="/blog/2014/06/01/using-npm-modules-from-github/">Using npm modules via GitHub</a></h2>
+    <p>At most of the hackathons that I am attending for PayPal I see people running into the same issues with Node projects over and over again: a certain Node module they want to use (via npmjs.org) is faulty or doesn’t 100% do what they want to do and they have...</p>
+    <a href="/blog/2014/06/01/using-npm-modules-from-github/"><button class="btn btn-more" aria-label="More">More &raquo;</button></a>
+  </div>
+</div>
+<div class="row entry">
+  <div class="col-md-2 date">
+    <i class="fa fa-calendar" aria-hidden="true"></i>
+    <span class="date">October 6th, 2013</span>
+  </div>
+  <div class="col-md-10">
+    <h2 class="header"><a href="/blog/2013/10/06/summary-reaktor-dev-day/">Summary Reaktor Dev Day</a></h2>
+    <p>I’ve been to a lot of conferences, hacks and meetups this year and enjoyed most of them a lot. Most of these events were great and I got to know lots of great attendees and speakers. But quite frank: Reaktor Dev Day in Helsinki was over 9000! Here’s my summary...</p>
+    <a href="/blog/2013/10/06/summary-reaktor-dev-day/"><button class="btn btn-more" aria-label="More">More &raquo;</button></a>
+  </div>
+</div>
+<div class="row entry">
+  <div class="col-md-2 date">
+    <i class="fa fa-calendar" aria-hidden="true"></i>
+    <span class="date">September 22nd, 2013</span>
+  </div>
+  <div class="col-md-10">
+    <h2 class="header"><a href="/blog/2013/09/22/node-dot-js-tutorial/">Node.js Tutorial</a></h2>
+    <p>At PayPal one of the biggest efforts in the last few months was getting rid of the old architecture and revamping it by using modern techniques and frameworks like Node.js, Express and Dust. By getting people like Doug Crockford and Bill Scott into our company...</p>
+    <a href="/blog/2013/09/22/node-dot-js-tutorial/"><button class="btn btn-more" aria-label="More">More &raquo;</button></a>
+  </div>
+</div>
+<div class="row entry">
+  <div class="col-md-2 date">
+    <i class="fa fa-calendar" aria-hidden="true"></i>
+    <span class="date">August 14th, 2013</span>
+  </div>
+  <div class="col-md-10">
+    <h2 class="header"><a href="/blog/2013/08/14/being-productive-with-alfred/">Being productive with Alfred</a></h2>
+    <p>One of the applications for Mac OS that I especially adore is Alfred. Having used Quicksilver and also the inbuilt search system Spotlight I was looking for something that adds more productivity and utility to my workflow. I’ve been blogging already about...</p>
+    <a href="/blog/2013/08/14/being-productive-with-alfred/"><button class="btn btn-more" aria-label="More">More &raquo;</button></a>
+  </div>
+</div>
+<div class="row entry">
+  <div class="col-md-2 date">
+    <i class="fa fa-calendar" aria-hidden="true"></i>
+    <span class="date">July 12th, 2013</span>
+  </div>
+  <div class="col-md-10">
+    <h2 class="header"><a href="/blog/2013/07/12/travel-overview-made-easy/">Travel overview made easy</a></h2>
+    <p>As mentioned in earlier posts (like “What’s in Your bag?”) I love to travel and have to travel a lot for work. One of the biggest issues for me is having an overview of all my different trips and getting detailed information of each and every single one. ...</p>
+    <a href="/blog/2013/07/12/travel-overview-made-easy/"><button class="btn btn-more" aria-label="More">More &raquo;</button></a>
+  </div>
+</div>
+<div class="row entry">
+  <div class="col-md-2 date">
+    <i class="fa fa-calendar" aria-hidden="true"></i>
+    <span class="date">June 28th, 2013</span>
+  </div>
+  <div class="col-md-10">
+    <h2 class="header"><a href="/blog/2013/06/28/summary-droidcon-paris-2013/">Summary Droidcon Paris 2013</a></h2>
+    <p>On Monday & Tuesday last week our Developer Relations team has been visiting Droidcon Paris. We had a booth over there and I had a speech about our new Android SDK on the second day. In this post I want to summarize the event as lots of people asked me already...</p>
+    <a href="/blog/2013/06/28/summary-droidcon-paris-2013/"><button class="btn btn-more" aria-label="More">More &raquo;</button></a>
+  </div>
+</div>
+<div class="row entry">
+  <div class="col-md-2 date">
+    <i class="fa fa-calendar" aria-hidden="true"></i>
+    <span class="date">June 1st, 2013</span>
+  </div>
+  <div class="col-md-10">
+    <h2 class="header"><a href="/blog/2013/06/01/organizing-a-hackday-part2/">Organizing a Hackday - Part 2</a></h2>
+    <p>In my previous post I wrote about the Hack Day Manifesto and about some tools that help you with Analytics for your hackathon. It is pretty important to understand if your current marketing works of if you should change your current strategy in order to grow...</p>
+    <a href="/blog/2013/06/01/organizing-a-hackday-part2/"><button class="btn btn-more" aria-label="More">More &raquo;</button></a>
+  </div>
+</div>
+<div class="row entry">
+  <div class="col-md-2 date">
+    <i class="fa fa-calendar" aria-hidden="true"></i>
+    <span class="date">May 29th, 2013</span>
+  </div>
+  <div class="col-md-10">
+    <h2 class="header"><a href="/blog/2013/05/29/organizing-a-hackday-part1/">Organizing a Hackday - Part 1</a></h2>
+    <p>Right now I’m deeply involved with organizing the Berlin stage of PayPal’s series of hackathons called Battle Hack. If you’ve ever organized a hackathon or in case you’re interested in doing so this post might be a great help for getting started. I’ll be...</p>
+    <a href="/blog/2013/05/29/organizing-a-hackday-part1/"><button class="btn btn-more" aria-label="More">More &raquo;</button></a>
+  </div>
+</div>
+<div class="row entry">
+  <div class="col-md-2 date">
+    <i class="fa fa-calendar" aria-hidden="true"></i>
+    <span class="date">May 18th, 2013</span>
+  </div>
+  <div class="col-md-10">
+    <h2 class="header"><a href="/blog/2013/05/18/summary-google-io-2013/">Summary Google I/O 2013</a></h2>
+    <p>Yesterday this year’s Google I/O officially ended with a series of Code Labs, Fireside Chats and talks about more general techniques. For me it was the second I/O in a row and I’ll try to briefly summarize the conference and side events I attended in this post...</p>
+    <a href="/blog/2013/05/18/summary-google-io-2013/"><button class="btn btn-more" aria-label="More">More &raquo;</button></a>
+  </div>
+</div>
+<div class="row entry">
+  <div class="col-md-2 date">
+    <i class="fa fa-calendar" aria-hidden="true"></i>
+    <span class="date">May 11th, 2013</span>
+  </div>
+  <div class="col-md-10">
+    <h2 class="header"><a href="/blog/2013/05/11/octopress-alfred-workflow/">Octopress Alfred Workflow</a></h2>
+    <p>This is just a very short post highlighting a very nice Alfred workflow that adds support for creating new posts for Octopress or regenerating the site. Furthermore I’ll quickly describe how I post my stuff to GitHub. You can find the workflow over at the...</p>
+    <a href="/blog/2013/05/11/octopress-alfred-workflow/"><button class="btn btn-more" aria-label="More">More &raquo;</button></a>
+  </div>
+</div>
+<div class="row entry">
+  <div class="col-md-2 date">
+    <i class="fa fa-calendar" aria-hidden="true"></i>
+    <span class="date">May 8th, 2013</span>
+  </div>
+  <div class="col-md-10">
+    <h2 class="header"><a href="/blog/2013/05/08/whats-in-your-bag/">What's in Your bag?</a></h2>
+    <p>One of the things I do a lot working as Developer Evangelist is traveling. Flying from Berlin to Amsterdam, Amsterdam to London and back to Berlin. From Berlin to Vilnius and from Vilnius to Stockholm and back. And so on and so on and so on. When I meet people...</p>
+    <a href="/blog/2013/05/08/whats-in-your-bag/"><button class="btn btn-more" aria-label="More">More &raquo;</button></a>
+  </div>
+</div>
+<div class="row entry">
+  <div class="col-md-2 date">
+    <i class="fa fa-calendar" aria-hidden="true"></i>
+    <span class="date">May 6th, 2013</span>
+  </div>
+  <div class="col-md-10">
+    <h2 class="header"><a href="/blog/2013/05/06/summary-angelhack-berlin-2013/">Summary AngelHack Berlin 2013</a></h2>
+    <p>Over the last weekend the famous AngelHack came to Berlin to find the best local hackers. The winning teams are going to be mentored for 3 months and will be shipped over to the US afterwards to raise investments, meet VCs etc. in the Valley. This years winner...</p>
+    <a href="/blog/2013/05/06/summary-angelhack-berlin-2013/"><button class="btn btn-more" aria-label="More">More &raquo;</button></a>
+  </div>
+</div>
+<div class="row entry">
+  <div class="col-md-2 date">
+    <i class="fa fa-calendar" aria-hidden="true"></i>
+    <span class="date">May 6th, 2013</span>
+  </div>
+  <div class="col-md-10">
+    <h2 class="header"><a href="/blog/2013/05/06/a-new-start-using-octopress/">A New Start Using Octopress</a></h2>
+    <p>After I’ve spent some time blogging on Blogger I wanted to try something new. The reason for that is not necessarily Blogger not being a good platform for your blog but me being eager to learn new stuff. Having worked with Jekyll before it was pretty obvious...</p>
+    <a href="/blog/2013/05/06/a-new-start-using-octopress/"><button class="btn btn-more" aria-label="More">More &raquo;</button></a>
+  </div>
+</div>
+
+      </div>
+      <footer>
+  <small>&copy; Tim Messerschmidt 2016 - The opinions stated here are my own, not those of my company.</small>
+</footer>
+
+    </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
+<script>window.jQuery || document.write('<script src="public/js/jquery-1.12.2.min.js"><\/script>')</script>
+<script src="/public/js/bootstrap.min.js"></script>
+<!-- Google Analytics -->
+<script type="text/javascript">
+  var _gaq = _gaq || [];
+  _gaq.push(["_setAccount", "UA-40700707-1"]);
+  _gaq.push(["_trackPageview"]);
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? '//ssl' : '//www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+</script>
+<!-- End Google Analytics -->
+
+<script type="text/javascript">
+  /* Async Font Awesome */
+  (function() {
+  	var css = document.createElement('link');
+  	css.href = '//maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css';
+  	css.rel = 'stylesheet';
+  	css.type = 'text/css';
+  	document.getElementsByTagName('head')[0].appendChild(css);
+  })();
+</script>
+
+<!-- <script>
+if('serviceWorker' in navigator) {
+  navigator.serviceWorker.register('/service-worker.js', { scope: '/' }).then(function(registration) {
+      console.log("SW registered");
+  });
+
+  navigator.serviceWorker.ready.then(function(registration) {
+    console.log("SW ready");
+  });
+}
+</script>
+ -->
+
+  </body>
+</html>

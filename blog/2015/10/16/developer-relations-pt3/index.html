@@ -1,0 +1,262 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+<meta http-equiv='X-UA-Compatible' content='IE=edge;chrome=1' />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+
+<style>
+  body {
+    background-color: #2C3E50;
+    font-family: HelveticaNeue-Light,"Helvetica Neue Light","Helvetica Neue",Helvetica,"Open Sans",sans-serif;
+    font-size: 18px;
+    color: #E1E4E6;
+  }
+
+  p {
+    font-weight: 300;
+  }
+
+  h1, h2, h3, h4, h5 {
+    font-weight: 400;
+    letter-spacing: -1px;
+    color: #F4511E;
+  }
+
+  a, a:hover, a:visited {
+    color: #F4511E;
+    text-decoration: none;
+  }
+</style>
+
+
+<link href="/public/css/site.css" rel="stylesheet" />
+
+<meta name="theme-color" content="#2C3E50">
+
+<!-- Web Application Manifest -->
+<link rel="manifest" href="https://timmesserschmidt.com/manifest.json">
+
+<!-- Chrome on Android -->
+<meta name="theme-color" content="#2C3E50">
+<meta name="mobile-web-app-capable" content="yes">
+<meta name="application-name" content="timmesserschmidt">
+<link rel="icon" sizes="192x192" href="/public/img/chrome192x192.png">
+
+<!-- Safari on iOS -->
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black">
+<meta name="apple-mobile-web-app-title" content="timmesserschmidt">
+
+<link rel="apple-touch-icon" href="/public/img/apple192x192.png">
+<link rel="apple-touch-icon" sizes="76x76" href="/public/img/apple76x76.png">
+<link rel="apple-touch-icon" sizes="120x120" href="/public/img/apple120x120.png">
+<link rel="apple-touch-icon" sizes="152x152" href="/public/img/apple152x152.png">
+
+<!-- Windows 8 -->
+<meta name="msapplication-TileColor" content="#2C3E50">
+<meta name="msapplication-TileImage" content="/public/img/ms144x144.png">
+
+<!-- Twitter Cards -->
+<meta name="twitter:card" content="summary" />
+<meta name="twitter:site" content="@seraandroid" />
+<meta name="twitter:title" content="Developer Advocacy Part 3: Copy & Paste" />
+<meta name="twitter:description" content="In a previous post I wrote about the six principles I use when it comes to live coding at events and a few of the tools that help create a smooth workflow. In this post, I’ll cover a topic that I’v..." />
+<meta name="twitter:image" content="https://timmesserschmidt.com/public/img/profile.png" />
+
+<!-- Facebook Open Graph -->
+<meta property="og:title" content="Developer Advocacy Part 3: Copy & Paste" />
+<meta property="og:site_name" content="timmesserschmidt" />
+<meta property="og:description" content="In a previous post I wrote about the six principles I use when it comes to live coding at events and a few of the tools that help create a smooth workflow. In this post, I’ll cover a topic that I’ve mentioned before: code snippets and relying on copy..." />
+<meta property="fb:app_id" content="969436346421526" />
+<meta property="og:type" content="article" />
+<meta property="og:image" content="https://timmesserschmidt.com/public/img/profile.png" />
+<meta property="og:url" content="https://timmesserschmidt.com/blog/2015/10/16/developer-relations-pt3/" />
+
+<title>Developer Advocacy Part 3: Copy & Paste - timmesserschmidt</title>
+
+<meta property="article:author" content="https://www.facebook.com/tim.messerschmidt" />
+
+<link href="/favicon.ico" rel="icon" type="image/ico" />
+
+<link rel="alternate" type="application/atom+xml" title="Atom Feed" href="https://timmesserschmidt.com/feed.xml" />
+
+  </head>
+  <body>
+    <nav class="navbar navbar-inverse navbar-static-top" id="navbar">
+  <div class="container">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-navbar-collapse" aria-expanded="false">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="/">timmesserschmidt</a>
+    </div>
+    <div class="collapse navbar-collapse" id="bs-navbar-collapse">
+      <ul class="nav navbar-nav">
+        <li><a href="/">Blog</a></li>
+        <li><a href="/events">Events</a></li>
+        <li><a href="/about">About</a></li>
+      </ul>
+      <div class="navbar-right" id="social">
+        <ul class="nav navbar-nav">
+          <li>
+<a href="mailto:timmesserschmidt@gmail.com">              <i class="hidden-xs fa fa-envelope-square fa-2x fa-fw"></i>
+              <span class="sr-only">Mail</span>
+              <span class="visible-xs-inline-block">Mail</span>
+</a>          </li>
+          <li><a href="http://plus.google.com/+TimMesserschmidt"><i class="hidden-xs fa fa-google-plus-square fa-2x fa-fw"></i><span class="sr-only">Google Plus</span><span class="visible-xs-inline-block">Google Plus</span></a></li>
+          <li><a href="http://twitter.com/seraandroid"><i class="hidden-xs fa fa-twitter-square fa-2x fa-fw"></i><span class="sr-only">Twitter</span><span class="visible-xs-inline-block">Twitter</span></a></li>
+          <li><a href="http://linkedin.com/in/timmesserschmidt"><i class="hidden-xs fa fa-linkedin-square fa-2x fa-fw"></i><span class="sr-only">LinkedIn</span><span class="visible-xs-inline-block">LinkedIn</span></a></li>
+          <li><a href="http://github.com/seraphimserapis"><i class="hidden-xs fa fa-github-square fa-2x fa-fw"></i><span class="sr-only">GitHub</span><span class="visible-xs-inline-block">GitHub</span></a></li>
+          <li>
+<a href="/feed.xml">              <i class="hidden-xs fa fa-rss-square fa-2x fa-fw"></i>
+              <span class="sr-only">RSS</span>
+              <span class="visible-xs-inline-block">RSS</span>
+</a>          </li>
+        </ul><!-- nav navbar-nav -->
+      </div><!-- navbar-right -->
+    </div><!-- collapse navbar-collapse -->
+  </div><!-- container -->
+</nav>
+
+
+    <div class="container">
+      <div id="main" role="main">
+          <article>
+    <div class="page-header title">
+      <h1><a href="#">Developer Advocacy Part 3: Copy & Paste</a></h1>
+      <i class="fa fa-calendar" aria-hidden="true"></i>
+      <span class="date">October 16th, 2015</span>
+      <div class="tags">
+<a href="/blog/categories/advocacy">          <button class="btn btn-tag">advocacy</button>
+</a><a href="/blog/categories/culture">          <button class="btn btn-tag">culture</button>
+</a>      </div>
+    </div>
+    <p><a href="/blog/2015/07/15/developer-relations-pt2/">In a previous post</a> I wrote about the six principles I use when it comes to live coding at events and a few of the tools that help create a smooth workflow. In this post, I’ll cover a topic that I’ve mentioned before: code snippets and relying on copy and paste in code demos.</p>
+
+<p>Live coding is an awesome way to show how easy it is to implement and use a certain SDK or API. Now, I’ll admit that heavily relying on code snippets and comments feels a bit like cheating to me; it suggests you don’t know the code you’re supposed to demo. However, because time on stage is often limited, snippets conveniently allow you to spend more time interacting with your audience.</p>
+
+<h3 id="when-do-i-copy-and-paste-or-use-snippets">When do I copy and paste or use snippets?</h3>
+
+<p>I rely on <a href="http://kapeli.com/dash">Dash</a>, a documentation browser and snippet manager for Mac OS, to handle the credentials I use for working with PayPal and Braintree SDKs and APIs. Dash allows me to paste snippets like this one without first navigating to <a href="http://sandbox.braintreegateway.com/login">Braintree’s sandbox</a> and copying the right bit of information before going back to my code:</p>
+
+<pre class="highlight ruby"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+3
+4
+</pre></td><td class="rouge-code"><pre><span class="no">Braintree</span><span class="o">::</span><span class="no">Configuration</span><span class="p">.</span><span class="nf">environment</span> <span class="o">=</span> <span class="ss">:sandbox</span>
+<span class="no">Braintree</span><span class="o">::</span><span class="no">Configuration</span><span class="p">.</span><span class="nf">merchant_id</span> <span class="o">=</span> <span class="s1">'ffdqc9fyffn7yn2j'</span>
+<span class="no">Braintree</span><span class="o">::</span><span class="no">Configuration</span><span class="p">.</span><span class="nf">public_key</span> <span class="o">=</span> <span class="s1">'qj65nndbnn6qyjkp'</span>
+<span class="no">Braintree</span><span class="o">::</span><span class="no">Configuration</span><span class="p">.</span><span class="nf">private_key</span> <span class="o">=</span> <span class="s1">'a3de3bb7dddf68ed3c33f4eb6d9579ca'</span>
+</pre></td></tr></tbody></table>
+</code></pre>
+<p>Realistically, this snippet saves me about 30 to 45 seconds of precious stage time that I’d rather dedicate to entertaining my audience.</p>
+
+<p>Another example would be adding <a href="http://developers.braintreepayments.com/android+ruby/guides/client-sdk#gradle">Gradle dependencies</a> to my Android demos:</p>
+
+<pre class="highlight plaintext"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+</pre></td><td class="rouge-code"><pre>compile 'com.braintreepayments.api:braintree:1.+'  
+compile 'com.loopj.android:android-async-http:1.4.4'
+</pre></td></tr></tbody></table>
+</code></pre>
+<p>Typing the package names is error-prone and not tremendously important compared to the actual implementation of the SDK.</p>
+
+<h3 id="moments-of-uncertainty">Moments of uncertainty</h3>
+
+<p>Mistakes can – and probably will – happen, especially when dealing with new products, or performing a demo for the first time. In order to avoid these mistakes, use a linter. Linters allow for highlighting syntax issues, unknown variables, and even that annoying missing semicolon that breaks your code.</p>
+
+<p>Whenever I work with Atom I rely on the <a href="http://atom.io/packages/linter">linter package</a>; for JS I use <a href="http://atom.io/packages/linter-jshint">linter-jshint</a>, and, when using Ruby, <a href="http://atom.io/packages/linter-rubocop">linter-rubocop</a> gets the job done.</p>
+
+<p>Other than that, all you can do is practice, practice, practice. A great way to actively improve is to record your demos and check for hiccups on both the coding and performance bit. Did you encounter hiccups? Start again. Having trouble explaining a certain section when coding? Try to find an easier explanation, and repeat it over and over until you feel comfortable.</p>
+
+<h3 id="the-next-step">The next step</h3>
+
+<p><a href="/blog/2015/07/01/an-intro-to-dev-advocacy/">As promised in my first post in this series</a>, I’d like to cover multiple topics that deal with daily obstacles in developer relations. The next topic I am going to write about is that moment before you go on stage and how to deal with stage fright. I’d be more than excited to hear your feedback or ideas for new topics in this area - please feel free to comment below or reach out to me via Twitter.</p>
+
+<p><em>Originally published at braintreepayments.com on October 16, 2015.</em></p>
+
+  </article>
+  <!-- Disqus -->
+<div id='disqus_thread'></div>
+<script type='text/javascript'>
+//<![CDATA[
+                  var disqus_shortname = 'tmecoffee';
+          
+    (function() {
+        var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+        dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    })();
+//]]>
+</script>
+<noscript>Please enable JavaScript to view the <a href='http://disqus.com/?ref_noscript'>comments powered by Disqus.</a></noscript>
+<a href='http://disqus.com' class='dsq-brlink'>comments powered by <span class='logo-disqus'>Disqus</span></a>
+
+<script type="text/javascript">
+//<![CDATA[
+    var disqus_shortname = 'tmecoffee';
+    (function () {
+        var s = document.createElement('script'); s.async = true;
+        s.type = 'text/javascript';
+        s.src = '//' + disqus_shortname + '.disqus.com/count.js';
+        (document.getElementsByTagName('HEAD')[0] || document.getElementsByTagName('BODY')[0]).appendChild(s);
+    }());
+//]]>
+</script>
+
+<!-- End Disqus -->
+
+
+      </div>
+      <footer>
+  <small>&copy; Tim Messerschmidt 2016 - The opinions stated here are my own, not those of my company.</small>
+</footer>
+
+    </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
+<script>window.jQuery || document.write('<script src="public/js/jquery-1.12.2.min.js"><\/script>')</script>
+<script src="/public/js/bootstrap.min.js"></script>
+<!-- Google Analytics -->
+<script type="text/javascript">
+  var _gaq = _gaq || [];
+  _gaq.push(["_setAccount", "UA-40700707-1"]);
+  _gaq.push(["_trackPageview"]);
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? '//ssl' : '//www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+</script>
+<!-- End Google Analytics -->
+
+<script type="text/javascript">
+  /* Async Font Awesome */
+  (function() {
+  	var css = document.createElement('link');
+  	css.href = '//maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css';
+  	css.rel = 'stylesheet';
+  	css.type = 'text/css';
+  	document.getElementsByTagName('head')[0].appendChild(css);
+  })();
+</script>
+
+<!-- <script>
+if('serviceWorker' in navigator) {
+  navigator.serviceWorker.register('/service-worker.js', { scope: '/' }).then(function(registration) {
+      console.log("SW registered");
+  });
+
+  navigator.serviceWorker.ready.then(function(registration) {
+    console.log("SW ready");
+  });
+}
+</script>
+ -->
+
+  </body>
+</html>

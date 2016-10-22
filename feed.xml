@@ -1,0 +1,336 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title>timmesserschmidt</title>
+  <subtitle>Developer Relations</subtitle>
+  <id>https://timmesserschmidt.com/blog</id>
+  <link href="https://timmesserschmidt.com/blog"/>
+  <link href="https://timmesserschmidt.com/feed.xml" rel="self"/>
+  <updated>2016-09-09T00:00:00+02:00</updated>
+  <author>
+    <name>Tim Messerschmidt</name>
+  </author>
+  <entry>
+    <title>Security UI&amp;#47;UX best practices with FirebaseUI Auth</title>
+    <link rel="alternate" href="https://timmesserschmidt.com/blog/2016/09/09/firebaseui-auth/"/>
+    <id>https://timmesserschmidt.com/blog/2016/09/09/firebaseui-auth/</id>
+    <published>2016-09-09T00:00:00+02:00</published>
+    <updated>2016-09-09T11:16:59+02:00</updated>
+    <author>
+      <name>Tim Messerschmidt</name>
+    </author>
+    <content type="html">&lt;p&gt;In this post I’d like to cover a great open source library: FirebaseUI (for &lt;a href="https://github.com/firebase/FirebaseUI-Android"&gt;Android&lt;/a&gt; and &lt;a href="https://github.com/firebase/FirebaseUI-iOS"&gt;iOS&lt;/a&gt;). I’ve been &lt;a href="http://www.slideshare.net/TimMesserschmidt/death-to-passwords-sxsw"&gt;pretty vocal&lt;/a&gt; about the need to come up with better patterns around dealing with passwords or even ideally getting completely rid of them by using better alternatives and I feel like Firebase’s approach towards authentication is very much in line with what I’ve been demanding.&lt;/p&gt;
+
+
+
+&lt;h2 id="what-is-firebaseui-auth"&gt;What is FirebaseUI Auth?&lt;/h2&gt;
+
+&lt;p&gt;FirebaseUI Auth is a collection of UI bindings for Firebase that allows to handle presenting data from Firebase (FirebaseUI Database) and offers a beautiful drop-in solution to handle user authentication (FirebaseUI Auth) in your Android or iOS application. It comes with support for &lt;a href="https://get.google.com/smartlock/"&gt;Smart Lock&lt;/a&gt;, integrates with the most common identity providers (such as Facebook, Twitter, and Google) and allows to customize it’s UI by simply providing a theme on Android or subclassing &lt;code&gt;FIRAuthPickerViewController&lt;/code&gt; on iOS.&lt;/p&gt;
+
+&lt;h2 id="why-is-it-useful"&gt;Why is it useful?&lt;/h2&gt;
+
+&lt;p&gt;The team took a look at implementing several security best practices - such as suggesting a user’s frequently used email addresses (via &lt;a href="https://developers.google.com/identity/smartlock-passwords/android/retrieve-hints"&gt;Smart Lock HintRequest&lt;/a&gt;), creating new accounts or linking multiple accounts to the same user. This sounds very easy in theory but looking at the variety of possible cases this suddenly becomes a behemoth that isn’t all that easy to handle (picture taken from the FirebaseUI Auth &lt;a href="https://github.com/firebase/FirebaseUI-Android/blob/master/auth/README.md"&gt;documentation&lt;/a&gt;):&lt;/p&gt;
+
+&lt;p&gt;&lt;img src="/public/img/posts/auth_flow.png" alt="ssl" class="img-responsive" /&gt;&lt;/p&gt;
+
+&lt;p&gt;Not having to work on solving all these different (edge) cases and instead focussing on a great user experience (and your own application) sounds like a great proposition for me. This is why I’d love to encourage you to give FirebaseUI a try and provide me or the team itself (via &lt;a href="https://twitter.com/firebase"&gt;Twitter&lt;/a&gt; or &lt;a href="https://github.com/firebase/FirebaseUI-Android/issues"&gt;GitHub&lt;/a&gt;) with any feedback you might have.&lt;/p&gt;
+
+&lt;h2 id="how-can-i-use-it"&gt;How can I use it?&lt;/h2&gt;
+
+&lt;p&gt;Installation is as easy as using either Gradle or CocoaPods in order to resolve the right dependencies. The team has split up FirebaseUI into multiple modules/subspecs in order to allow you to select the most minimal feature set you’re interested in. There are great samples - like the FirebaseUI Chat Demo for &lt;a href="https://github.com/firebase/FirebaseUI-iOS/tree/master/examples/FirebaseUIChat"&gt;iOS&lt;/a&gt; or the sample application for &lt;a href="https://github.com/firebase/FirebaseUI-Android#sample-app"&gt;Android&lt;/a&gt; that outline the steps needed to get the library integrated.&lt;/p&gt;
+
+&lt;p&gt;I’ll be giving a talk at &lt;a href="https://droidcon.at/schedule/#session-117"&gt;Droidcon Vienna&lt;/a&gt; next weekend and am looking forward to discussing current authentication UI/UX best practices with the attendees!&lt;/p&gt;
+</content>
+  </entry>
+  <entry>
+    <title>Hosting Static Web Apps with Firebase</title>
+    <link rel="alternate" href="https://timmesserschmidt.com/blog/2016/05/25/hosting-with-firebase/"/>
+    <id>https://timmesserschmidt.com/blog/2016/05/25/hosting-with-firebase/</id>
+    <published>2016-05-25T00:00:00+02:00</published>
+    <updated>2016-05-25T19:27:18+02:00</updated>
+    <author>
+      <name>Tim Messerschmidt</name>
+    </author>
+    <content type="html">&lt;p&gt;Amongst the major announcements of last week’s I/O, Google’s annual developer conference, was the release of the new (&amp;amp; awesome) Firebase. Firebase is renowned for it’s realtime database that allows for instantly synchronizing entries between mobile clients (Android &amp;amp; iOS) and the web. One feature that is lesser known will be the focus of this post: the ability to host static sites and web apps.&lt;/p&gt;
+
+
+
+&lt;p&gt;Last Saturday I gave Firebase’s hosting feature a try and &lt;a href="http://twitter.com/SeraAndroid/status/734145833600319489"&gt;shared my experience&lt;/a&gt;. The response from the developer community was overwhelming and very positive; people were interested in reasons why to choose Firebase and what features it allows to use.&lt;/p&gt;
+
+&lt;center&gt;
+  &lt;blockquote class="twitter-tweet" data-cards="hidden" data-lang="en"&gt;&lt;p lang="en" dir="ltr"&gt;Just deployed my blog with &lt;a href="https://twitter.com/Firebase"&gt;@Firebase&lt;/a&gt; in less than 2 minutes. Highly impressed and deeply in love! &lt;a href="https://t.co/bvCvJDKWfI"&gt;pic.twitter.com/bvCvJDKWfI&lt;/a&gt;&lt;/p&gt;&amp;mdash; Tim Messerschmidt (@SeraAndroid) &lt;a href="https://twitter.com/SeraAndroid/status/734145833600319489"&gt;May 21, 2016&lt;/a&gt;&lt;/blockquote&gt;
+  &lt;script async="" src="//platform.twitter.com/widgets.js" charset="utf-8"&gt;&lt;/script&gt;
+&lt;/center&gt;
+
+&lt;h2 id="the-upsides-and-downsides-of-gh-pages"&gt;The upsides and downsides of GH Pages&lt;/h2&gt;
+
+&lt;p&gt;As a quick reminder: I’ve been using &lt;a href="http://pages.github.com"&gt;GitHub Pages&lt;/a&gt; as a comfortable way to host my blog (and a variety of side-projects) for a couple of years. GH Pages is fantastic when it comes to quickly deploying your site, offers native support for Jekyll, comes with GitHub’s own SSL certificate for sites that run on their domain (github.io) and even allows for quickly editing your project &lt;a href="http://help.github.com/articles/editing-files-in-your-repository"&gt;directly in the browser&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;Sadly GH pages doesn’t allow for configuring your site’s HTTP headers (like setting the &lt;code&gt;Cache-Control&lt;/code&gt; header) to optimize performance and your application’s behavior. When using custom domains (ergo your own domain) with GitHub Pages you loose the convenience of SSL protection.&lt;/p&gt;
+
+&lt;h2 id="my-move-to-firebase"&gt;My move to Firebase&lt;/h2&gt;
+
+&lt;p&gt;Amongst the features that come per default with &lt;a href="http://firebase.google.com/docs/hosting/"&gt;Firebase Hosting&lt;/a&gt; are an amazing CDN, SSL per default, one-click rollbacks and a really fun CLI that allows for easy configuration and deployment of your project.&lt;/p&gt;
+
+&lt;p&gt;My project, this blog, consists of three folders - &lt;code&gt;data&lt;/code&gt; (static json files that I use to manage certain resources such as my blog’s &lt;a href="http://timmesserschmidt.com/events"&gt;events page&lt;/a&gt;, &lt;code&gt;source&lt;/code&gt; (this is where my Ruby code, my posts, and my blog’s templates reside) and &lt;code&gt;build&lt;/code&gt; (you see the result here); for this kind of project it’s only relevant to deploy the content of &lt;code&gt;build&lt;/code&gt;; Firebase allows for configuring your project’s &lt;code&gt;public&lt;/code&gt; folder in the &lt;code&gt;firebase.json&lt;/code&gt; (&lt;a href="http://firebase.google.com/docs/hosting/deploying#section-firebase-json"&gt;check out the docs&lt;/a&gt; for more information).&lt;/p&gt;
+
+&lt;p&gt;In addition to that, you can also define URL rewrites to clean-up your application’s URLs (for example: remove trailing slashes or redirect certain pages) and customize your application’s &lt;a href="http://firebase.google.com/docs/hosting/url-redirects-rewrites#section-headers"&gt;headers&lt;/a&gt; based on file specific &lt;a href="http://firebase.google.com/docs/hosting/full-config#section-glob"&gt;glob notation&lt;/a&gt;. This is useful for optimizing your page’s performance by tweaking the default caching behavior (check out &lt;a href="http://developers.google.com/web/fundamentals/performance/optimizing-content-efficiency/http-caching?hl=en#cache-control"&gt;this great doc&lt;/a&gt; on the &lt;code&gt;Cache-Control&lt;/code&gt; header) or setting up &lt;a href="http://en.wikipedia.org/wiki/Cross-origin_resource_sharing"&gt;Cross-origin Resource Sharing&lt;/a&gt;.&lt;/p&gt;
+
+&lt;h2 id="your-thoughts"&gt;Your thoughts&lt;/h2&gt;
+
+&lt;p&gt;I hope this post helps clarifying some of the questions I’ve received around hosting static web applications with Firebase and I’d be happy to hear your thoughts! Please feel free to contact me via &lt;a href="http://twitter.com/seraandroid"&gt;Twitter&lt;/a&gt; or &lt;a href="http://plus.google.com/+TimMesserschmidt"&gt;G+&lt;/a&gt;!&lt;/p&gt;
+</content>
+  </entry>
+  <entry>
+    <title>Service Worker Precache for Middleman</title>
+    <link rel="alternate" href="https://timmesserschmidt.com/blog/2016/05/15/sw-precache/"/>
+    <id>https://timmesserschmidt.com/blog/2016/05/15/sw-precache/</id>
+    <published>2016-05-15T00:00:00+02:00</published>
+    <updated>2016-05-15T19:35:19+02:00</updated>
+    <author>
+      <name>Tim Messerschmidt</name>
+    </author>
+    <content type="html">&lt;p&gt;After we’ve taken the time to explore the basic functionality of Service Worker in my &lt;a href="/blog/2016/05/10/service-worker/"&gt;most recent post&lt;/a&gt;, I’d like to expand on this topic by covering &lt;a href="http://github.com/GoogleChrome/sw-precache"&gt;sw-precache&lt;/a&gt; (a module for generating a worker that handles precaching of your application’s resources) and how to use it with Middleman.&lt;/p&gt;
+
+
+
+&lt;p&gt;As a quick reminder, Service Worker is a feature of Progressive Web Apps, that handles fetching and caching of resources and greatly increases application’s performance.&lt;/p&gt;
+
+&lt;p&gt;The Chrome team has released a  module called sw-precache that applies best practices around handling your application’s workers and ensuring that your client always serve the newest version of your resources. In order to achieve this, sw-precache generates MD5 hashes of all your application’s resources and stores them in the worker’s file:&lt;/p&gt;
+
+&lt;pre class="highlight javascript"&gt;&lt;code&gt;&lt;table class="rouge-table"&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td class="rouge-gutter gl"&gt;&lt;pre class="lineno"&gt;1
+2
+3
+4
+5
+&lt;/pre&gt;&lt;/td&gt;&lt;td class="rouge-code"&gt;&lt;pre&gt;&lt;span class="kd"&gt;var&lt;/span&gt; &lt;span class="nx"&gt;PrecacheConfig&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="p"&gt;[&lt;/span&gt;
+  &lt;span class="p"&gt;[&lt;/span&gt;&lt;span class="s2"&gt;"about/index.html"&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;&lt;span class="s2"&gt;"10def4949ab13adf7f1e81dd4a201a01"&lt;/span&gt;&lt;span class="p"&gt;],&lt;/span&gt;
+  &lt;span class="p"&gt;[&lt;/span&gt;&lt;span class="s2"&gt;"assets/bootstrap/dist/fonts/glyphicons-halflings-regular.eot"&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;&lt;span class="s2"&gt;"f4769f9db7466be65088239c12046"&lt;/span&gt;&lt;span class="p"&gt;],&lt;/span&gt;
+  &lt;span class="p"&gt;...&lt;/span&gt;
+&lt;span class="p"&gt;];&lt;/span&gt;
+&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Whenever a file’s size changes the related MD5 hash changes, too, and the Service Worker can update your application’s cache.&lt;/p&gt;
+
+&lt;h2 id="running-sw-precache-automatically"&gt;Running sw-precache automatically&lt;/h2&gt;
+
+&lt;p&gt;sw-precache works in harmony with Grunt and can be defined as a task in your application’s build process. Sadly Grunt is not native to the world of Ruby and therefore we’ll have to deal with Rake. Since I publish my site on GitHub pages I make use of &lt;code&gt;middleman-gh-pages&lt;/code&gt; - this gem handles pushing the built source to the &lt;code&gt;master&lt;/code&gt; branch while the actual source code resides in &lt;code&gt;source&lt;/code&gt;.&lt;/p&gt;
+
+&lt;p&gt;The perfect hook for using sw-precache would be the &lt;code&gt;publish&lt;/code&gt; task - &lt;a href="http://github.com/edgecase/middleman-gh-pages/blob/master/lib/middleman-gh-pages/tasks/gh-pages.rake#L85"&gt;as defined here&lt;/a&gt; - which ensures that there are no dirty builds, (re-)syncs the directory, builds the project and then handles pushing the source code.&lt;/p&gt;
+
+&lt;pre class="highlight ruby"&gt;&lt;code&gt;&lt;table class="rouge-table"&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td class="rouge-gutter gl"&gt;&lt;pre class="lineno"&gt;1
+2
+3
+&lt;/pre&gt;&lt;/td&gt;&lt;td class="rouge-code"&gt;&lt;pre&gt;&lt;span class="n"&gt;task&lt;/span&gt; &lt;span class="ss"&gt;:publish&lt;/span&gt; &lt;span class="o"&gt;=&amp;gt;&lt;/span&gt; &lt;span class="p"&gt;[&lt;/span&gt;&lt;span class="ss"&gt;:prevent_dirty_builds&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="ss"&gt;:sync_build_dir&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="ss"&gt;:build&lt;/span&gt;&lt;span class="p"&gt;]&lt;/span&gt; &lt;span class="k"&gt;do&lt;/span&gt;
+  &lt;span class="c1"&gt;# Fancy Ruby magic&lt;/span&gt;
+&lt;span class="k"&gt;end&lt;/span&gt;
+&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Next to sw-precache’s ability to be used as Grunt task, you can also use the Node executable &lt;a href="http://github.com/GoogleChrome/sw-precache#command-line-interface"&gt;via a CLI&lt;/a&gt; to run it on it’s own. We can use this to our advantage and define a new task in our project’s Rakefile:&lt;/p&gt;
+
+&lt;pre class="highlight ruby"&gt;&lt;code&gt;&lt;table class="rouge-table"&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td class="rouge-gutter gl"&gt;&lt;pre class="lineno"&gt;1
+2
+3
+4
+&lt;/pre&gt;&lt;/td&gt;&lt;td class="rouge-code"&gt;&lt;pre&gt;&lt;span class="n"&gt;desc&lt;/span&gt; &lt;span class="s2"&gt;"Runs sw-precache from the build directory"&lt;/span&gt;
+&lt;span class="n"&gt;task&lt;/span&gt; &lt;span class="ss"&gt;:sw&lt;/span&gt; &lt;span class="k"&gt;do&lt;/span&gt;
+  &lt;span class="n"&gt;sh&lt;/span&gt; &lt;span class="s2"&gt;"cd build &amp;amp;&amp;amp; sw-precache"&lt;/span&gt;
+&lt;span class="k"&gt;end&lt;/span&gt;
+&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;During the build process Middleman creates a new directory called &lt;code&gt;build&lt;/code&gt; in your project’s root folder - this is where we want to run sw-precache before the code gets published.&lt;/p&gt;
+
+&lt;p&gt;The last bit that needs to be done is overriding the publish task. In Rake lingo we &lt;em&gt;enhance&lt;/em&gt; the task by adding another prerequisite to the task:&lt;/p&gt;
+
+&lt;pre class="highlight ruby"&gt;&lt;code&gt;&lt;table class="rouge-table"&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td class="rouge-gutter gl"&gt;&lt;pre class="lineno"&gt;1
+&lt;/pre&gt;&lt;/td&gt;&lt;td class="rouge-code"&gt;&lt;pre&gt;&lt;span class="n"&gt;task&lt;/span&gt; &lt;span class="ss"&gt;:publish&lt;/span&gt; &lt;span class="o"&gt;=&amp;gt;&lt;/span&gt; &lt;span class="p"&gt;[&lt;/span&gt;&lt;span class="ss"&gt;:prevent_dirty_builds&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="ss"&gt;:sync_build_dir&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="ss"&gt;:build&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="ss"&gt;:sw&lt;/span&gt;&lt;span class="p"&gt;]&lt;/span&gt;
+&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Once the Rake file has been modified, running &lt;code&gt;rake publish&lt;/code&gt; leads to building the source, generating the service-worker.js file in your project’s build folder and publishing the code to GitHub.&lt;/p&gt;
+
+&lt;p&gt;I hope this proves to be useful to some of you out there - I’d be more than happy to hear your thoughts!&lt;/p&gt;
+</content>
+  </entry>
+  <entry>
+    <title>Using the Power of the Service Worker</title>
+    <link rel="alternate" href="https://timmesserschmidt.com/blog/2016/05/10/service-worker/"/>
+    <id>https://timmesserschmidt.com/blog/2016/05/10/service-worker/</id>
+    <published>2016-05-10T00:00:00+02:00</published>
+    <updated>2016-05-11T06:59:25+02:00</updated>
+    <author>
+      <name>Tim Messerschmidt</name>
+    </author>
+    <content type="html">&lt;p&gt;In today’s blog post I’d like to write about an essential component of &lt;a href="http://developers.google.com/web/progressive-web-apps?hl=en"&gt;Progressive Web Apps&lt;/a&gt;: the &lt;a href="http://slightlyoff.github.io/ServiceWorker/spec/service_worker/"&gt;Service Worker&lt;/a&gt; - an event-driven background processing tool that enables fetching resources and managing your application’s cache. The result is a gain in reliable performance; connection quality and network performance loose in importance when it comes to enjoying your application.&lt;/p&gt;
+
+
+
+&lt;p&gt;Service Worker got introduced as feature with Chrome 40 and since then made it into a number of other browsers such as Firefox, Opera, Edge (currently in the works) and hopefully soon Safari, too. You can find a complete overview about &lt;a href="http://jakearchibald.github.io/isserviceworkerready/"&gt;browser support for Service Workers here&lt;/a&gt;. A requirement for making use of Service Worker is HTTPs - this prevents things like injecting malicious code into a site that persists due to being cached.&lt;/p&gt;
+
+&lt;h2 id="putting-the-service-worker-to-work"&gt;Putting the Service Worker to work&lt;/h2&gt;
+
+&lt;p&gt;As I’ve mentioned in this post’s introduction, a Service Worker can handle fetching resources, application caching and much more. In order to make this happen Service Workers rely on ES2015’s &lt;a href="http://developer.mozilla.org/en/docs/Web/JavaScript/Reference/Global_Objects/Promise#Description"&gt;Promises&lt;/a&gt; - a new (and awesomely efficient) way to handle asynchronous requests.&lt;/p&gt;
+
+&lt;p&gt;First of all we’ll need to start adding event listener’s that subscribe to a number of important events (namely &lt;code&gt;install&lt;/code&gt;, &lt;code&gt;activate&lt;/code&gt; &amp;amp; &lt;code&gt;fetch&lt;/code&gt;). There are a &lt;a href="http://developer.mozilla.org/en-US/docs/Web/API/Service_Worker_API/Using_Service_Workers#Basic_architecture"&gt;few more events&lt;/a&gt; that can add additional functionality but we’ll ignore them for now.&lt;/p&gt;
+
+&lt;p&gt;&lt;code&gt;install&lt;/code&gt; is fired after &lt;code&gt;navigator.serviceWorker.register()&lt;/code&gt; ran successfully - this is where we want to define which files to cache. You’ll noticed that I’ve provided my domain &lt;code&gt;tme.coffee&lt;/code&gt; as the cache’s name. You can choose whatever works best (and hopefully is somehow unique) here.&lt;/p&gt;
+
+&lt;pre class="highlight javascript"&gt;&lt;code&gt;&lt;table class="rouge-table"&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td class="rouge-gutter gl"&gt;&lt;pre class="lineno"&gt;1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+&lt;/pre&gt;&lt;/td&gt;&lt;td class="rouge-code"&gt;&lt;pre&gt;&lt;span class="kd"&gt;var&lt;/span&gt; &lt;span class="nx"&gt;toCache&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="p"&gt;[&lt;/span&gt;
+  &lt;span class="s1"&gt;'/'&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;
+  &lt;span class="s1"&gt;'/public/css/site.css'&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;
+  &lt;span class="s1"&gt;'/public/js/bootstrap.min.js'&lt;/span&gt;
+&lt;span class="p"&gt;];&lt;/span&gt;
+
+&lt;span class="nx"&gt;self&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="nx"&gt;addEventListener&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s1"&gt;'install'&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="kd"&gt;function&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nx"&gt;e&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt; &lt;span class="p"&gt;{&lt;/span&gt;
+  &lt;span class="nx"&gt;e&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="nx"&gt;waitUntil&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;
+    &lt;span class="nx"&gt;caches&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="nx"&gt;open&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s1"&gt;'tme.coffee'&lt;/span&gt;&lt;span class="p"&gt;).&lt;/span&gt;&lt;span class="nx"&gt;then&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="kd"&gt;function&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nx"&gt;cache&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt; &lt;span class="p"&gt;{&lt;/span&gt;
+      &lt;span class="k"&gt;return&lt;/span&gt; &lt;span class="nx"&gt;cache&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="nx"&gt;addAll&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nx"&gt;toCache&lt;/span&gt;&lt;span class="p"&gt;).&lt;/span&gt;&lt;span class="nx"&gt;then&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="kd"&gt;function&lt;/span&gt;&lt;span class="p"&gt;()&lt;/span&gt; &lt;span class="p"&gt;{&lt;/span&gt;
+        &lt;span class="k"&gt;return&lt;/span&gt; &lt;span class="nx"&gt;self&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="nx"&gt;skipWaiting&lt;/span&gt;&lt;span class="p"&gt;();&lt;/span&gt;
+      &lt;span class="p"&gt;});&lt;/span&gt;
+    &lt;span class="p"&gt;})&lt;/span&gt;
+  &lt;span class="p"&gt;);&lt;/span&gt;
+&lt;span class="p"&gt;});&lt;/span&gt;
+&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;In my case I choose to cache my page’s CSS and Bootstrap. This saves valuable time and resources when (re-)visiting this blog, resulting in a performance gain. To force an update you’ll need to modify the Service Worker’s file - a simple trick to force an update is bumping a version number:&lt;/p&gt;
+
+&lt;pre class="highlight javascript"&gt;&lt;code&gt;&lt;table class="rouge-table"&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td class="rouge-gutter gl"&gt;&lt;pre class="lineno"&gt;1
+&lt;/pre&gt;&lt;/td&gt;&lt;td class="rouge-code"&gt;&lt;pre&gt;&lt;span class="kd"&gt;var&lt;/span&gt; &lt;span class="nx"&gt;version&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="s1"&gt;'0.0.1'&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt; &lt;span class="c1"&gt;// increment in order to force a cache update&lt;/span&gt;
+&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Depending on your site’s &lt;code&gt;cache-control&lt;/code&gt; headers the update might actually not happen directly.&lt;/p&gt;
+
+&lt;p&gt;You’ll notice the usage of &lt;code&gt;skipWaiting()&lt;/code&gt; while handling the &lt;code&gt;install&lt;/code&gt; event; this method works in relation to &lt;code&gt;clients.claim()&lt;/code&gt; and ensures that updates to the worker take immediate effect on all clients.&lt;/p&gt;
+
+&lt;p&gt;The next event, &lt;code&gt;activate&lt;/code&gt;, can be used to handle tasks like cache management. In this basic example we use &lt;code&gt;self.clients.claim()&lt;/code&gt; to set our Service Worker as the client page’s active worker:&lt;/p&gt;
+
+&lt;pre class="highlight javascript"&gt;&lt;code&gt;&lt;table class="rouge-table"&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td class="rouge-gutter gl"&gt;&lt;pre class="lineno"&gt;1
+2
+3
+&lt;/pre&gt;&lt;/td&gt;&lt;td class="rouge-code"&gt;&lt;pre&gt;&lt;span class="nx"&gt;self&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="nx"&gt;addEventListener&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s1"&gt;'activate'&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="kd"&gt;function&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nx"&gt;event&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt; &lt;span class="p"&gt;{&lt;/span&gt;
+  &lt;span class="nx"&gt;event&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="nx"&gt;waitUntil&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nx"&gt;self&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="nx"&gt;clients&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="nx"&gt;claim&lt;/span&gt;&lt;span class="p"&gt;());&lt;/span&gt;
+&lt;span class="p"&gt;});&lt;/span&gt;
+&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;The final event we’ll explore is &lt;code&gt;fetch&lt;/code&gt;. This is where we can decide if a resource should be returned from the application’s cache or should be fetched and provided to the client:&lt;/p&gt;
+
+&lt;pre class="highlight javascript"&gt;&lt;code&gt;&lt;table class="rouge-table"&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td class="rouge-gutter gl"&gt;&lt;pre class="lineno"&gt;1
+2
+3
+4
+5
+6
+7
+&lt;/pre&gt;&lt;/td&gt;&lt;td class="rouge-code"&gt;&lt;pre&gt;&lt;span class="nx"&gt;self&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="nx"&gt;addEventListener&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s1"&gt;'fetch'&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="kd"&gt;function&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nx"&gt;event&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt; &lt;span class="p"&gt;{&lt;/span&gt;
+  &lt;span class="nx"&gt;event&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="nx"&gt;respondWith&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;
+    &lt;span class="nx"&gt;caches&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="nx"&gt;match&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nx"&gt;event&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="nx"&gt;request&lt;/span&gt;&lt;span class="p"&gt;).&lt;/span&gt;&lt;span class="nx"&gt;then&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="kd"&gt;function&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nx"&gt;response&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt; &lt;span class="p"&gt;{&lt;/span&gt;
+      &lt;span class="k"&gt;return&lt;/span&gt; &lt;span class="nx"&gt;response&lt;/span&gt; &lt;span class="o"&gt;||&lt;/span&gt; &lt;span class="nx"&gt;fetch&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nx"&gt;event&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="nx"&gt;request&lt;/span&gt;&lt;span class="p"&gt;);&lt;/span&gt;
+    &lt;span class="p"&gt;})&lt;/span&gt;
+  &lt;span class="p"&gt;);&lt;/span&gt;
+&lt;span class="p"&gt;});&lt;/span&gt;
+&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h3 id="adding-the-service-worker"&gt;Adding the Service Worker&lt;/h3&gt;
+
+&lt;p&gt;In this last section we’ll go through the needed code in order to load the worker we’ve defined above. In my case the Service Worker resides in a file called &lt;code&gt;sw.js&lt;/code&gt; in my project’s root folder. The following snippet ends up enclosed by a &lt;code&gt;&amp;lt;script&amp;gt;&lt;/code&gt;-tag in your layout’s body. As with most resources that end up being loaded when opening up your page I’d recommend moving this code at the bottom of your document in order to ensure that your file renders other information (such as your minimum required CSS and the document itself) before:&lt;/p&gt;
+
+&lt;pre class="highlight javascript"&gt;&lt;code&gt;&lt;table class="rouge-table"&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td class="rouge-gutter gl"&gt;&lt;pre class="lineno"&gt;1
+2
+3
+4
+5
+6
+7
+8
+9
+&lt;/pre&gt;&lt;/td&gt;&lt;td class="rouge-code"&gt;&lt;pre&gt;&lt;span class="k"&gt;if&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s1"&gt;'serviceWorker'&lt;/span&gt; &lt;span class="k"&gt;in&lt;/span&gt; &lt;span class="nx"&gt;navigator&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt; &lt;span class="p"&gt;{&lt;/span&gt;
+  &lt;span class="nx"&gt;navigator&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="nx"&gt;serviceWorker&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="nx"&gt;register&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s1"&gt;'/sw.js'&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="p"&gt;{&lt;/span&gt; &lt;span class="na"&gt;scope&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt; &lt;span class="s1"&gt;'/'&lt;/span&gt; &lt;span class="p"&gt;}).&lt;/span&gt;&lt;span class="nx"&gt;then&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="kd"&gt;function&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nx"&gt;registration&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt; &lt;span class="p"&gt;{&lt;/span&gt;
+      &lt;span class="nx"&gt;console&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="nx"&gt;log&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s2"&gt;"SW registered"&lt;/span&gt;&lt;span class="p"&gt;);&lt;/span&gt;
+  &lt;span class="p"&gt;});&lt;/span&gt;
+
+  &lt;span class="nx"&gt;navigator&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="nx"&gt;serviceWorker&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="nx"&gt;ready&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="nx"&gt;then&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="kd"&gt;function&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nx"&gt;registration&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt; &lt;span class="p"&gt;{&lt;/span&gt;
+    &lt;span class="nx"&gt;console&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="nx"&gt;log&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s2"&gt;"SW ready"&lt;/span&gt;&lt;span class="p"&gt;);&lt;/span&gt;
+  &lt;span class="p"&gt;});&lt;/span&gt;
+&lt;span class="p"&gt;}&lt;/span&gt;
+&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;The beauty is that the snippet doesn’t cause any harm when Service Worker is not available. We don’t break anything and the worker is simply ignored.&lt;/p&gt;
+
+&lt;p&gt;Congratulations! If you’ve followed this post (and adjusted the code to your needs) you should’ve Service Worker-enabled your application. You can check if everything works as intended by navigating to &lt;code&gt;chrome://serviceworker-internals&lt;/code&gt;.&lt;/p&gt;
+</content>
+  </entry>
+  <entry>
+    <title>kramdown instead of Redcarpet</title>
+    <link rel="alternate" href="https://timmesserschmidt.com/blog/2016/04/07/kramdown-redcarpet/"/>
+    <id>https://timmesserschmidt.com/blog/2016/04/07/kramdown-redcarpet/</id>
+    <published>2016-04-07T00:00:00+02:00</published>
+    <updated>2016-04-21T18:48:48+02:00</updated>
+    <author>
+      <name>Tim Messerschmidt</name>
+    </author>
+    <content type="html">&lt;p&gt;Since &lt;a href="/blog/2016/03/14/a-new-blog-using-middleman/"&gt;my switch to Middleman&lt;/a&gt; I’ve been using &lt;a href="http://github.com/vmg/redcarpet"&gt;Redcarpet&lt;/a&gt; as Markdown engine. The rendering engine itself ran fine but sadly doesn’t offer a way to specify custom classes for elements - a shame when you’re looking for a way to declare a certain image as &lt;code&gt;img-responsive&lt;/code&gt; for Bootstrap et cetera.&lt;/p&gt;
+
+
+
+&lt;p&gt;Middleman gladly supports a variety of engines (including &lt;a href="http://kramdown.gettalong.org/"&gt;kramdown&lt;/a&gt;) and I figured it might be worth switching in order to obtain that extra bit of flexibility. kramdown comes with a non-standard syntax for CSS-classes:&lt;/p&gt;
+
+&lt;pre class="highlight markdown"&gt;&lt;code&gt;&lt;table class="rouge-table"&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td class="rouge-gutter gl"&gt;&lt;pre class="lineno"&gt;1
+2
+3
+&lt;/pre&gt;&lt;/td&gt;&lt;td class="rouge-code"&gt;&lt;pre&gt;&lt;span class="p"&gt;![&lt;/span&gt;&lt;span class="nv"&gt;an-image-description&lt;/span&gt;&lt;span class="p"&gt;](&lt;/span&gt;&lt;span class="sx"&gt;someimage.png&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;{: .img-responsive }
+&lt;span class="p"&gt;![&lt;/span&gt;&lt;span class="nv"&gt;another-image-description&lt;/span&gt;&lt;span class="p"&gt;](&lt;/span&gt;&lt;span class="sx"&gt;anotherimage.png&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;{: .img-responsive .round }
+&lt;span class="p"&gt;![&lt;/span&gt;&lt;span class="nv"&gt;an-image-with-id&lt;/span&gt;&lt;span class="p"&gt;](&lt;/span&gt;&lt;span class="sx"&gt;imagewithid.png&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;{: #banner .img-responsive }
+&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;When you’re looking into switching your Markdown engine you’ll have to set the following line in your &lt;code&gt;config.rb&lt;/code&gt;:&lt;/p&gt;
+
+&lt;pre class="highlight ruby"&gt;&lt;code&gt;&lt;table class="rouge-table"&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td class="rouge-gutter gl"&gt;&lt;pre class="lineno"&gt;1
+&lt;/pre&gt;&lt;/td&gt;&lt;td class="rouge-code"&gt;&lt;pre&gt;&lt;span class="n"&gt;set&lt;/span&gt; &lt;span class="ss"&gt;:markdown_engine&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="ss"&gt;:kramdown&lt;/span&gt;
+&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Another engine that allows using custom CSS-classes via attribute lists is &lt;a href="http://maruku.rubyforge.org/proposal.html#attribute_lists"&gt;Maruku&lt;/a&gt;. Feature-wise it looks quite similar to kramdown but there has been little activity in &lt;a href="http://github.com/bhollis/maruku"&gt;it’s GitHub repository&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;I hope this short post helps a few of you,&lt;br /&gt;
+Tim&lt;/p&gt;
+</content>
+  </entry>
+  <entry>
+    <title>Let's Encrypt for GitHub Pages</title>
+    <link rel="alternate" href="https://timmesserschmidt.com/blog/2016/03/18/lets-encrypt-gh-pages/"/>
+    <id>https://timmesserschmidt.com/blog/2016/03/18/lets-encrypt-gh-pages/</id>
+    <published>2016-03-18T00:00:00+01:00</published>
+    <updated>2016-04-21T18:48:48+02:00</updated>
+    <author>
+      <name>Tim Messerschmidt</name>
+    </author>
+    <content type="html">&lt;p&gt;In my &lt;a href="/blog/2016/03/14/a-new-blog-using-middleman/"&gt;most recent post&lt;/a&gt; I wrote about rewriting my blog from scratch and my attempts at improving it’s performance, reliability and ease of use. While exploring possible options I also investigated if it makes sense - and if it’s worth the hassle - to enable HTTPS for this site.&lt;/p&gt;
+
+
+
+&lt;p&gt;While searching for possible solution a GitHub issue came up that asked GitHub to start supporting HTTPS for GitHub through SSL certificates provided by Let’s Encrypt. To me it seemed like the discussion was worthwhile to follow-up with; the plan was to go back within the next few days and see if an elegant solution has been proposed.&lt;/p&gt;
+
+&lt;h3 id="lets-encrypt-amp-kloudsec"&gt;Let’s Encrypt &amp;amp; Kloudsec&lt;/h3&gt;
+
+&lt;p&gt;&lt;a href="http://letsencrypt.org"&gt;Let’s Encrypt&lt;/a&gt; is a relatively new Certificate Authority (sponsored by prominent companies and teams such as Mozilla, the Google Chrome team and Facebook), that aims at securing internet traffic by issuing free SSL certificates.&lt;/p&gt;
+
+&lt;p&gt;An amazing startup from Singapore, &lt;a href="http://kloudsec.com"&gt;Kloudsec&lt;/a&gt;, tackled the issue by creating a CDN that works directly with Let’s Encrypt and offers SSL protection - plus a few &lt;a href="http://kloudsec.com/#/features"&gt;other optimizations&lt;/a&gt; - with very little configuration effort. The whole procedure involved changing merely 3 DNS records and after a few minutes my SSL certificate was issued.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src="/public/img/posts/ssl.png" alt="ssl" class="img-responsive" /&gt;&lt;/p&gt;
+
+&lt;p&gt;I’m pretty happy with this solution and am keen to see what else they come up with.&lt;/p&gt;
+</content>
+  </entry>
+</feed>

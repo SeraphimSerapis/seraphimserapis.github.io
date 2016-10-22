@@ -1,0 +1,277 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+<meta http-equiv='X-UA-Compatible' content='IE=edge;chrome=1' />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+
+<style>
+  body {
+    background-color: #2C3E50;
+    font-family: HelveticaNeue-Light,"Helvetica Neue Light","Helvetica Neue",Helvetica,"Open Sans",sans-serif;
+    font-size: 18px;
+    color: #E1E4E6;
+  }
+
+  p {
+    font-weight: 300;
+  }
+
+  h1, h2, h3, h4, h5 {
+    font-weight: 400;
+    letter-spacing: -1px;
+    color: #F4511E;
+  }
+
+  a, a:hover, a:visited {
+    color: #F4511E;
+    text-decoration: none;
+  }
+</style>
+
+
+<link href="/public/css/site.css" rel="stylesheet" />
+
+<meta name="theme-color" content="#2C3E50">
+
+<!-- Web Application Manifest -->
+<link rel="manifest" href="https://timmesserschmidt.com/manifest.json">
+
+<!-- Chrome on Android -->
+<meta name="theme-color" content="#2C3E50">
+<meta name="mobile-web-app-capable" content="yes">
+<meta name="application-name" content="timmesserschmidt">
+<link rel="icon" sizes="192x192" href="/public/img/chrome192x192.png">
+
+<!-- Safari on iOS -->
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black">
+<meta name="apple-mobile-web-app-title" content="timmesserschmidt">
+
+<link rel="apple-touch-icon" href="/public/img/apple192x192.png">
+<link rel="apple-touch-icon" sizes="76x76" href="/public/img/apple76x76.png">
+<link rel="apple-touch-icon" sizes="120x120" href="/public/img/apple120x120.png">
+<link rel="apple-touch-icon" sizes="152x152" href="/public/img/apple152x152.png">
+
+<!-- Windows 8 -->
+<meta name="msapplication-TileColor" content="#2C3E50">
+<meta name="msapplication-TileImage" content="/public/img/ms144x144.png">
+
+<!-- Twitter Cards -->
+<meta name="twitter:card" content="summary" />
+<meta name="twitter:site" content="@seraandroid" />
+<meta name="twitter:title" content="Service Worker Precache for Middleman" />
+<meta name="twitter:description" content="After we’ve taken the time to explore the basic functionality of Service Worker in my most recent post, I’d like to expand on this topic by covering sw-precache (a module for generating a worker th..." />
+<meta name="twitter:image" content="https://timmesserschmidt.com/public/img/profile.png" />
+
+<!-- Facebook Open Graph -->
+<meta property="og:title" content="Service Worker Precache for Middleman" />
+<meta property="og:site_name" content="timmesserschmidt" />
+<meta property="og:description" content="After we’ve taken the time to explore the basic functionality of Service Worker in my most recent post, I’d like to expand on this topic by covering sw-precache (a module for generating a worker that handles precaching of your application’s resources) and how to use it with Middleman. As a quick reminder, Service Worker is a feature of Progressive Web Apps, that handles fetching and caching of resources and greatly increases application’s performance. The Chrome team has released a module cal..." />
+<meta property="fb:app_id" content="969436346421526" />
+<meta property="og:type" content="article" />
+<meta property="og:image" content="https://timmesserschmidt.com/public/img/profile.png" />
+<meta property="og:url" content="https://timmesserschmidt.com/blog/2016/05/15/sw-precache/" />
+
+<title>Service Worker Precache for Middleman - timmesserschmidt</title>
+
+<meta property="article:author" content="https://www.facebook.com/tim.messerschmidt" />
+
+<link href="/favicon.ico" rel="icon" type="image/ico" />
+
+<link rel="alternate" type="application/atom+xml" title="Atom Feed" href="https://timmesserschmidt.com/feed.xml" />
+
+  </head>
+  <body>
+    <nav class="navbar navbar-inverse navbar-static-top" id="navbar">
+  <div class="container">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-navbar-collapse" aria-expanded="false">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="/">timmesserschmidt</a>
+    </div>
+    <div class="collapse navbar-collapse" id="bs-navbar-collapse">
+      <ul class="nav navbar-nav">
+        <li><a href="/">Blog</a></li>
+        <li><a href="/events">Events</a></li>
+        <li><a href="/about">About</a></li>
+      </ul>
+      <div class="navbar-right" id="social">
+        <ul class="nav navbar-nav">
+          <li>
+<a href="mailto:timmesserschmidt@gmail.com">              <i class="hidden-xs fa fa-envelope-square fa-2x fa-fw"></i>
+              <span class="sr-only">Mail</span>
+              <span class="visible-xs-inline-block">Mail</span>
+</a>          </li>
+          <li><a href="http://plus.google.com/+TimMesserschmidt"><i class="hidden-xs fa fa-google-plus-square fa-2x fa-fw"></i><span class="sr-only">Google Plus</span><span class="visible-xs-inline-block">Google Plus</span></a></li>
+          <li><a href="http://twitter.com/seraandroid"><i class="hidden-xs fa fa-twitter-square fa-2x fa-fw"></i><span class="sr-only">Twitter</span><span class="visible-xs-inline-block">Twitter</span></a></li>
+          <li><a href="http://linkedin.com/in/timmesserschmidt"><i class="hidden-xs fa fa-linkedin-square fa-2x fa-fw"></i><span class="sr-only">LinkedIn</span><span class="visible-xs-inline-block">LinkedIn</span></a></li>
+          <li><a href="http://github.com/seraphimserapis"><i class="hidden-xs fa fa-github-square fa-2x fa-fw"></i><span class="sr-only">GitHub</span><span class="visible-xs-inline-block">GitHub</span></a></li>
+          <li>
+<a href="/feed.xml">              <i class="hidden-xs fa fa-rss-square fa-2x fa-fw"></i>
+              <span class="sr-only">RSS</span>
+              <span class="visible-xs-inline-block">RSS</span>
+</a>          </li>
+        </ul><!-- nav navbar-nav -->
+      </div><!-- navbar-right -->
+    </div><!-- collapse navbar-collapse -->
+  </div><!-- container -->
+</nav>
+
+
+    <div class="container">
+      <div id="main" role="main">
+          <article>
+    <div class="page-header title">
+      <h1><a href="#">Service Worker Precache for Middleman</a></h1>
+      <i class="fa fa-calendar" aria-hidden="true"></i>
+      <span class="date">May 15th, 2016</span>
+      <div class="tags">
+<a href="/blog/categories/general">          <button class="btn btn-tag">general</button>
+</a>      </div>
+    </div>
+    <p>After we’ve taken the time to explore the basic functionality of Service Worker in my <a href="/blog/2016/05/10/service-worker/">most recent post</a>, I’d like to expand on this topic by covering <a href="http://github.com/GoogleChrome/sw-precache">sw-precache</a> (a module for generating a worker that handles precaching of your application’s resources) and how to use it with Middleman.</p>
+
+
+
+<p>As a quick reminder, Service Worker is a feature of Progressive Web Apps, that handles fetching and caching of resources and greatly increases application’s performance.</p>
+
+<p>The Chrome team has released a  module called sw-precache that applies best practices around handling your application’s workers and ensuring that your client always serve the newest version of your resources. In order to achieve this, sw-precache generates MD5 hashes of all your application’s resources and stores them in the worker’s file:</p>
+
+<pre class="highlight javascript"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+</pre></td><td class="rouge-code"><pre><span class="kd">var</span> <span class="nx">PrecacheConfig</span> <span class="o">=</span> <span class="p">[</span>
+  <span class="p">[</span><span class="s2">"about/index.html"</span><span class="p">,</span><span class="s2">"10def4949ab13adf7f1e81dd4a201a01"</span><span class="p">],</span>
+  <span class="p">[</span><span class="s2">"assets/bootstrap/dist/fonts/glyphicons-halflings-regular.eot"</span><span class="p">,</span><span class="s2">"f4769f9db7466be65088239c12046"</span><span class="p">],</span>
+  <span class="p">...</span>
+<span class="p">];</span>
+</pre></td></tr></tbody></table>
+</code></pre>
+<p>Whenever a file’s size changes the related MD5 hash changes, too, and the Service Worker can update your application’s cache.</p>
+
+<h2 id="running-sw-precache-automatically">Running sw-precache automatically</h2>
+
+<p>sw-precache works in harmony with Grunt and can be defined as a task in your application’s build process. Sadly Grunt is not native to the world of Ruby and therefore we’ll have to deal with Rake. Since I publish my site on GitHub pages I make use of <code>middleman-gh-pages</code> - this gem handles pushing the built source to the <code>master</code> branch while the actual source code resides in <code>source</code>.</p>
+
+<p>The perfect hook for using sw-precache would be the <code>publish</code> task - <a href="http://github.com/edgecase/middleman-gh-pages/blob/master/lib/middleman-gh-pages/tasks/gh-pages.rake#L85">as defined here</a> - which ensures that there are no dirty builds, (re-)syncs the directory, builds the project and then handles pushing the source code.</p>
+
+<pre class="highlight ruby"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+3
+</pre></td><td class="rouge-code"><pre><span class="n">task</span> <span class="ss">:publish</span> <span class="o">=&gt;</span> <span class="p">[</span><span class="ss">:prevent_dirty_builds</span><span class="p">,</span> <span class="ss">:sync_build_dir</span><span class="p">,</span> <span class="ss">:build</span><span class="p">]</span> <span class="k">do</span>
+  <span class="c1"># Fancy Ruby magic</span>
+<span class="k">end</span>
+</pre></td></tr></tbody></table>
+</code></pre>
+<p>Next to sw-precache’s ability to be used as Grunt task, you can also use the Node executable <a href="http://github.com/GoogleChrome/sw-precache#command-line-interface">via a CLI</a> to run it on it’s own. We can use this to our advantage and define a new task in our project’s Rakefile:</p>
+
+<pre class="highlight ruby"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+3
+4
+</pre></td><td class="rouge-code"><pre><span class="n">desc</span> <span class="s2">"Runs sw-precache from the build directory"</span>
+<span class="n">task</span> <span class="ss">:sw</span> <span class="k">do</span>
+  <span class="n">sh</span> <span class="s2">"cd build &amp;&amp; sw-precache"</span>
+<span class="k">end</span>
+</pre></td></tr></tbody></table>
+</code></pre>
+<p>During the build process Middleman creates a new directory called <code>build</code> in your project’s root folder - this is where we want to run sw-precache before the code gets published.</p>
+
+<p>The last bit that needs to be done is overriding the publish task. In Rake lingo we <em>enhance</em> the task by adding another prerequisite to the task:</p>
+
+<pre class="highlight ruby"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+</pre></td><td class="rouge-code"><pre><span class="n">task</span> <span class="ss">:publish</span> <span class="o">=&gt;</span> <span class="p">[</span><span class="ss">:prevent_dirty_builds</span><span class="p">,</span> <span class="ss">:sync_build_dir</span><span class="p">,</span> <span class="ss">:build</span><span class="p">,</span> <span class="ss">:sw</span><span class="p">]</span>
+</pre></td></tr></tbody></table>
+</code></pre>
+<p>Once the Rake file has been modified, running <code>rake publish</code> leads to building the source, generating the service-worker.js file in your project’s build folder and publishing the code to GitHub.</p>
+
+<p>I hope this proves to be useful to some of you out there - I’d be more than happy to hear your thoughts!</p>
+
+  </article>
+  <!-- Disqus -->
+<div id='disqus_thread'></div>
+<script type='text/javascript'>
+//<![CDATA[
+                  var disqus_shortname = 'tmecoffee';
+          
+    (function() {
+        var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+        dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    })();
+//]]>
+</script>
+<noscript>Please enable JavaScript to view the <a href='http://disqus.com/?ref_noscript'>comments powered by Disqus.</a></noscript>
+<a href='http://disqus.com' class='dsq-brlink'>comments powered by <span class='logo-disqus'>Disqus</span></a>
+
+<script type="text/javascript">
+//<![CDATA[
+    var disqus_shortname = 'tmecoffee';
+    (function () {
+        var s = document.createElement('script'); s.async = true;
+        s.type = 'text/javascript';
+        s.src = '//' + disqus_shortname + '.disqus.com/count.js';
+        (document.getElementsByTagName('HEAD')[0] || document.getElementsByTagName('BODY')[0]).appendChild(s);
+    }());
+//]]>
+</script>
+
+<!-- End Disqus -->
+
+
+      </div>
+      <footer>
+  <small>&copy; Tim Messerschmidt 2016 - The opinions stated here are my own, not those of my company.</small>
+</footer>
+
+    </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
+<script>window.jQuery || document.write('<script src="public/js/jquery-1.12.2.min.js"><\/script>')</script>
+<script src="/public/js/bootstrap.min.js"></script>
+<!-- Google Analytics -->
+<script type="text/javascript">
+  var _gaq = _gaq || [];
+  _gaq.push(["_setAccount", "UA-40700707-1"]);
+  _gaq.push(["_trackPageview"]);
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? '//ssl' : '//www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+</script>
+<!-- End Google Analytics -->
+
+<script type="text/javascript">
+  /* Async Font Awesome */
+  (function() {
+  	var css = document.createElement('link');
+  	css.href = '//maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css';
+  	css.rel = 'stylesheet';
+  	css.type = 'text/css';
+  	document.getElementsByTagName('head')[0].appendChild(css);
+  })();
+</script>
+
+<!-- <script>
+if('serviceWorker' in navigator) {
+  navigator.serviceWorker.register('/service-worker.js', { scope: '/' }).then(function(registration) {
+      console.log("SW registered");
+  });
+
+  navigator.serviceWorker.ready.then(function(registration) {
+    console.log("SW ready");
+  });
+}
+</script>
+ -->
+
+  </body>
+</html>

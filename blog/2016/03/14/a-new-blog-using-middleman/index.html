@@ -1,0 +1,351 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+<meta http-equiv='X-UA-Compatible' content='IE=edge;chrome=1' />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+
+<style>
+  body {
+    background-color: #2C3E50;
+    font-family: HelveticaNeue-Light,"Helvetica Neue Light","Helvetica Neue",Helvetica,"Open Sans",sans-serif;
+    font-size: 18px;
+    color: #E1E4E6;
+  }
+
+  p {
+    font-weight: 300;
+  }
+
+  h1, h2, h3, h4, h5 {
+    font-weight: 400;
+    letter-spacing: -1px;
+    color: #F4511E;
+  }
+
+  a, a:hover, a:visited {
+    color: #F4511E;
+    text-decoration: none;
+  }
+</style>
+
+
+<link href="/public/css/site.css" rel="stylesheet" />
+
+<meta name="theme-color" content="#2C3E50">
+
+<!-- Web Application Manifest -->
+<link rel="manifest" href="https://timmesserschmidt.com/manifest.json">
+
+<!-- Chrome on Android -->
+<meta name="theme-color" content="#2C3E50">
+<meta name="mobile-web-app-capable" content="yes">
+<meta name="application-name" content="timmesserschmidt">
+<link rel="icon" sizes="192x192" href="/public/img/chrome192x192.png">
+
+<!-- Safari on iOS -->
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black">
+<meta name="apple-mobile-web-app-title" content="timmesserschmidt">
+
+<link rel="apple-touch-icon" href="/public/img/apple192x192.png">
+<link rel="apple-touch-icon" sizes="76x76" href="/public/img/apple76x76.png">
+<link rel="apple-touch-icon" sizes="120x120" href="/public/img/apple120x120.png">
+<link rel="apple-touch-icon" sizes="152x152" href="/public/img/apple152x152.png">
+
+<!-- Windows 8 -->
+<meta name="msapplication-TileColor" content="#2C3E50">
+<meta name="msapplication-TileImage" content="/public/img/ms144x144.png">
+
+<!-- Twitter Cards -->
+<meta name="twitter:card" content="summary" />
+<meta name="twitter:site" content="@seraandroid" />
+<meta name="twitter:title" content="A new blog using Middleman" />
+<meta name="twitter:description" content="After nearly three years I’ve taken the time to look at my blog and realized that the Octopress (& Jekyll) based solution wasn’t good enough anymore. Octopress was outdated (the blog was based on v..." />
+<meta name="twitter:image" content="https://timmesserschmidt.com/public/img/profile.png" />
+
+<!-- Facebook Open Graph -->
+<meta property="og:title" content="A new blog using Middleman" />
+<meta property="og:site_name" content="timmesserschmidt" />
+<meta property="og:description" content="After nearly three years I’ve taken the time to look at my blog and realized that the Octopress (& Jekyll) based solution wasn’t good enough anymore. Octopress was outdated (the blog was based on version 2 instead of the current v3 version), leveraged Bootstrap 2 and another author’s publicly available template. Since Octopress and the technology behind it always seemed a little over the top for what I was looking for, I decided to create a new blog from scratch. This time I wanted to try out..." />
+<meta property="fb:app_id" content="969436346421526" />
+<meta property="og:type" content="article" />
+<meta property="og:image" content="https://timmesserschmidt.com/public/img/profile.png" />
+<meta property="og:url" content="https://timmesserschmidt.com/blog/2016/03/14/a-new-blog-using-middleman/" />
+
+<title>A new blog using Middleman - timmesserschmidt</title>
+
+<meta property="article:author" content="https://www.facebook.com/tim.messerschmidt" />
+
+<link href="/favicon.ico" rel="icon" type="image/ico" />
+
+<link rel="alternate" type="application/atom+xml" title="Atom Feed" href="https://timmesserschmidt.com/feed.xml" />
+
+  </head>
+  <body>
+    <nav class="navbar navbar-inverse navbar-static-top" id="navbar">
+  <div class="container">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-navbar-collapse" aria-expanded="false">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="/">timmesserschmidt</a>
+    </div>
+    <div class="collapse navbar-collapse" id="bs-navbar-collapse">
+      <ul class="nav navbar-nav">
+        <li><a href="/">Blog</a></li>
+        <li><a href="/events">Events</a></li>
+        <li><a href="/about">About</a></li>
+      </ul>
+      <div class="navbar-right" id="social">
+        <ul class="nav navbar-nav">
+          <li>
+<a href="mailto:timmesserschmidt@gmail.com">              <i class="hidden-xs fa fa-envelope-square fa-2x fa-fw"></i>
+              <span class="sr-only">Mail</span>
+              <span class="visible-xs-inline-block">Mail</span>
+</a>          </li>
+          <li><a href="http://plus.google.com/+TimMesserschmidt"><i class="hidden-xs fa fa-google-plus-square fa-2x fa-fw"></i><span class="sr-only">Google Plus</span><span class="visible-xs-inline-block">Google Plus</span></a></li>
+          <li><a href="http://twitter.com/seraandroid"><i class="hidden-xs fa fa-twitter-square fa-2x fa-fw"></i><span class="sr-only">Twitter</span><span class="visible-xs-inline-block">Twitter</span></a></li>
+          <li><a href="http://linkedin.com/in/timmesserschmidt"><i class="hidden-xs fa fa-linkedin-square fa-2x fa-fw"></i><span class="sr-only">LinkedIn</span><span class="visible-xs-inline-block">LinkedIn</span></a></li>
+          <li><a href="http://github.com/seraphimserapis"><i class="hidden-xs fa fa-github-square fa-2x fa-fw"></i><span class="sr-only">GitHub</span><span class="visible-xs-inline-block">GitHub</span></a></li>
+          <li>
+<a href="/feed.xml">              <i class="hidden-xs fa fa-rss-square fa-2x fa-fw"></i>
+              <span class="sr-only">RSS</span>
+              <span class="visible-xs-inline-block">RSS</span>
+</a>          </li>
+        </ul><!-- nav navbar-nav -->
+      </div><!-- navbar-right -->
+    </div><!-- collapse navbar-collapse -->
+  </div><!-- container -->
+</nav>
+
+
+    <div class="container">
+      <div id="main" role="main">
+          <article>
+    <div class="page-header title">
+      <h1><a href="#">A new blog using Middleman</a></h1>
+      <i class="fa fa-calendar" aria-hidden="true"></i>
+      <span class="date">March 14th, 2016</span>
+      <div class="tags">
+<a href="/blog/categories/general">          <button class="btn btn-tag">general</button>
+</a>      </div>
+    </div>
+    <p>After nearly three years I’ve taken the time to look at my blog and realized that the Octopress (&amp; Jekyll) based solution wasn’t good enough anymore. Octopress was outdated (the blog was based on version 2 instead of the current v3 version), leveraged Bootstrap 2 and another author’s publicly available template.</p>
+
+
+
+<p>Since Octopress and the technology behind it always seemed a little over the top for what I was looking for, I decided to create a new blog from scratch. This time I wanted to try out <a href="http://middlemanapp.com">Middleman</a> - a fantastic static site generator - that can be configured to work very similar to other (often Jekyll-based) solutions. I knew about Middleman’s capabilities since <a href="http://cristianobetta.com">Cristiano</a> successfully built sites with it before and was able to help with tweaking the blog’s systems to my liking.</p>
+
+<p>My goals for this projects were simple: I wanted to ensure that all my previous links continued to work, had the goal of increasing the blog’s speed and wanted to improve my Ruby skills.</p>
+
+<h3 id="middleman-v4">Middleman v4</h3>
+
+<p>The blog is now based on the latest release of Middleman - version 4 - which comes with the upside of many tweaks &amp; optimizations under the hood and a huge downside of a lot of incompatible extensions. When running into issues you’ll notice that not too many people ran into them before and therefore simply using Google didn’t solve every problem (reading open and recently closed issues on GitHub helped a lot, though).</p>
+
+<p>Skimming over my blog’s Gemfile will reveal that I had to use a couple of gems from other sources than ruby-gems.org:</p>
+
+<pre class="highlight plaintext"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+</pre></td><td class="rouge-code"><pre># Middleman Gems
+gem "middleman", "~&gt; 4.0.0"
+gem "middleman-blog"
+gem "middleman-livereload"
+gem "middleman-meta-tags",
+  :git =&gt; "https://github.com/rossta/middleman-meta-tags"
+gem "middleman-syntax"
+gem "middleman-sprockets", "~&gt; 4.0.0.rc"
+gem "middleman-disqus"
+gem "middleman-google-analytics", "~&gt; 2.1"
+gem "middleman-gh-pages"
+</pre></td></tr></tbody></table>
+</code></pre>
+<p><code>middleman-meta-tags</code> - a useful extension for setting HTML meta tags isn’t compatible with Middleman v4 anymore; gladly a user on GitHub forked the project and implemented the changes needed in order to make the gem work with Middleman 4 again.</p>
+
+<p>Another gem that had to be (re-)added was <code>middleman-sprockets</code> - Middleman’s developers chose to rely on external asset pipelines and therefore dropped Sprockets (which is also Rail’s asset packaging service). Since I wanted to be able to support Sass as CSS extension the current release candidate had to be installed.</p>
+
+<h4 id="data-files">Data files</h4>
+
+<p>A feature I especially love is called Data Files. Developers are allowed to store data sets in the <code>data</code> folder as JSON or YAML files; by doing so you can avoid cluttering up your templates!</p>
+
+<p>A good example is <a href="/events">this blog’s events</a> page:</p>
+
+<pre class="highlight javascript"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+</pre></td><td class="rouge-code"><pre><span class="p">{</span>
+  <span class="s2">"years"</span><span class="p">:</span> <span class="p">[</span>
+    <span class="p">{</span>
+      <span class="s2">"year"</span><span class="p">:</span> <span class="mi">2015</span><span class="p">,</span>
+      <span class="s2">"events"</span><span class="p">:</span> <span class="p">[</span>
+        <span class="p">{</span>
+          <span class="s2">"name"</span><span class="p">:</span> <span class="s2">"JSConf.Asia"</span><span class="p">,</span>
+          <span class="s2">"location"</span><span class="p">:</span> <span class="s2">"Singapore"</span><span class="p">,</span>
+          <span class="s2">"date"</span><span class="p">:</span> <span class="s2">"November 19th - 20th"</span>
+        <span class="p">},</span>
+        <span class="p">...</span>
+      <span class="p">]</span>
+    <span class="p">}</span>
+  <span class="p">]</span>
+<span class="p">}</span>
+</pre></td></tr></tbody></table>
+</code></pre>
+<p>Rendering the data is as easy as accessing it via the templates:</p>
+
+<pre class="highlight erb"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+</pre></td><td class="rouge-code"><pre><span class="cp">&lt;%</span> <span class="n">data</span><span class="p">.</span><span class="nf">events</span><span class="p">.</span><span class="nf">years</span><span class="p">.</span><span class="nf">each</span> <span class="k">do</span> <span class="o">|</span><span class="n">year</span><span class="o">|</span> <span class="cp">%&gt;</span>
+  <span class="nt">&lt;h3</span> <span class="na">class=</span><span class="s">"page-header"</span><span class="nt">&gt;</span><span class="cp">&lt;%=</span> <span class="n">year</span><span class="p">.</span><span class="nf">year</span> <span class="cp">%&gt;</span><span class="nt">&lt;/h3&gt;</span>
+  <span class="cp">&lt;%</span> <span class="n">year</span><span class="p">.</span><span class="nf">events</span><span class="p">.</span><span class="nf">each</span> <span class="k">do</span> <span class="o">|</span><span class="n">event</span><span class="o">|</span> <span class="cp">%&gt;</span>
+    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"row event"</span><span class="nt">&gt;</span>
+      <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"col-md-3"</span><span class="nt">&gt;</span><span class="cp">&lt;%=</span> <span class="n">event</span><span class="p">.</span><span class="nf">date</span> <span class="cp">%&gt;</span><span class="nt">&lt;/div&gt;</span>
+      <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"col-md-6"</span><span class="nt">&gt;</span><span class="cp">&lt;%=</span> <span class="n">event</span><span class="p">.</span><span class="nf">name</span> <span class="cp">%&gt;</span><span class="nt">&lt;/div&gt;</span>
+      <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"col-md-3"</span><span class="nt">&gt;</span><span class="cp">&lt;%=</span> <span class="n">event</span><span class="p">.</span><span class="nf">location</span> <span class="cp">%&gt;</span><span class="nt">&lt;/div&gt;</span>
+    <span class="nt">&lt;/div&gt;</span>
+  <span class="cp">&lt;%</span> <span class="k">end</span> <span class="cp">%&gt;</span>
+<span class="cp">&lt;%</span> <span class="k">end</span> <span class="cp">%&gt;</span>
+</pre></td></tr></tbody></table>
+</code></pre>
+<h3 id="deploying-to-gh-pages">Deploying to GH Pages</h3>
+
+<p>My blog has been running on GitHub for nearly three years and I obviously wanted to continue doing exactly that. Since this blog is not a project’s page and doesn’t belong to an organization I had to be able to push my site to the <code>master</code> branch instead of <code>gh-pages</code>. My source code resides on the <code>source</code> branch in the same repository.</p>
+
+<p>I tried to work with <a href="http://github.com/middleman-contrib/middleman-deploy">middleman-deploy</a> but sadly wasn’t able to work around a handful of issues. Other people ran into the same problems and created a currently <a href="http://github.com/middleman-contrib/middleman-deploy/issues/114">open issue on GitHub</a>.</p>
+
+<p>One of the alternatives that has been suggested is the gem <a href="http://github.com/edgecase/middleman-gh-pages">middleman-gh-pages</a> which gladly did the trick for me. I’ve configured my project’s Rakefile to publish to <code>master</code> and got everything to work:</p>
+
+<pre class="highlight plaintext"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+</pre></td><td class="rouge-code"><pre>require "middleman-gh-pages"
+
+ENV["BRANCH_NAME"] = "master"
+
+task :default =&gt; [:publish]
+</pre></td></tr></tbody></table>
+</code></pre>
+<p>Currently the <code>build</code> folder has to be removed before pushing the newly generated blog to the <code>master</code> branch. The reason is a change in Middleman`s site generation mechanisms.</p>
+
+<p>I also had to add a file called <code>.nojekyll</code> in order to <a href="https://github.com/blog/572-bypassing-jekyll-on-github-pages">avoid issues with GitHub</a>.</p>
+
+<h3 id="whats-next">What’s next?</h3>
+
+<p>I’m looking for ways to further optimize the site’s appearance, loading times and work around issues like having to remove the <code>build</code> folder before deploying an update version of my blog. Over the course of the next few weeks and months many gems will start to officially support Middleman v4 and the Middleman team is working on v4.1 which will bring back some cool functionality to the site generator’s core.</p>
+
+<p>Any feedback is welcome!</p>
+
+  </article>
+  <!-- Disqus -->
+<div id='disqus_thread'></div>
+<script type='text/javascript'>
+//<![CDATA[
+                  var disqus_shortname = 'tmecoffee';
+          
+    (function() {
+        var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+        dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    })();
+//]]>
+</script>
+<noscript>Please enable JavaScript to view the <a href='http://disqus.com/?ref_noscript'>comments powered by Disqus.</a></noscript>
+<a href='http://disqus.com' class='dsq-brlink'>comments powered by <span class='logo-disqus'>Disqus</span></a>
+
+<script type="text/javascript">
+//<![CDATA[
+    var disqus_shortname = 'tmecoffee';
+    (function () {
+        var s = document.createElement('script'); s.async = true;
+        s.type = 'text/javascript';
+        s.src = '//' + disqus_shortname + '.disqus.com/count.js';
+        (document.getElementsByTagName('HEAD')[0] || document.getElementsByTagName('BODY')[0]).appendChild(s);
+    }());
+//]]>
+</script>
+
+<!-- End Disqus -->
+
+
+      </div>
+      <footer>
+  <small>&copy; Tim Messerschmidt 2016 - The opinions stated here are my own, not those of my company.</small>
+</footer>
+
+    </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
+<script>window.jQuery || document.write('<script src="public/js/jquery-1.12.2.min.js"><\/script>')</script>
+<script src="/public/js/bootstrap.min.js"></script>
+<!-- Google Analytics -->
+<script type="text/javascript">
+  var _gaq = _gaq || [];
+  _gaq.push(["_setAccount", "UA-40700707-1"]);
+  _gaq.push(["_trackPageview"]);
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? '//ssl' : '//www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+</script>
+<!-- End Google Analytics -->
+
+<script type="text/javascript">
+  /* Async Font Awesome */
+  (function() {
+  	var css = document.createElement('link');
+  	css.href = '//maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css';
+  	css.rel = 'stylesheet';
+  	css.type = 'text/css';
+  	document.getElementsByTagName('head')[0].appendChild(css);
+  })();
+</script>
+
+<!-- <script>
+if('serviceWorker' in navigator) {
+  navigator.serviceWorker.register('/service-worker.js', { scope: '/' }).then(function(registration) {
+      console.log("SW registered");
+  });
+
+  navigator.serviceWorker.ready.then(function(registration) {
+    console.log("SW ready");
+  });
+}
+</script>
+ -->
+
+  </body>
+</html>

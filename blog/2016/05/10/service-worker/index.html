@@ -1,0 +1,329 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+<meta http-equiv='X-UA-Compatible' content='IE=edge;chrome=1' />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+
+<style>
+  body {
+    background-color: #2C3E50;
+    font-family: HelveticaNeue-Light,"Helvetica Neue Light","Helvetica Neue",Helvetica,"Open Sans",sans-serif;
+    font-size: 18px;
+    color: #E1E4E6;
+  }
+
+  p {
+    font-weight: 300;
+  }
+
+  h1, h2, h3, h4, h5 {
+    font-weight: 400;
+    letter-spacing: -1px;
+    color: #F4511E;
+  }
+
+  a, a:hover, a:visited {
+    color: #F4511E;
+    text-decoration: none;
+  }
+</style>
+
+
+<link href="/public/css/site.css" rel="stylesheet" />
+
+<meta name="theme-color" content="#2C3E50">
+
+<!-- Web Application Manifest -->
+<link rel="manifest" href="https://timmesserschmidt.com/manifest.json">
+
+<!-- Chrome on Android -->
+<meta name="theme-color" content="#2C3E50">
+<meta name="mobile-web-app-capable" content="yes">
+<meta name="application-name" content="timmesserschmidt">
+<link rel="icon" sizes="192x192" href="/public/img/chrome192x192.png">
+
+<!-- Safari on iOS -->
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black">
+<meta name="apple-mobile-web-app-title" content="timmesserschmidt">
+
+<link rel="apple-touch-icon" href="/public/img/apple192x192.png">
+<link rel="apple-touch-icon" sizes="76x76" href="/public/img/apple76x76.png">
+<link rel="apple-touch-icon" sizes="120x120" href="/public/img/apple120x120.png">
+<link rel="apple-touch-icon" sizes="152x152" href="/public/img/apple152x152.png">
+
+<!-- Windows 8 -->
+<meta name="msapplication-TileColor" content="#2C3E50">
+<meta name="msapplication-TileImage" content="/public/img/ms144x144.png">
+
+<!-- Twitter Cards -->
+<meta name="twitter:card" content="summary" />
+<meta name="twitter:site" content="@seraandroid" />
+<meta name="twitter:title" content="Using the Power of the Service Worker" />
+<meta name="twitter:description" content="In today’s blog post I’d like to write about an essential component of Progressive Web Apps: the Service Worker - an event-driven background processing tool that enables fetching resources and mana..." />
+<meta name="twitter:image" content="https://timmesserschmidt.com/public/img/profile.png" />
+
+<!-- Facebook Open Graph -->
+<meta property="og:title" content="Using the Power of the Service Worker" />
+<meta property="og:site_name" content="timmesserschmidt" />
+<meta property="og:description" content="In today’s blog post I’d like to write about an essential component of Progressive Web Apps: the Service Worker - an event-driven background processing tool that enables fetching resources and managing your application’s cache. The result is a gain in reliable performance; connection quality and network performance loose in importance when it comes to enjoying your application. Service Worker got introduced as feature with Chrome 40 and since then made it into a number of other browsers such ..." />
+<meta property="fb:app_id" content="969436346421526" />
+<meta property="og:type" content="article" />
+<meta property="og:image" content="https://timmesserschmidt.com/public/img/profile.png" />
+<meta property="og:url" content="https://timmesserschmidt.com/blog/2016/05/10/service-worker/" />
+
+<title>Using the Power of the Service Worker - timmesserschmidt</title>
+
+<meta property="article:author" content="https://www.facebook.com/tim.messerschmidt" />
+
+<link href="/favicon.ico" rel="icon" type="image/ico" />
+
+<link rel="alternate" type="application/atom+xml" title="Atom Feed" href="https://timmesserschmidt.com/feed.xml" />
+
+  </head>
+  <body>
+    <nav class="navbar navbar-inverse navbar-static-top" id="navbar">
+  <div class="container">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-navbar-collapse" aria-expanded="false">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="/">timmesserschmidt</a>
+    </div>
+    <div class="collapse navbar-collapse" id="bs-navbar-collapse">
+      <ul class="nav navbar-nav">
+        <li><a href="/">Blog</a></li>
+        <li><a href="/events">Events</a></li>
+        <li><a href="/about">About</a></li>
+      </ul>
+      <div class="navbar-right" id="social">
+        <ul class="nav navbar-nav">
+          <li>
+<a href="mailto:timmesserschmidt@gmail.com">              <i class="hidden-xs fa fa-envelope-square fa-2x fa-fw"></i>
+              <span class="sr-only">Mail</span>
+              <span class="visible-xs-inline-block">Mail</span>
+</a>          </li>
+          <li><a href="http://plus.google.com/+TimMesserschmidt"><i class="hidden-xs fa fa-google-plus-square fa-2x fa-fw"></i><span class="sr-only">Google Plus</span><span class="visible-xs-inline-block">Google Plus</span></a></li>
+          <li><a href="http://twitter.com/seraandroid"><i class="hidden-xs fa fa-twitter-square fa-2x fa-fw"></i><span class="sr-only">Twitter</span><span class="visible-xs-inline-block">Twitter</span></a></li>
+          <li><a href="http://linkedin.com/in/timmesserschmidt"><i class="hidden-xs fa fa-linkedin-square fa-2x fa-fw"></i><span class="sr-only">LinkedIn</span><span class="visible-xs-inline-block">LinkedIn</span></a></li>
+          <li><a href="http://github.com/seraphimserapis"><i class="hidden-xs fa fa-github-square fa-2x fa-fw"></i><span class="sr-only">GitHub</span><span class="visible-xs-inline-block">GitHub</span></a></li>
+          <li>
+<a href="/feed.xml">              <i class="hidden-xs fa fa-rss-square fa-2x fa-fw"></i>
+              <span class="sr-only">RSS</span>
+              <span class="visible-xs-inline-block">RSS</span>
+</a>          </li>
+        </ul><!-- nav navbar-nav -->
+      </div><!-- navbar-right -->
+    </div><!-- collapse navbar-collapse -->
+  </div><!-- container -->
+</nav>
+
+
+    <div class="container">
+      <div id="main" role="main">
+          <article>
+    <div class="page-header title">
+      <h1><a href="#">Using the Power of the Service Worker</a></h1>
+      <i class="fa fa-calendar" aria-hidden="true"></i>
+      <span class="date">May 10th, 2016</span>
+      <div class="tags">
+<a href="/blog/categories/general">          <button class="btn btn-tag">general</button>
+</a>      </div>
+    </div>
+    <p>In today’s blog post I’d like to write about an essential component of <a href="http://developers.google.com/web/progressive-web-apps?hl=en">Progressive Web Apps</a>: the <a href="http://slightlyoff.github.io/ServiceWorker/spec/service_worker/">Service Worker</a> - an event-driven background processing tool that enables fetching resources and managing your application’s cache. The result is a gain in reliable performance; connection quality and network performance loose in importance when it comes to enjoying your application.</p>
+
+
+
+<p>Service Worker got introduced as feature with Chrome 40 and since then made it into a number of other browsers such as Firefox, Opera, Edge (currently in the works) and hopefully soon Safari, too. You can find a complete overview about <a href="http://jakearchibald.github.io/isserviceworkerready/">browser support for Service Workers here</a>. A requirement for making use of Service Worker is HTTPs - this prevents things like injecting malicious code into a site that persists due to being cached.</p>
+
+<h2 id="putting-the-service-worker-to-work">Putting the Service Worker to work</h2>
+
+<p>As I’ve mentioned in this post’s introduction, a Service Worker can handle fetching resources, application caching and much more. In order to make this happen Service Workers rely on ES2015’s <a href="http://developer.mozilla.org/en/docs/Web/JavaScript/Reference/Global_Objects/Promise#Description">Promises</a> - a new (and awesomely efficient) way to handle asynchronous requests.</p>
+
+<p>First of all we’ll need to start adding event listener’s that subscribe to a number of important events (namely <code>install</code>, <code>activate</code> &amp; <code>fetch</code>). There are a <a href="http://developer.mozilla.org/en-US/docs/Web/API/Service_Worker_API/Using_Service_Workers#Basic_architecture">few more events</a> that can add additional functionality but we’ll ignore them for now.</p>
+
+<p><code>install</code> is fired after <code>navigator.serviceWorker.register()</code> ran successfully - this is where we want to define which files to cache. You’ll noticed that I’ve provided my domain <code>tme.coffee</code> as the cache’s name. You can choose whatever works best (and hopefully is somehow unique) here.</p>
+
+<pre class="highlight javascript"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+</pre></td><td class="rouge-code"><pre><span class="kd">var</span> <span class="nx">toCache</span> <span class="o">=</span> <span class="p">[</span>
+  <span class="s1">'/'</span><span class="p">,</span>
+  <span class="s1">'/public/css/site.css'</span><span class="p">,</span>
+  <span class="s1">'/public/js/bootstrap.min.js'</span>
+<span class="p">];</span>
+
+<span class="nx">self</span><span class="p">.</span><span class="nx">addEventListener</span><span class="p">(</span><span class="s1">'install'</span><span class="p">,</span> <span class="kd">function</span><span class="p">(</span><span class="nx">e</span><span class="p">)</span> <span class="p">{</span>
+  <span class="nx">e</span><span class="p">.</span><span class="nx">waitUntil</span><span class="p">(</span>
+    <span class="nx">caches</span><span class="p">.</span><span class="nx">open</span><span class="p">(</span><span class="s1">'tme.coffee'</span><span class="p">).</span><span class="nx">then</span><span class="p">(</span><span class="kd">function</span><span class="p">(</span><span class="nx">cache</span><span class="p">)</span> <span class="p">{</span>
+      <span class="k">return</span> <span class="nx">cache</span><span class="p">.</span><span class="nx">addAll</span><span class="p">(</span><span class="nx">toCache</span><span class="p">).</span><span class="nx">then</span><span class="p">(</span><span class="kd">function</span><span class="p">()</span> <span class="p">{</span>
+        <span class="k">return</span> <span class="nx">self</span><span class="p">.</span><span class="nx">skipWaiting</span><span class="p">();</span>
+      <span class="p">});</span>
+    <span class="p">})</span>
+  <span class="p">);</span>
+<span class="p">});</span>
+</pre></td></tr></tbody></table>
+</code></pre>
+<p>In my case I choose to cache my page’s CSS and Bootstrap. This saves valuable time and resources when (re-)visiting this blog, resulting in a performance gain. To force an update you’ll need to modify the Service Worker’s file - a simple trick to force an update is bumping a version number:</p>
+
+<pre class="highlight javascript"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+</pre></td><td class="rouge-code"><pre><span class="kd">var</span> <span class="nx">version</span> <span class="o">=</span> <span class="s1">'0.0.1'</span><span class="p">;</span> <span class="c1">// increment in order to force a cache update</span>
+</pre></td></tr></tbody></table>
+</code></pre>
+<p>Depending on your site’s <code>cache-control</code> headers the update might actually not happen directly.</p>
+
+<p>You’ll notice the usage of <code>skipWaiting()</code> while handling the <code>install</code> event; this method works in relation to <code>clients.claim()</code> and ensures that updates to the worker take immediate effect on all clients.</p>
+
+<p>The next event, <code>activate</code>, can be used to handle tasks like cache management. In this basic example we use <code>self.clients.claim()</code> to set our Service Worker as the client page’s active worker:</p>
+
+<pre class="highlight javascript"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+3
+</pre></td><td class="rouge-code"><pre><span class="nx">self</span><span class="p">.</span><span class="nx">addEventListener</span><span class="p">(</span><span class="s1">'activate'</span><span class="p">,</span> <span class="kd">function</span><span class="p">(</span><span class="nx">event</span><span class="p">)</span> <span class="p">{</span>
+  <span class="nx">event</span><span class="p">.</span><span class="nx">waitUntil</span><span class="p">(</span><span class="nx">self</span><span class="p">.</span><span class="nx">clients</span><span class="p">.</span><span class="nx">claim</span><span class="p">());</span>
+<span class="p">});</span>
+</pre></td></tr></tbody></table>
+</code></pre>
+<p>The final event we’ll explore is <code>fetch</code>. This is where we can decide if a resource should be returned from the application’s cache or should be fetched and provided to the client:</p>
+
+<pre class="highlight javascript"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+6
+7
+</pre></td><td class="rouge-code"><pre><span class="nx">self</span><span class="p">.</span><span class="nx">addEventListener</span><span class="p">(</span><span class="s1">'fetch'</span><span class="p">,</span> <span class="kd">function</span><span class="p">(</span><span class="nx">event</span><span class="p">)</span> <span class="p">{</span>
+  <span class="nx">event</span><span class="p">.</span><span class="nx">respondWith</span><span class="p">(</span>
+    <span class="nx">caches</span><span class="p">.</span><span class="nx">match</span><span class="p">(</span><span class="nx">event</span><span class="p">.</span><span class="nx">request</span><span class="p">).</span><span class="nx">then</span><span class="p">(</span><span class="kd">function</span><span class="p">(</span><span class="nx">response</span><span class="p">)</span> <span class="p">{</span>
+      <span class="k">return</span> <span class="nx">response</span> <span class="o">||</span> <span class="nx">fetch</span><span class="p">(</span><span class="nx">event</span><span class="p">.</span><span class="nx">request</span><span class="p">);</span>
+    <span class="p">})</span>
+  <span class="p">);</span>
+<span class="p">});</span>
+</pre></td></tr></tbody></table>
+</code></pre>
+<h3 id="adding-the-service-worker">Adding the Service Worker</h3>
+
+<p>In this last section we’ll go through the needed code in order to load the worker we’ve defined above. In my case the Service Worker resides in a file called <code>sw.js</code> in my project’s root folder. The following snippet ends up enclosed by a <code>&lt;script&gt;</code>-tag in your layout’s body. As with most resources that end up being loaded when opening up your page I’d recommend moving this code at the bottom of your document in order to ensure that your file renders other information (such as your minimum required CSS and the document itself) before:</p>
+
+<pre class="highlight javascript"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+6
+7
+8
+9
+</pre></td><td class="rouge-code"><pre><span class="k">if</span><span class="p">(</span><span class="s1">'serviceWorker'</span> <span class="k">in</span> <span class="nx">navigator</span><span class="p">)</span> <span class="p">{</span>
+  <span class="nx">navigator</span><span class="p">.</span><span class="nx">serviceWorker</span><span class="p">.</span><span class="nx">register</span><span class="p">(</span><span class="s1">'/sw.js'</span><span class="p">,</span> <span class="p">{</span> <span class="na">scope</span><span class="p">:</span> <span class="s1">'/'</span> <span class="p">}).</span><span class="nx">then</span><span class="p">(</span><span class="kd">function</span><span class="p">(</span><span class="nx">registration</span><span class="p">)</span> <span class="p">{</span>
+      <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="s2">"SW registered"</span><span class="p">);</span>
+  <span class="p">});</span>
+
+  <span class="nx">navigator</span><span class="p">.</span><span class="nx">serviceWorker</span><span class="p">.</span><span class="nx">ready</span><span class="p">.</span><span class="nx">then</span><span class="p">(</span><span class="kd">function</span><span class="p">(</span><span class="nx">registration</span><span class="p">)</span> <span class="p">{</span>
+    <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="s2">"SW ready"</span><span class="p">);</span>
+  <span class="p">});</span>
+<span class="p">}</span>
+</pre></td></tr></tbody></table>
+</code></pre>
+<p>The beauty is that the snippet doesn’t cause any harm when Service Worker is not available. We don’t break anything and the worker is simply ignored.</p>
+
+<p>Congratulations! If you’ve followed this post (and adjusted the code to your needs) you should’ve Service Worker-enabled your application. You can check if everything works as intended by navigating to <code>chrome://serviceworker-internals</code>.</p>
+
+  </article>
+  <!-- Disqus -->
+<div id='disqus_thread'></div>
+<script type='text/javascript'>
+//<![CDATA[
+                  var disqus_shortname = 'tmecoffee';
+          
+    (function() {
+        var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+        dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    })();
+//]]>
+</script>
+<noscript>Please enable JavaScript to view the <a href='http://disqus.com/?ref_noscript'>comments powered by Disqus.</a></noscript>
+<a href='http://disqus.com' class='dsq-brlink'>comments powered by <span class='logo-disqus'>Disqus</span></a>
+
+<script type="text/javascript">
+//<![CDATA[
+    var disqus_shortname = 'tmecoffee';
+    (function () {
+        var s = document.createElement('script'); s.async = true;
+        s.type = 'text/javascript';
+        s.src = '//' + disqus_shortname + '.disqus.com/count.js';
+        (document.getElementsByTagName('HEAD')[0] || document.getElementsByTagName('BODY')[0]).appendChild(s);
+    }());
+//]]>
+</script>
+
+<!-- End Disqus -->
+
+
+      </div>
+      <footer>
+  <small>&copy; Tim Messerschmidt 2016 - The opinions stated here are my own, not those of my company.</small>
+</footer>
+
+    </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
+<script>window.jQuery || document.write('<script src="public/js/jquery-1.12.2.min.js"><\/script>')</script>
+<script src="/public/js/bootstrap.min.js"></script>
+<!-- Google Analytics -->
+<script type="text/javascript">
+  var _gaq = _gaq || [];
+  _gaq.push(["_setAccount", "UA-40700707-1"]);
+  _gaq.push(["_trackPageview"]);
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? '//ssl' : '//www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+</script>
+<!-- End Google Analytics -->
+
+<script type="text/javascript">
+  /* Async Font Awesome */
+  (function() {
+  	var css = document.createElement('link');
+  	css.href = '//maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css';
+  	css.rel = 'stylesheet';
+  	css.type = 'text/css';
+  	document.getElementsByTagName('head')[0].appendChild(css);
+  })();
+</script>
+
+<!-- <script>
+if('serviceWorker' in navigator) {
+  navigator.serviceWorker.register('/service-worker.js', { scope: '/' }).then(function(registration) {
+      console.log("SW registered");
+  });
+
+  navigator.serviceWorker.ready.then(function(registration) {
+    console.log("SW ready");
+  });
+}
+</script>
+ -->
+
+  </body>
+</html>
