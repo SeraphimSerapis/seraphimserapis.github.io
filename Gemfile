@@ -22,7 +22,7 @@ gem "middleman-gh-pages"
 gem 'middleman-search_engine_sitemap', :git => "https://github.com/angeloashmore/middleman-search_engine_sitemap"
 
 # HTML validity
-gem "nokogiri"
+gem 'nokogiri', '~> 1.6'
 
 # Markdown
 gem "redcarpet", "~> 3.3", ">= 3.3.4"
