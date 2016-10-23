@@ -1,6 +1,36 @@
 {
   "years": [
     {
+      "year": 2016,
+      "events": [
+        {
+          "name": "Codemotion",
+          "location": "Berlin, DE",
+          "date": "October 24nd - 25th"
+        },
+        {
+          "name": "GDG DevFest",
+          "location": "Dusseldorf, DE",
+          "date": "October 22nd - 22rd"
+        },
+        {
+          "name": "Droidcon",
+          "location": "Vienna, AT",
+          "date": "September 16th - 17th"
+        },
+        {
+          "name": "Google for Entrepreneuers Workshop: Factory",
+          "location": "Berlin, DE",
+          "date": "September 13th"
+        },
+        {
+          "name": "Firebase Overview @ Wooga",
+          "location": "Berlin, DE",
+          "date": "July 11th"
+        }
+      ]
+    },
+    {
       "year": 2015,
       "events": [
         {
