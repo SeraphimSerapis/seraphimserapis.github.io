@@ -1,13 +1,68 @@
 {
   "years": [
     {
+      "year": 2017,
+      "events": [
+        {
+          "name": "Women Techmakers",
+          "location": "Berlin, DE",
+          "date": "December 15th"
+        },
+        {
+          "name": "Google Cloud Summit",
+          "location": "Munich, DE",
+          "date": "December 6th"
+        },
+        {
+          "name": "Women Techmakers India Summit",
+          "location": "Bangalore, IN",
+          "date": "November 27th - 28th"
+        },
+        {
+          "name": "DevFest Ukraine",
+          "location": "Lviv, UA",
+          "date": "October 13th - 14th"
+        },
+        {
+          "name": "code.talks",
+          "location": "Hamburg, DE",
+          "date": "September 28th"
+        },
+        {
+          "name": "Hack Zurich",
+          "location": "Zurich, CH",
+          "date": "September 14th - 16th"
+        },
+        {
+          "name": "Female Tech Leaders",
+          "location": "Munich, DE",
+          "date": "July 10th"
+        },
+        {
+          "name": "Women Techmakers EMEA Summit",
+          "location": "Prague, CZ",
+          "date": "June 10th - 11th"
+        },
+        {
+          "name": "GDG Hamburg",
+          "location": "Hamburg, DE",
+          "date": "April 19th"
+        },
+        {
+          "name": "GDG Munich",
+          "location": "Munich, DE",
+          "date": "April 4th"
+        }
+      ]
+    },
+    {
       "year": 2016,
       "events": [
-	{
-	  "name": "DevRelCon UK",
-	  "location": "London, UK",
-	  "date": "December 7th"
-	},
+        {
+          "name": "DevRelCon UK",
+          "location": "London, UK",
+          "date": "December 7th"
+        },
         {
           "name": "Codemotion",
           "location": "Berlin, DE",
@@ -18,11 +73,11 @@
           "location": "Dusseldorf, DE",
           "date": "October 22nd - 22rd"
         },
-	{
-	  "name": "Bits & Pretzels",
-	  "location": "Munich, DE",
-	  "date": "September 25th - 27th"
-	},
+        {
+          "name": "Bits & Pretzels",
+          "location": "Munich, DE",
+          "date": "September 25th - 27th"
+        },
         {
           "name": "Droidcon",
           "location": "Vienna, AT",
