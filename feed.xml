@@ -5,7 +5,7 @@
   <id>https://timmesserschmidt.com/blog</id>
   <link href="https://timmesserschmidt.com/blog"/>
   <link href="https://timmesserschmidt.com/feed.xml" rel="self"/>
-  <updated>2016-09-09T00:00:00+02:00</updated>
+  <updated>2016-09-08T15:00:00-07:00</updated>
   <author>
     <name>Tim Messerschmidt</name>
   </author>
@@ -13,8 +13,8 @@
     <title>Security UI&amp;#47;UX best practices with FirebaseUI Auth</title>
     <link rel="alternate" href="https://timmesserschmidt.com/blog/2016/09/09/firebaseui-auth/"/>
     <id>https://timmesserschmidt.com/blog/2016/09/09/firebaseui-auth/</id>
-    <published>2016-09-09T00:00:00+02:00</published>
-    <updated>2017-02-28T16:07:06+01:00</updated>
+    <published>2016-09-08T15:00:00-07:00</published>
+    <updated>2017-02-28T07:07:06-08:00</updated>
     <author>
       <name>Tim Messerschmidt</name>
     </author>
@@ -45,8 +45,8 @@
     <title>Hosting Static Web Apps with Firebase</title>
     <link rel="alternate" href="https://timmesserschmidt.com/blog/2016/05/25/hosting-with-firebase/"/>
     <id>https://timmesserschmidt.com/blog/2016/05/25/hosting-with-firebase/</id>
-    <published>2016-05-25T00:00:00+02:00</published>
-    <updated>2017-02-28T16:07:06+01:00</updated>
+    <published>2016-05-24T15:00:00-07:00</published>
+    <updated>2017-02-28T07:07:06-08:00</updated>
     <author>
       <name>Tim Messerschmidt</name>
     </author>
@@ -84,8 +84,8 @@
     <title>Service Worker Precache for Middleman</title>
     <link rel="alternate" href="https://timmesserschmidt.com/blog/2016/05/15/sw-precache/"/>
     <id>https://timmesserschmidt.com/blog/2016/05/15/sw-precache/</id>
-    <published>2016-05-15T00:00:00+02:00</published>
-    <updated>2017-02-28T16:07:06+01:00</updated>
+    <published>2016-05-14T15:00:00-07:00</published>
+    <updated>2017-02-28T07:07:06-08:00</updated>
     <author>
       <name>Tim Messerschmidt</name>
     </author>
@@ -154,8 +154,8 @@
     <title>Using the Power of the Service Worker</title>
     <link rel="alternate" href="https://timmesserschmidt.com/blog/2016/05/10/service-worker/"/>
     <id>https://timmesserschmidt.com/blog/2016/05/10/service-worker/</id>
-    <published>2016-05-10T00:00:00+02:00</published>
-    <updated>2017-02-28T16:07:06+01:00</updated>
+    <published>2016-05-09T15:00:00-07:00</published>
+    <updated>2017-02-28T07:07:06-08:00</updated>
     <author>
       <name>Tim Messerschmidt</name>
     </author>
@@ -276,8 +276,8 @@
     <title>kramdown instead of Redcarpet</title>
     <link rel="alternate" href="https://timmesserschmidt.com/blog/2016/04/07/kramdown-redcarpet/"/>
     <id>https://timmesserschmidt.com/blog/2016/04/07/kramdown-redcarpet/</id>
-    <published>2016-04-07T00:00:00+02:00</published>
-    <updated>2017-02-28T16:07:06+01:00</updated>
+    <published>2016-04-06T15:00:00-07:00</published>
+    <updated>2017-02-28T07:07:06-08:00</updated>
     <author>
       <name>Tim Messerschmidt</name>
     </author>
@@ -311,8 +311,8 @@ Tim&lt;/p&gt;
     <title>Let's Encrypt for GitHub Pages</title>
     <link rel="alternate" href="https://timmesserschmidt.com/blog/2016/03/18/lets-encrypt-gh-pages/"/>
     <id>https://timmesserschmidt.com/blog/2016/03/18/lets-encrypt-gh-pages/</id>
-    <published>2016-03-18T00:00:00+01:00</published>
-    <updated>2017-02-28T16:07:06+01:00</updated>
+    <published>2016-03-17T16:00:00-07:00</published>
+    <updated>2017-02-28T07:07:06-08:00</updated>
     <author>
       <name>Tim Messerschmidt</name>
     </author>
