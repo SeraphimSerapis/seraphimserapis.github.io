@@ -1,6 +1,41 @@
 {
   "years": [
     {
+      "year": 2018,
+      "events": [
+        {
+          "name": "Gsuite Experts Training",
+          "location": "San Francisco, US",
+          "date": "July 27th"
+        },
+        {
+          "name": "Women Techmakers EMEA Summit",
+          "location": "Madrid, ES",
+          "date": "July 8th"
+        },
+        {
+          "name": "Media Hackday",
+          "location": "Berlin, DE",
+          "date": "May 26th - 27th"
+        },
+        {
+          "name": "Droidcon Italy",
+          "location": "Turin, IT",
+          "date": "April 19th - 20th"
+        },
+        {
+          "name": "RockIt Biz!",
+          "location": "Berlin, DE",
+          "date": "March 19th"
+        },
+        {
+          "name": "Google Developer Relations Conference",
+          "location": "Sunnyvale, US",
+          "date": "February 2nd"
+        }
+      ]
+    },
+    {
       "year": 2017,
       "events": [
         {
